@@ -20,10 +20,10 @@ timezone: Asia/Singapore
 
 title: Rootware Research                          # the main title
 
-tagline:    # it will display as the sub-title
+tagline: Cloud Systems Engineer, Cyber Security, DevOps / Site Reliability Engineering.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A blog for CTF writeups, Blue Team techniques and some research by Oaker Min (Bruce)
+  A blog for CTF writeups, Blue Team Techniques and some research by Oaker Min (Bruce)
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://brootware.github.io'
@@ -38,7 +38,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Oaker Min (Bruce)
-  email: example@doamin.com             # change to your email address
+  email:              # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/brootware       # change to your twitter homepage
