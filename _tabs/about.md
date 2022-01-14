@@ -6,7 +6,7 @@ order: 4
 
 ## What's this blog about?
 
-Welcome! This is a personal blog site to share my CTF writeups, Blue Team Techniques, other side projects research.
+Welcome! This is a personal blog site to share my CTF writeups, Blue Team Techniques, other side projects and research.
 
 ## Watch this space as I add in more tips and resources.
 

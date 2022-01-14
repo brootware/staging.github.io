@@ -1,9 +1,57 @@
 ---
 layout: post
-title: My New Post
+title: Looking Glass Hack The Box Firewalker CTF
 date: 2022-01-14 15:03 +0800
-categories: [Introduction, Test]
-tags: [Test]
+categories: [CTF, Web-exploitation]
+tags: [CTF, Web-exploitation]
 ---
 
-Hello world, this is my first post!
+![solved in time of CTF](https://img.shields.io/badge/solved-in%20time%20of%20CTF-brightgreen.svg)
+https://ctf.hackthebox.com/ctf/240
+Point: 325
+
+## Category
+
+Web-Exploitation
+
+## Question
+
+We've built the most secure networking tool in the market, come and check it out!
+
+## Solution
+
+This challenge is a remote code execution vulnerability challenge. You are given a web page to test out networking tool namely ping and traceroute.
+The web page is quickly popped in Owasp ZAP to recon the requests and responses to and from the server.
+![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Web-Exploitation/lookingGlass/1.png)
+
+A breakpoint is set to examine the request further.
+![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Web-Exploitation/lookingGlass/2.png)
+
+From the request we can see that a request for ping is sent to server in the following format.
+`test=ping&ip_address=188.166.174.107&submit=Test`
+
+A test injection command is crafted in the command as below to see if the request would be vulnerable to remote code execution on the server.
+
+`test=ping&ip_address=188.166.174.107;id&submit=Test`
+
+Indeed, the web application is vulnerable to an RCE from the response.
+![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Web-Exploitation/lookingGlass/3.png)
+
+Another test command is crafted to further recon the context of the environment we're in.
+![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Web-Exploitation/lookingGlass/4.png)
+
+The command again shows that we are in www directory of the server.
+![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Web-Exploitation/lookingGlass/5.png)
+
+We can see from here that there is a flag file one level up from www directory of the server.
+![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Web-Exploitation/lookingGlass/6.png)
+
+The command is again crafted further to read the contents of the flag file.
+![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Web-Exploitation/lookingGlass/7.png)
+
+The output of the contents are then shown in the output pane of the looking glass web application.
+![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Web-Exploitation/lookingGlass/8.png)
+
+## Improvement
+
+None

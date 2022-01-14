@@ -23,7 +23,7 @@ title: Rootware Research                          # the main title
 tagline: Cloud Systems Engineer, Cyber Security, DevOps / Site Reliability Engineering.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A blog for CTF writeups, Blue Team Techniques and some research by Oaker Min (Bruce)
+  A blog for CTF writeups, Blue Team Techniques, other side projects research by Oaker Min (Bruce)
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://brootware.github.io'
@@ -43,6 +43,8 @@ social:
     # The first element serves as the copyright owner's link
     - https://twitter.com/brootware       # change to your twitter homepage
     - https://github.com/brootware        # change to your github homepage
+    - https://blueteamlabs.online/public/user/f7656a47c955978a69858f
+    - https://tryhackme.com/p/rootware
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
