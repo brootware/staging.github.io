@@ -6,11 +6,6 @@
 -
   type: twitter
   icon: 'fab fa-twitter'
-
-- 
-  type: blueteamlabs
-  icon: 'https://blueteamlabs.online/favicon.ico'
-  url: 'https://blueteamlabs.online/public/user/f7656a47c955978a69858f'
 # -
 #   type: email
 #   icon: 'fas fa-envelope'
