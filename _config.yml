@@ -41,10 +41,10 @@ social:
   # email:              # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/brootware       # change to your twitter homepage
-    - https://github.com/brootware        # change to your github homepage
-    - https://blueteamlabs.online/public/user/f7656a47c955978a69858f
-    - https://tryhackme.com/p/rootware
+    # - https://twitter.com/brootware       # change to your twitter homepage
+    # - https://github.com/brootware        # change to your github homepage
+    # - https://blueteamlabs.online/public/user/f7656a47c955978a69858f
+    # - https://tryhackme.com/p/rootware
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
