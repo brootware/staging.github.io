@@ -7,7 +7,9 @@ tags: [CTF, Web-exploitation]
 ---
 
 ![solved in time of CTF](https://img.shields.io/badge/solved-in%20time%20of%20CTF-brightgreen.svg)
+
 https://ctf.hackthebox.com/ctf/240
+
 Point: 325
 
 ## Category
@@ -55,3 +57,7 @@ The output of the contents are then shown in the output pane of the looking glas
 ## Improvement
 
 None
+
+## For more writeups
+
+This write up is featured as just one of many write-ups that has been written. For more writeups please visit this [repo](https://github.com/brootware/CTF-Writeups)
