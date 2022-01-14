@@ -8,7 +8,7 @@
   icon: 'fab fa-twitter'
 
 - 
-  type: blue team labs
+  type: blueteamlabs
   icon: 'https://blueteamlabs.online/favicon.ico'
   url: 'https://blueteamlabs.online/public/user/f7656a47c955978a69858f'
 # -
@@ -28,7 +28,7 @@
 -
   type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://sg.linkedin.com/in/oakermin'                  # Fill with your Linkedin homepage
+  url:  'https://linkedin.com/in/oakermin'                  # Fill with your Linkedin homepage
 # -
 #   type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
