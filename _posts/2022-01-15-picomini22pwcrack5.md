@@ -2,7 +2,7 @@
 layout: post
 title: picomini22pwcrack5
 date: 2022-01-15 10:22 +0800
-categories: [CTF, Cryptography, Reverse-Engineering]
+categories: [CTF, Reverse-Engineering, Cryptography]
 tags: [CTF, Cryptography, Reverse-Engineering]
 ---
 
