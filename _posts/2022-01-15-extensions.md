@@ -6,8 +6,6 @@ categories: [CTF, Forensics]
 tags: [CTF, Forensics]
 ---
 
-# Extensions
-
 Point: 150
 
 ## Category

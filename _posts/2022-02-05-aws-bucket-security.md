@@ -6,8 +6,6 @@ categories: [CTF, Cloud-Security, Incident-Response]
 tags: [CTF, Cloud-Security, Incident-Response, Blue-team]
 ---
 
-# AWS bucket security
-
 Point: 600
 
 <https://cyberdefenders.org/blueteam-ctf-challenges/progress/rootware/84/>
@@ -19,8 +17,7 @@ Cloud Security, Blue team, Incident Response
 ## Solution
 
 What is the full AWS CLI command used to configure credentials?
-
-```aws configure```
+aws configure
 
 What is the 'creation' date of the bucket 'flaws2-logs'?
 
@@ -41,6 +38,7 @@ aws s3api list-buckets
 }
 ```
 
+The answer for the question is as below date time format.
 2018-11-19 20:54:31 UTC
 
 What is the name of the first generated event -according to time?
@@ -108,7 +106,13 @@ cat 653711331788_CloudTrail_us-east-1_20181128T2305Z_zKlMhON7EpHala9u.json | jq 
 }
 ```
 
-104.102.221.250
+Narrowing down the answer further as below.
+
+```bash
+
+cat 653711331788_CloudTrail_us-east-1_20181128T2305Z_zKlMhON7EpHala9u.json | jq '.Records[0].sourceIPAddress'
+"104.102.221.250"
+```
 
 Which user issued the 'ListBuckets' request?
 
@@ -151,7 +155,14 @@ cat 653711331788_CloudTrail_us-east-1_20181128T2310Z_jQajCuiobojD8I4y.json | jq 
 }
 ```
 
-level3
+Narrowing down the answer to username as below
+
+```bash
+
+cat 653711331788_CloudTrail_us-east-1_20181128T2310Z_jQajCuiobojD8I4y.json | jq '.Records[0].userIdentity.sessionContext.sessionIssuer.userName'
+"level3"
+
+```
 
 What was the first request issued by the user 'level1'?
 
@@ -159,6 +170,7 @@ What was the first request issued by the user 'level1'?
 cat 653711331788_CloudTrail_us-east-1_20181128T2310Z_7J9NEIxrjJsrlXSd.json | jq '.Records[0].eventName'
 "CreateLogStream"
 ```
+
 
 ## Improvement
 

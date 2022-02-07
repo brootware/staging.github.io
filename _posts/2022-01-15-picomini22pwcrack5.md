@@ -6,8 +6,6 @@ categories: [CTF, Reverse-Engineering, Cryptography]
 tags: [CTF, Cryptography, Reverse-Engineering]
 ---
 
-# PW Crack 5
-
 Point: 100
 
 ![solved in time of CTF](https://img.shields.io/badge/solved-in%20time%20of%20CTF-brightgreen.svg)
