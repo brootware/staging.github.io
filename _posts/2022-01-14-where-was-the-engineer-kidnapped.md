@@ -32,7 +32,7 @@ This challenge:
 
 ## Flag
 
-```
+```text
 govtech-csg{760870}
 ```
 
@@ -46,7 +46,7 @@ The first video file shows of bus 117 that is going towards Punggol interchange 
 ![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Osint/where-was-he-kidnapped/1.png)
 
 Bus 117 service route can be found on transitlink website.
-https://www.transitlink.com.sg/eservice/eguide/service_route.php?service=117
+<https://www.transitlink.com.sg/eservice/eguide/service_route.php?service=117>
 The second video shows the engineer getting off at a stop that is within a distant from the MRT. The video also shows two striking yellow colored columns which helped identify the stop number that the engineer got off at which is Blk 871.
 
 ![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Osint/where-was-he-kidnapped/2.png)

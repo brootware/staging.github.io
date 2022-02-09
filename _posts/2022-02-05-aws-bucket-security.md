@@ -16,10 +16,11 @@ Cloud Security, Blue team, Incident Response
 
 ## Solution
 
-What is the full AWS CLI command used to configure credentials?
+### What is the full AWS CLI command used to configure credentials?
+
 aws configure
 
-What is the 'creation' date of the bucket 'flaws2-logs'?
+### What is the 'creation' date of the bucket 'flaws2-logs'?
 
 ```bash
 
@@ -41,7 +42,7 @@ aws s3api list-buckets
 The answer for the question is as below date time format.
 2018-11-19 20:54:31 UTC
 
-What is the name of the first generated event -according to time?
+### What is the name of the first generated event -according to time?
 
 ```bash
 
@@ -51,7 +52,7 @@ cat 653711331788_CloudTrail_us-east-1_20181128T2235Z_cR9ra7OH1rytWyXY.json | jq 
 "AssumeRole"
 ```
 
-What source IP address generated the event dated 2018-11-28 at 23:03:20 UTC?
+### What source IP address generated the event dated 2018-11-28 at 23:03:20 UTC?
 
 ```bash
 
@@ -60,7 +61,7 @@ cat 653711331788_CloudTrail_us-east-1_20181128T2305Z_83VTWZ8Z0kiEC7Lq.json | jq 
 
 ```
 
-Which IP address does not belong to Amazon AWS infrastructure?
+### Which IP address does not belong to Amazon AWS infrastructure?
 
 ```bash
 
@@ -114,7 +115,7 @@ cat 653711331788_CloudTrail_us-east-1_20181128T2305Z_zKlMhON7EpHala9u.json | jq 
 "104.102.221.250"
 ```
 
-Which user issued the 'ListBuckets' request?
+### Which user issued the 'ListBuckets' request?
 
 ```bash
 cat 653711331788_CloudTrail_us-east-1_20181128T2310Z_jQajCuiobojD8I4y.json | jq '.Records[0]'
@@ -164,13 +165,12 @@ cat 653711331788_CloudTrail_us-east-1_20181128T2310Z_jQajCuiobojD8I4y.json | jq 
 
 ```
 
-What was the first request issued by the user 'level1'?
+### What was the first request issued by the user 'level1'?
 
 ```bash
 cat 653711331788_CloudTrail_us-east-1_20181128T2310Z_7J9NEIxrjJsrlXSd.json | jq '.Records[0].eventName'
 "CreateLogStream"
 ```
-
 
 ## Improvement
 
