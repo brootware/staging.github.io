@@ -33,7 +33,7 @@ However, the project did not meet the three points mentioned earlier as it is ru
 
 You simply have to clone the repo and run `ansible-playbook site.yml` to install all the tools locally. But I ran into a fair bit of errors as some of the roles have broken links for installation. The project also does not have the option to install all these on a fresh VM.
 
-## Combing best of both worlds (Why not both?)
+## Combining best of both worlds (Why not both?)
 
 So I forked the repo and added in further customizations to fit my needs. You can find my version of the [kali-up](https://github.com/brootware/kali-up) <--- here.
 
