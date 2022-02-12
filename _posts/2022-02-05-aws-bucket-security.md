@@ -1,6 +1,6 @@
 ---
 layout: post
-title: aws-bucket-security
+title: AWS Bucket - Cloud Security
 date: 2022-02-05 17:16 +0800
 categories: [CTF, Cloud-Security, Incident-Response]
 tags: [CTF, Cloud-Security, Incident-Response, Blue-team]
@@ -39,7 +39,7 @@ aws s3api list-buckets
 }
 ```
 
-The answer for the question is as below date time format.
+The answer to the question is as below date-time format.
 2018-11-19 20:54:31 UTC
 
 ### What is the name of the first generated event -according to time?
