@@ -9,13 +9,13 @@ tags: [Projects, security-toolkit, Ansible, Automation]
 
 As security professionals, it could be very time consuming to spin up a kali machine with all the tools needed to do any form of Red or Blue team work like bug bounty, threat hunting and malware analysis or even to play Capture The Flag (CTF) competitions. To embark on this project, here is a checklist of things borrowed from Infrastructure-As-Code (IAC) philosophy of DevOps to fit my needs. The automation tool has to be:
 
-- Portable across platform. It has to be distro agnostic, able to run anywhere: A workstation or a vm running Linux. 
+- Portable across platform. It has to be distro agnostic, able to run anywhere: A workstation or a vm running Linux.
 - Has to be extensible. More tools can be added and more customization can be done like adding vagrant and a provisioner to spin up multiple vms.
 - Idempotent to easily manage versioning of security testing tools within the automation.
 
 ## Finding any existing upstream projects
 
-So I looked around for any open source projects that might fit this need and came across a couple of interesting projects which is [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) by stevemcilwain and a project called [kali-up](https://github.com/archcloudlabs/kali-up) by archcloudlabs. 
+So I looked around for any open source projects that might fit this need and came across a couple of interesting projects which is [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) by stevemcilwain and a project called [kali-up](https://github.com/archcloudlabs/kali-up) by archcloudlabs.
 
 ### Disposable-kali (Bash script approach)
 
