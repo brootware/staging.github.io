@@ -10,18 +10,18 @@ tags: [Projects, security-toolkit, Ansible, Automation]
 As security professionals, it could be very time consuming to spin up a kali machine with all the tools needed to do any form of Red or Blue team work like bug bounty, threat hunting and malware analysis or even to play Capture The Flag (CTF) competitions. To embark on this project, here is a checklist of things borrowed from the Infrastructure-As-Code (IAC) philosophy of DevOps to fit my needs. The automation tool has to be:
 
 - Portable across platform. It has to be distro agnostic, able to run anywhere: A workstation or a VM running Linux.
-- Has to be extensible. More tools can be added and more customization can be done like adding a vagrant file with a provisioner to spin up multiple VMS.
-- Idempotent to easily manage versioning of security testing tools within the automation.
+- Has to be extensible. More tools can be added and more customization can be done like adding a vagrant file with a provisioner to spin up a VM with all the tools and dependency installed with one command line.
+- Idempotence to easily manage versioning of security testing tools within the automation.
 
-## Finding any existing upstream projects
+## Finding any existing open source projects
 
-So I looked around for any upstream open source projects that might fit this need and came across a couple of interesting projects which is [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) by stevemcilwain and a project called [kali-up](https://github.com/archcloudlabs/kali-up) by archcloudlabs.
+So I looked around for any open source projects that might fit this need and came across a couple of interesting projects which is [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) by stevemcilwain and a project called [kali-up](https://github.com/archcloudlabs/kali-up) by archcloudlabs.
 
 ### Disposable-kali (Bash script approach)
 
-[disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) the installation components in the [setup script](https://github.com/stevemcilwain/Disposable-Kali/blob/master/scripts/setup.sh) is spinning up a fresh VM to install all these which fits my needs.
+For [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) the installation components in the [setup script](https://github.com/stevemcilwain/Disposable-Kali/blob/master/scripts/setup.sh) is spinning up a fresh VM to install all the additional tools with customizations which fits my needs.
 
-However, the project did not meet the three points mentioned earlier as the project is running a bash script to set up all the tools which are also distro specific (ubuntu) and not able to run on any other distros like Fedora or Suse.
+However, the project did not meet the three points mentioned earlier as it is running a bash script to set up all the tools which are also distro specific (debian based) and not able to run on any other distros like Fedora or Suse.
 
 ### Kali-up (Ansible approach)
 
@@ -29,7 +29,7 @@ However, the project did not meet the three points mentioned earlier as the proj
 
 - [x] Portable
 - [x] Extensible
-- [x] Idempotent
+- [x] Idempotence
 
 You simply have to clone the repo and run `ansible-playbook site.yml` to install all the tools locally. But I ran into a fair bit of errors as some of the roles have broken links for installation. The project also does not have the option to install all these on a fresh VM.
 
