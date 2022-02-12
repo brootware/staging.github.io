@@ -42,17 +42,23 @@ So I forked the repo and added in further customizations to fit my needs. You ca
 - [x] Added Vagrant to provision a VirtualBox VM with an ansible provisioner to install all the roles.
 - [ ] (TODO) Translate installation components from [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) installation script into roles and add in to my version of [kali-up](https://github.com/brootware/kali-up).
 
-## A quick guide on installing on VMWare Fusion on Mac Users
+## A quick guide on installing Ansible roles on VMWare Fusion for Mac Users
 
 This is specifically for Mac users who are using VMWare Fusion for kali.
 
-1. Clone this repo.
+1. Download and install [VMWare Fusion Personal Use](https://customerconnect.vmware.com/web/vmware/evalcenter?p=fusion-player-personal).
+
+2. Download [kali machine](https://www.kali.org/get-kali/#kali-virtual-machines).
+
+3. Import the download kali machine into VMWare Fusion and spin up the VM.
+
+4. Log in to the kali VM and Clone this repo.
 
    ```bash
    git clone https://github.com/brootware/kali-up.git && cd kali-up
    ```
 
-2. Modify [site.yml](./site.yml) to have the Ansible roles you want to install on your machine by commenting. Else all the roles will be installed.
+5. Modify [site.yml](./site.yml) to have the Ansible roles you want to install on your machine by commenting. Else all the roles will be installed.
 
    ```yaml
    roles:
@@ -65,7 +71,7 @@ This is specifically for Mac users who are using VMWare Fusion for kali.
      - forensics-blue
    ```
 
-3. Execute the following if you are installing it without any virtualization.
+6. Execute the following if you are installing it without any virtualization.
 
    ```bash
    ansible-playbook site.yml
@@ -75,4 +81,4 @@ Note that this is just one of the options to install and if you want a more deta
 
 ## Conclusion
 
-Thank you for reading. If this guide helped you in any way, please share around and if you run into any trouble with the installation make sure to open an issue at <https://github.com/brootware/kali-up/issues>.
+Thank you for reading. If this guide helped you in any way, please share around. If you run into any trouble with the installation make sure to open an issue at <https://github.com/brootware/kali-up/issues>.
