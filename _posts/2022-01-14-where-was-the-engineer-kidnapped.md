@@ -1,12 +1,10 @@
 ---
 layout: post
-title: where was the engineer kidnapped?
+title: Stack the flags. Where was the engineer kidnapped?
 date: 2022-01-14 16:15 +0800
 categories: [CTF, OSINT]
 tags: [CTF, OSINT]
 ---
-
-# CTF Name: Where was he kidnapped?
 
 ![solved in time of CTF](https://img.shields.io/badge/solved-in%20time%20of%20CTF-brightgreen.svg)
 
@@ -39,15 +37,15 @@ govtech-csg{760870}
 ## Detailed solution
 
 3 video files were given for the challenge.
-First video was showing a bus arriving that the engineer is taking to get to a place.
+The first video was showing a bus arriving that the engineer is taking to get to a place.
 
-The first video file shows of bus 117 that is going towards Punggol interchange on Yishun Avenue 2. Note that there is an MRT station in the background which means the engineer was either opposite of Yishun or Khatib station by referencing the bus service route.
+The first video file shows bus 117 that is going towards Punggol interchange on Yishun Avenue 2. Note that there is an MRT station in the background which means the engineer was either opposite of Yishun or Khatib station by referencing the bus service route.
 
 ![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Osint/where-was-he-kidnapped/1.png)
 
-Bus 117 service route can be found on transitlink website.
+Bus 117 service route can be found on the transit link website.
 <https://www.transitlink.com.sg/eservice/eguide/service_route.php?service=117>
-The second video shows the engineer getting off at a stop that is within a distant from the MRT. The video also shows two striking yellow colored columns which helped identify the stop number that the engineer got off at which is Blk 871.
+The second video shows the engineer getting off at a stop that is within a distance from the MRT. The video also shows two striking yellow-coloured columns which helped identify the stop number that the engineer got off at which is Blk 871.
 
 ![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Osint/where-was-he-kidnapped/2.png)
 ![image](https://raw.githubusercontent.com/brootware/CTF-Writeups/master/Osint/where-was-he-kidnapped/3.png)
