@@ -40,7 +40,7 @@ So I forked the repo and added in further customizations to fit my needs. You ca
 - [x] Fixed broken roles for installation
 - [x] Refactored all the roles for easier versioning.
 - [x] Added Vagrant to provision a virtualbox vm with ansible provisioner to install all the roles.
-- [ ] Translate installation components from [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) installation script into roles and add in here. (TODO)
+- [ ] (TODO) Translate installation components from [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) installation script into roles and add in here.
 
 ## A quick guide on installing on VMWare Fusion on Mac Users
 
