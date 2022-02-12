@@ -1,6 +1,6 @@
 ---
 layout: post
-title: picomini22pwcrack5
+title: Beginner picoMini 2022 password crack 5
 date: 2022-01-15 10:22 +0800
 categories: [CTF, Reverse-Engineering, Cryptography]
 tags: [CTF, Cryptography, Reverse-Engineering]
@@ -25,11 +25,11 @@ Opening a file in Python is crucial to using the provided dictionary.
 
 You may need to trim the whitespace from the dictionary word before hashing. Look up the Python string function, strip.
 
-The str_xor function does not need to be reverse engineered for this challenge.
+The str_xor function does not need to be reverse-engineered for this challenge.
 
 ## Solution
 
-You are given 4 files. A dictionary file with list of possible words, an encrypted text file, a hash file and a skeleton python file to reverse engineer the code to crack the password.
+You are given 4 files. A dictionary file with the list of possible words, an encrypted text file, a hash file and a skeleton python file to reverse engineer the code to crack the password.
 
 First, the password cracker python file is enumerated. The first function can be ignored as it's not part of the challenge as stated.
 
@@ -53,7 +53,7 @@ correct_pw_hash = open('level5.hash.bin', 'rb').read()
 
 ```
 
-The second part is a function that takes in a user input and hashes the password with md5.
+The second part is a function that takes in user input and hashes the password with md5.
 
 ```python
 
@@ -87,7 +87,7 @@ level_5_pw_check()
 
 ```
 
-The python file is run and as expected, it returns incorrect.
+The python file is run and as expected, it returns incorrectly.
 
 ```bash
 
@@ -97,14 +97,14 @@ That password is incorrect
 
 ```
 
-Lets check out the dictionary file. The file is fairly big with over 65k lines of passwords we need to test to correct one.
+Let's check out the dictionary file. The file is fairly big with over 65k lines of passwords we need to test to correct one.
 
 ```bash
 ➜  pwcrack5 cat dictionary.txt | wc -l
    65536
 ```
 
-Now let's get into modifying the code to brute force the correct password. A helper function called `grab_pw()` is written to grab all the words, procssed and appended into the list to test.
+Now let's get into modifying the code to brute force the correct password. A helper function called `grab_pw()` is written to grab all the words, processed and appended into the list to test.
 
 ```python
 
