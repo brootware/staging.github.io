@@ -27,7 +27,7 @@ Make sure to submit the flag as picoCTF{XXXXX}
 This challenge is fairly simple if you know how file extensions work in different operating systems. One line explanation of file extensions is : it is a tag for operating system to interpret and run the file using their respective programs. E.g: files with pdf extension can be run using pdf reader.
 
 There is a really good in-depth explanation on this by LiveOverFlow which I highly recommend to watch.
-https://youtu.be/VVdmmN0su6E
+<https://youtu.be/VVdmmN0su6E>
 
 With that being said, here's how I approached the problem.
 
