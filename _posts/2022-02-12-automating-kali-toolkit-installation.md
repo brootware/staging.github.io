@@ -15,7 +15,7 @@ As security professionals, it could be very time consuming to spin up a kali mac
 
 ## Finding any existing upstream projects
 
-So I looked around for any open source projects that might fit this need and came across a couple of interesting projects which is [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) by stevemcilwain and a project called [kali-up](https://github.com/archcloudlabs/kali-up) by archcloudlabs.
+So I looked around for any upstream open source projects that might fit this need and came across a couple of interesting projects which is [disposable-kali](https://github.com/stevemcilwain/Disposable-Kali) by stevemcilwain and a project called [kali-up](https://github.com/archcloudlabs/kali-up) by archcloudlabs.
 
 ### Disposable-kali (Bash script approach)
 
