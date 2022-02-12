@@ -8,3 +8,9 @@ tags: [Projects, blogging software, Automation, CICD, Github-Actions]
 ## Introduction
 
 As you might have noticed, I only recently started blogging. I realised how important it is to document all of the things that I have learnt in Cyber Security and DevOps space to make my life easier.
+
+## Finding the best blogging software for my needs
+
+## How I contributed back and fixed a bug
+
+## Conclusion
