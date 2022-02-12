@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Automating kali toolkit installation
-date: 2022-02-11 08:13 +0800
 categories:
 - Projects
 - security-toolkit
@@ -10,8 +9,8 @@ tags:
 - security-toolkit
 - Ansible
 - Automation
+date: 2022-02-12 17:53 +0800
 ---
-
 ## Introduction
 
 As security professionals, it could be very time consuming to spin up a kali machine with all the tools needed to do any form of Red or Blue team work like bug bounty, threat hunting and malware analysis or even to play Capture The Flag (CTF) competitions. To embark on this project, here is a checklist of things borrowed from Infrastructure-As-Code (IAC) philosophy of DevOps to fit my needs. The automation tool has to be:
