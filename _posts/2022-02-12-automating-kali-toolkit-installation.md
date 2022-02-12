@@ -50,7 +50,7 @@ This is specifically for Mac users who are using VMWare Fusion for kali.
 
 2. Download [kali machine](https://www.kali.org/get-kali/#kali-virtual-machines).
 
-3. Import the download kali machine into VMWare Fusion and spin up the VM.
+3. Import the downloaded kali machine into VMWare Fusion and spin up the VM.
 
 4. Log in to the kali VM and Clone this repo.
 
