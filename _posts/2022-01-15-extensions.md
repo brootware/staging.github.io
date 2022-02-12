@@ -1,6 +1,6 @@
 ---
 layout: post
-title: extensions
+title: Extensions
 date: 2022-01-15 08:39 +0800
 categories: [CTF, Forensics]
 tags: [CTF, Forensics]
@@ -24,9 +24,9 @@ Make sure to submit the flag as picoCTF{XXXXX}
 
 ## Solution
 
-This challenge is fairly simple if you know how file extensions work in different operating systems. One line explanation of file extensions is : it is a tag for operating system to interpret and run the file using their respective programs. E.g: files with pdf extension can be run using pdf reader.
+This challenge is fairly simple if you know how file extensions work in different operating systems. One line explanation of file extensions is: it is a tag for an operating system to interpret and run the file using their respective programs. E.g: files with pdf extension can be run using a pdf reader.
 
-There is a really good in-depth explanation on this by LiveOverFlow which I highly recommend to watch.
+There is a really good in-depth explanation on this by LiveOverFlow which I highly recommend watching.
 <https://youtu.be/VVdmmN0su6E>
 
 With that being said, here's how I approached the problem.
@@ -38,7 +38,7 @@ file flag.txt
 flag.txt: PNG image data, 1697 x 608, 8-bit/color RGB, non-interlaced
 ```
 
-From here, we can find that the original file format is a PNG image data. We can change the extension as below.
+From here, we can find that the original file format is PNG image data. We can change the extension as below.
 
 ```bash
 cp flag.txt flag.png
