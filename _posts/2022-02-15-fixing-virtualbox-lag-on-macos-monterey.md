@@ -12,11 +12,11 @@ date: 2022-02-15 13:48 +0800
 ---
 ## Introduction
 
-If you are using Mac and running Linux virtual machines on virtual box, you might have experienced slowness and lags compared to using VMWare Fusion. This blog is a quick fix to this issue.
+If you are using Mac and running Linux virtual machines on virtual box, you might have experienced slowness and lags compared to using VMWare Fusion. This blog is a quick fix to this problem.
 
 ## Why it happens
 
-There are no official statements from virtual box addressing the issue. Only bits and pieces of information around the community forums and blogs provide a clue and [lack of support for retina 4k display](https://forums.virtualbox.org/viewtopic.php?f=8&t=90446).
+There are no official statements from virtual box addressing the problem directly. Only bits and pieces of information around the community forums and blogs provide a clue and [lack of support for retina 4k display](https://forums.virtualbox.org/viewtopic.php?f=8&t=90446).
 
 ## How to resolve
 
