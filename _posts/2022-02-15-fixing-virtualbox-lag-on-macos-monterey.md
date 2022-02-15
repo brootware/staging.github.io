@@ -43,11 +43,16 @@ To work around this, you will instead have to edit a variable within the **info.
 ![info.plist location](/assets/img/blogImages/infoPlist.png)
 
 As a sudoer (Admin user), you will need to edit this variable from
-`<key>NSHighResolutionCapable</key> <true/>`
+
+```xml
+<key>NSHighResolutionCapable</key> <true/>
+```
 
 to
 
-`<code>NSHighResolutionCapable</key> <false/>`
+```xml
+<code>NSHighResolutionCapable</key> <false/>
+```
 
 You can either use vi or vscode to edit this.
 
