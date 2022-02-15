@@ -16,7 +16,7 @@ If you are using Mac and running Linux virtual machines on virtual box, you migh
 
 ## Why it happens
 
-There are no official statements from virtual box addressing the problem directly. Only bits and pieces of information around the community forums and blogs provide a clue and [lack of support for retina 4k display](https://forums.virtualbox.org/viewtopic.php?f=8&t=90446).
+There are no official statements from virtual box addressing the problem directly. Only bits and pieces of information around the community forums and blogs provide a clue on [lack of support for retina 4k display](https://forums.virtualbox.org/viewtopic.php?f=8&t=90446).
 
 ## How to resolve
 
