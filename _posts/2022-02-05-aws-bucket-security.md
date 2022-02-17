@@ -16,18 +16,17 @@ Cloud Security, Blue team, Incident Response
 
 ## Challenge Details
 
-Scenario
 Welcome, Defender! As an incident responder, we're granting you access to the AWS account called "Security" as an IAM user. This account contains a copy of the logs during the time period of the incident and has the ability to assume the "Security" role in the target account so you can look around to spot the misconfigurations that allowed for this attack to happen.
 
-Credentials
+Credentials\
 Your IAM credentials for the Security account:
 
-Login: <https://flaws2-security.signin.aws.amazon.com/console>
-Account ID: 322079859186
-Username: security
-Password: password
-Access Key: AKIAIUFNQ2WCOPTEITJQ
-Secret Key: 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
+- Login: <https://flaws2-security.signin.aws.amazon.com/console>
+- Account ID: 322079859186
+- Username: security
+- Password: password
+- Access Key: AKIAIUFNQ2WCOPTEITJQ
+- Secret Key: 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
 
 Environment
 The credentials above give you access to the Security account, which can assume the role of "security" in the Target account. You also have access to an S3 bucket, named flaws2_logs, in the Security account, that contains the CloudTrail logs recorded during a successful compromise
