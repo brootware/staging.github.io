@@ -2,10 +2,10 @@
 layout: post
 title: Fixing Virtualbox lag on macOS Monterey
 categories:
-- Projects
-- Misc
+- General-tech
+- Virtualization
 tags:
-- Projects
+- General-tech
 - Virtualization
 - VirtualBox
 date: 2022-02-15 13:48 +0800
