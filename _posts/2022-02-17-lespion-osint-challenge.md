@@ -11,7 +11,7 @@ date: 2022-02-17 18:45 +0800
 ---
 Point: 850
 
-<https://cyberdefenders.org/blueteam-ctf-challenges/progress/rootware/73/>
+<a href="https://cyberdefenders.org/blueteam-ctf-challenges/progress/rootware/73/"><img src="https://img.shields.io/badge/completed-lespion%20opensource%20intelligence-brightgreen.svg" /></a>
 
 ## Category
 

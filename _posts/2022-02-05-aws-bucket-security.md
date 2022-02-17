@@ -8,7 +8,7 @@ tags: [CTF, Cloud-Security, Incident-Response, Blue-team]
 
 Point: 600
 
-<https://cyberdefenders.org/blueteam-ctf-challenges/progress/rootware/84/>
+<a href="https://cyberdefenders.org/blueteam-ctf-challenges/progress/rootware/84/"><img src="https://img.shields.io/badge/completed-aws%20cloud%20security-brightgreen.svg" /></a>
 
 ## Category
 
