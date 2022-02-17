@@ -6,7 +6,7 @@ tags: [CTF, Malware-Analysis, Incident-Response, Blue-team]
 ---
 Point: 1200
 
-<https://cyberdefenders.org/blueteam-ctf-challenges/progress/rootware/84/>
+<https://cyberdefenders.org/blueteam-ctf-challenges/progress/rootware/47/>
 
 ## Category
 
