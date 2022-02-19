@@ -151,6 +151,8 @@ By [searching for these 2 theatres](https://www.google.com/search?q=hippodrome+t
 
 ### File -> Webcam.png: With the intel, you have provided, our ground surveillance unit is now overlooking the person of interest's suspected address. They saw them leaving their apartment and followed them to the airport. Their plane took off and has landed in another country. Our intelligence team spotted the target with this IP camera. Which state is this camera in?
 
+**Indiana**
+
 The camera is 24 hour stream from [the University of Notre Dame](https://dome.nd.edu). By checking the address:
 
 `Notre Dame, IN 46556 USA`
