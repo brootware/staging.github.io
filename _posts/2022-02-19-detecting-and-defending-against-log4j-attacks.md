@@ -34,7 +34,7 @@ The computer hostname can be found in the network setup log file which is record
 
 ![netsetup](https://bn1304files.storage.live.com/y4mbJTqryKZecaAfzMVMLEKav0F1602GIIPZAtUoHNRRSJeWg8TsU_kBrjrhwNhgBzm6xVP6hewaVp6L_645W7uWRDOcDmr84BwkzknflsubNmACj_zYkTfdn88MBw3BQPs4D1W9hQu7xYTQ60Ao33JrJoOH-j1_9SZ1_6w9RUhWa7WnfVCogbY9CB6CkmbIC-V6tIhOzoj-mMObxrIK1sdAZ2dOFf1HQCunJZSrnxJqZU?encodeFailures=1&width=1087&height=615)
 
-## 2. What is the Timezone of the compromised machine?
+### 2. What is the Timezone of the compromised machine?
 
 **UTC-8**
 
