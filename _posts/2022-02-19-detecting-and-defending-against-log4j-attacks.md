@@ -32,7 +32,7 @@ For the last week, log4shell vulnerability has been gaining much attention not f
 
 The computer hostname can be found in the network setup log file which is recording the domain join activity. The path to the file is `C:\Windows\debug\NetSetup.LOG`
 
-![netsetup](/assets/img/blogImages/log4j/log4jq1.png)
+![netsetup](https://bn1304files.storage.live.com/y4mbJTqryKZecaAfzMVMLEKav0F1602GIIPZAtUoHNRRSJeWg8TsU_kBrjrhwNhgBzm6xVP6hewaVp6L_645W7uWRDOcDmr84BwkzknflsubNmACj_zYkTfdn88MBw3BQPs4D1W9hQu7xYTQ60Ao33JrJoOH-j1_9SZ1_6w9RUhWa7WnfVCogbY9CB6CkmbIC-V6tIhOzoj-mMObxrIK1sdAZ2dOFf1HQCunJZSrnxJqZU?encodeFailures=1&width=1087&height=615)
 
 ## 2. What is the Timezone of the compromised machine?
 
@@ -44,7 +44,7 @@ Using Autopsy, you are able to view registry files through `SYSTEM` registry in 
 
 Open the `SYSTEM` registry file > go to ControlSet001 > Control > TimeZoneInformation > TimeZoneKeyName
 
-![timezone](/assets/img/blogImages/log4j/log4jq2.png)
+![timezone](https://bn1304files.storage.live.com/y4m7u6Gtw_J9so9OpGbKH5fqNZ19do5Z0xUHxKuMXPdWWHiXoUaitLO9PR762MQGxAKzue4hOmmj4OHLyVQ-srCiT7ryfalbwRmKwVyRgRLR2QTi6fa_wtPulVeHTaUNcJOA_1dgAJ90TwzlNuunGdMY4gSQOHUovvUBFJaw-yc9vn_RWuD-ReF4FzcUKLatqkGpv1E9MwFMV1_dL8pj0QT3DTkBeUX8Lg18h4M2VN_Fgg?encodeFailures=1&width=842&height=321)
 
 `Pacific Standard Time`
 
@@ -60,7 +60,7 @@ The current windows build number can be found via `SOFTWARE` registry within Aut
 
 Open the `SOFTWARE` registry file > Microsoft > Windows NT > CurrentVersion
 
-![buildversion](/assets/img/blogImages/log4j/log4jq3.png)
+![buildversion](https://bn1304files.storage.live.com/y4mUO5CYgH6yHIpc81beod48PNNBQ0VH2PqrM0jtbNCdv5UO_frCUHZ1baT7rr5XGlmIUsNpLDDxzgQ4WcQm_tEz8sw6pA52qrCA87CQH1Y9OX_eaMfPZ1DzRbXMqoGZEyL3-OX3dpBmWJxWcsZd4ORRhoVfv-GvVkGLD9VLDaP-n2K51iz-d9Ao2wZUroLwGEyDzEJ63Jb_Tl-6iZMwzVrWynKeErtlvQ3A7VjcudcNuU?encodeFailures=1&width=1750&height=794)
 
 ### 4. What is the computer IP?
 
@@ -70,7 +70,7 @@ The IP address of the computer can be found in previous `SYSTEM` registry as fol
 
 Open the `SYSTEM` registry file > go to ControlSet002 > Services > Tcpip > Parameters > Interfaces > `{82e9...}`
 
-![ipaddress](/assets/img/blogImages/log4j/log4jq4.png)
+![ipaddress](https://bn1304files.storage.live.com/y4mU-57GnbO9G5X4USYrAze7wrgcOkfmZj-F8jIBZ7ZaPpKoBvcGLXl59slrVQd83SK_o3EzWrjLCRt-qAwb-1BHdg8-K8iBihWPpEEccOfVygysBgDF6VvulitUaWgV1gkuMP2GQoG-lyEXob2kWKbQTsRsW2TnmYzSWvBAymyNOFz5WQcVyQ81moczlpJ0RKeHGx4_kvWYioQbEf51xtV9IqKM_FaApgZnE4SrSEPiy4?encodeFailures=1&width=1866&height=1118)
 
 ### 5. What is the domain computer was assigned to?
 
@@ -80,7 +80,7 @@ The domain of the computer can be found in previous `SYSTEM` registry as follow.
 
 Open the `SYSTEM` registry file > go to ControlSet002 > Services > Tcpip > Parameters
 
-![domain](/assets/img/blogImages/log4j/log4jq5.png)
+![domain](https://bn1304files.storage.live.com/y4mgVREtJlNKr-fqB3CiAiN-vIh6DsXRAr1qe_UvfubOs2oB7FBYeYzCUFj1YgmszOfCNLqD2T4kdr1FlSSzkziW4aKYEs7EqAhuEyCg9qCN6wyf8SYCdgtFf9zCoPUSS74ax7OljZvLdJyuqh4VtUK3pm2eAi1mNa8j2VJJYaqe0lb53kij116u7VyqZ_wMfjRMsLWtiEdfB4HaSTkxyKTJJLJoVhImVALVGC89UquZlo?encodeFailures=1&width=1866&height=1118)
 
 ### 6. When was myoussef user created?
 
@@ -88,7 +88,7 @@ Open the `SYSTEM` registry file > go to ControlSet002 > Services > Tcpip > Param
 
 From Autopsy, go to OS Accounts under the tree view on the left and search for the user **myoussef** in the results as below.
 
-![image](/assets/img/blogImages/log4j/log4jq6.png)
+![image](https://bn1304files.storage.live.com/y4mGpv_F3XK4nGanU6LDQg_wXuLDHtpj1ID5BtE9bTHg-jw6iyHyfCRSklXb4udDShiERJZmb64TLdQZZchlwUg8om-K1m4z4HMKFZHhBdLRSB-S_h3yq088Kkz048_czgOLjoL5xZYH2UrLrlC3u8BgKZeI8T3U5bYYN__sk6WYJNUiZVM5ci8hRSL8aCdDwFrWoLV1hxqG-HA3d6gC8jkxsoUaqH9ThroVoy07zCGTIY?encodeFailures=1&width=1263&height=727)
 
 ### 7. What is the user mhasan password hint?
 
@@ -96,7 +96,7 @@ From Autopsy, go to OS Accounts under the tree view on the left and search for t
 
 We can see from the results that mhasan's password hint is a linkedin profile.
 
-![image](/assets/img/blogImages/log4j/log4jq7.png)
+![image](https://bn1304files.storage.live.com/y4micuGa0VH-ovWswZ6EzPOtBLg_c4u8V02cc9p2LJI5OjGeRKfCWti8ZMy5fEaulj-cYNMpU_LQLwDP7eRCm7GGP60mgvdJEtuRBYt852Qt3guTGkAsl_Yapp8MWI1S22eUtS2R1kW45zQd-oNpLEwEJY_GZur6YNZwA6zsmzwKIOc_snhd5bVJ7m9jFkGjW-pL2zt8oU1et3MGGbWTVMiQnOvQsW9k44OBmTeTaGpl7k?encodeFailures=1&width=1263&height=727)
 
 ### 8. What is the version of the VMware product installed on the machine?
 
@@ -104,7 +104,7 @@ We can see from the results that mhasan's password hint is a linkedin profile.
 
 The version of VMWare product installed can be checked via *Installed programs* can be shown under *Data Artifacts* > *Installed Programs*
 
-![image](/assets/img/blogImages/log4j/log4jq8.png)
+![image](https://bn1304files.storage.live.com/y4mwA2vCw1haeuFwJETHlucmdHCO97vtCWhV0Ok2ZyPhFEDvE23A95ms_JDlNs7CQfhHAQ5Rjqt6Yh4xtxvyfy8UnmiIE31HoDmX8APFzoYGBglahBSh_iDTQzUl4l2jqAdqrBCv9H2TgR7ZxIWN4A9JCOwtjK0qkO6kqZflqEZQwzR0ivCuPmPuNmWMMiw6bnE5Mzduw0VzfKaEoYnl0YkYGYkHj4zosRvHsoaMkVNAPs?encodeFailures=1&width=945&height=84)
 
 ### 9. What is the version of the log4j library used by the installed VMware product?
 
@@ -120,7 +120,7 @@ The version of log4j library VMWare product is using can be checked in the follo
 
 This needed some digging as the log4j.properties is the main config file that keeps log4j configurations in key-value pairs. So a keyword search was done via Autopsy to look for log4j.properties file within the disk.
 
-![image](/assets/img/blogImages/log4j/log4jq10.png)
+![image](https://bn1304files.storage.live.com/y4mUJ2QqivuVvZdwQx_WryybKHkkmrNMJ21W59cOPOv1ryYxYoryjyAPqEdk-9yQIu005WgboSV3ETIIGATltHjstcFStZuiph2BD3mcHwqXKIA6ikJ52tE3vsvcpunpHEMGhJtx0B5fWxMC0x2exh6pwol_fPL2y3opxO5MelT9RqVX8FV9D0c6VihKuiXOIvBmFA8Z0QwTO8LHRL7ct8j8E5Cbmpg1gf08x8R2Gn41fw?encodeFailures=1&width=2240&height=1312)
 
 ### 11. The attacker exploited log4shell through an HTTP login request. What is the HTTP header used to inject payload?
 
@@ -216,7 +216,7 @@ The exe can be discovered in the below path.
 
 Click on `NTUSER.DAT` and expand SOFTWARE > Microsoft > Windows > CurrentVersion, then click on RunOnce
 
-![image](/assets/img/blogImages/log4j/log4jq21.png)
+![image](https://bn1304files.storage.live.com/y4mP2NX1n_VSJjPkROjPUHNSoLhhCWCV3LVkYaCUa6ioElcT1fLW-n2jZCWXhhCF9eC-g2HWUexz_5w7Mbg7Dyk2rCWlhNkpq2znKDSgtyrJMvCXwChjyc0ClvfznZ-smNmaTKmn0dBdMaIFn_tyy85vKO0WbG_L9_sujO3Pdt2JtfOS1NZFXF9sN4SHWybKW1yx5nTZ6kVtag493d8TiLttME2p5yJMauvXoA2d_p-4dk?encodeFailures=1&width=2122&height=1372)
 
 ### 22. When was the first submission of ransomware to virustotal?
 

@@ -36,11 +36,11 @@ Here are the steps to resolution.
 
 Indeed, in newer macOS Monterey version 12 and above you will not be able to find that option anymore following the above steps for the solution.
 
-![No resolution option](/assets/img/blogImages/noOption.png)
+![No resolution option](https://bn1304files.storage.live.com/y4mfskAMaYclH70GOsk4-fQiLx-SrM1Et5DaB01grh_qWnDuQ7ZokhpCQXiC_zLhDwoOB6P08zr_ZR923_VlEwf-MNYP5YWopL2BmhcrfKT9NpnHhTD9bNFN2uc8LPd1EDwncb6vIZclOTNXDFAghUQDEKMTgSxONxuninpL4F2RvYTpAHaXoDGWGusWiibuq7Rsit8RdR6x_Ap8t_2GLJwyJC47SxNL6RrtoRsc2mwT2M?encodeFailures=1&width=2047&height=1502)
 
 To work around this, you will instead have to edit a variable within the **info.plist** file instead.
 
-![info.plist location](/assets/img/blogImages/infoPlist.png)
+![info.plist location](https://bn1304files.storage.live.com/y4mhOyMdoQUUBo3r7v9bYQlwKrsR2JGQdrkCoPS3YhKF3XrMAWGaP-PeSz2Ww4_LqekuTAklPYch034T3opNmGpg2p92WAP-SYlSVPp87aa7jLdWsOs-xIMK29uRneZia7IlIo-ljZ4lj3RHcc03aAriXC2qPl_pzGwqEvgDkhXloRXZRL8ctOgX2J-wgScr-0yvcVqXrmHFHda2AoOVei5xucPK7afyEJaqSM599AxV9o?encodeFailures=1&width=964&height=478)
 
 As a sudoer (Admin user), you will need to edit this variable from
 
