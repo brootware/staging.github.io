@@ -197,7 +197,8 @@ Once that file is extracted, sha256 hash of the class can be computed as below.
 ```powershell
 Get-FileHash .\JndiLookup.class | Format-List
 Algorithm : SHA256
-Hash      : 0F038A1E0AA0AFF76D66D1440C88A2B35A3D023AD8B2E3BAC8E25A3208499F7E                                                                                                                               Path      : C:\Users\uname\Desktop\Log4shell\log4j-core-2.11.2\org\apache\logging\log4j\core\lookup\JndiLookup.class
+Hash      : 0F038A1E0AA0AFF76D66D1440C88A2B35A3D023AD8B2E3BAC8E25A3208499F7E
+Path      : C:\Users\uname\Desktop\Log4shell\log4j-core-2.11.2\org\apache\logging\log4j\core\lookup\JndiLookup.class
 ```
 
 ### 20. Analyze JNDILookup.class. What is the value stored in the CONTAINER_JNDI_RESOURCE_PATH_PREFIX variable?
@@ -214,7 +215,7 @@ The `CONTAINER_JNDI_RESOURCE_PATH_PREFIX` can be found in the path below.
 
 The exe can be discovered in the below path.
 
-`C:\Users/Administrator.WIN-B633EO9K91M\NTUSER.DAT`
+`C:\Users\Administrator.WIN-B633EO9K91M\NTUSER.DAT`
 
 Click on `NTUSER.DAT` and expand SOFTWARE > Microsoft > Windows > CurrentVersion, then click on RunOnce
 
