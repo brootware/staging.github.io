@@ -235,7 +235,8 @@ More research is done on this ransomeware via virustotal an detailed article on 
 
 <https://www.bluvector.io/threat-report/khonsari-new-malware-apache-log4j/>
 
-Another way to get the key is to reverse engineer the malware.  {: .prompt-info }
+> Another way to get the key is to reverse engineer the malware.
+{: .prompt-info }
 
 Using the `f2e3f685256e5f31b05fc9f9ca470f527d7fdae28fa3190c8eba179473e20789` from question 23, we can download the malware from <https://bazaar.abuse.ch/> and open it up in [dnspy](https://github.com/dnSpy/dnSpy#:~:text=dnSpy%20is%20a%20debugger%20and,Main%20features%3A&text=NET%20and%20Unity%20assemblies), a .Net debugger.
 
@@ -283,7 +284,8 @@ This can be found from the previous Virustotal results.
 The extension is **ini** as mentioned in the same report from question 23.
 <https://www.bluvector.io/threat-report/khonsari-new-malware-apache-log4j/>
 
-Another way to get the key is to reverse engineer the malware.  {: .prompt-info }
+> Another way to get the key is to reverse engineer the malware.
+{: .prompt-info }
 
 In the same debugger session of dnspy from question 23 we can check the `LxqQXinF` function that is checking strings. The interesting variable here is `edhcLlqR2` which checks the condition and decrypts to ini extension.
 
