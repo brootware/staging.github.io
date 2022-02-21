@@ -78,7 +78,7 @@ The IP address of the computer can be found in previous `SYSTEM` registry as fol
 
 Open the `SYSTEM` registry file > go to ControlSet002 > Services > Tcpip > Parameters > Interfaces > `{82e9...}`
 
-![ipaddress](https://bn1304files.storage.live.com/y4mU-57GnbO9G5X4USYrAze7wrgcOkfmZj-F8jIBZ7ZaPpKoBvcGLXl59slrVQd83SK_o3EzWrjLCRt-qAwb-1BHdg8-K8iBihWPpEEccOfVygysBgDF6VvulitUaWgV1gkuMP2GQoG-lyEXob2kWKbQTsRsW2TnmYzSWvBAymyNOFz5WQcVyQ81moczlpJ0RKeHGx4_kvWYioQbEf51xtV9IqKM_FaApgZnE4SrSEPiy4?encodeFailures=1&width=1866&height=1118)
+![ipaddress](https://bn1304files.storage.live.com/y4mhgdjeFanInLrqF1BS7uRSVKnEQdj1ABGHDserm5KzKnFGZGNdwHmuE3EO3FW03QPp_CQG9rjvl9NU23zUOs0Vsf1XCqbQxXdCl7aTz4rSAMteP-osRYbwXrKWs7Pl7T4jDOQ2CmqhAMW5igrK6OzPovMidITlp-BuIWV4nEYvXhO7lvnY6KaxMivWICnn_o3?width=1866&height=1118&cropmode=none)
 
 ### 5
 
