@@ -128,7 +128,7 @@ What university did the insider go to?
 
 For this question you will need to search linkedin. I searched for last name and the title keywords as filters below.
 
-![linkedin](https://bn1304files.storage.live.com/y4mXE69v8UAAbbcyv0_UF9t7FRVyPBuJNIPoFK2gCNqi5kyUYdQFmLkoDdDoaLhr8CwNEmxnBenzJBFMgOvVNpRbZaD1FpqjHQBUcbJLZ5tOeP5PfIZfIzt6-UHE6ylrJzqiQBGtOIOoFf7C6JwnVUQuwzoUbaZWHvAxIpqxKiS9KTclbglOGRSQJKO7rk24AdVN4WO28jELz0k_Rv8OaE9-DulJzXAYS6b2VHvVuVw4-g?encodeFailures=1&width=1236&height=479)
+![linkedin](https://bn1304files.storage.live.com/y4mqzeMdsX1BFbOYzTklIrrFrpbrRnf26jhRwFJVNEWPKFJryjwGIproEv8FMB8c2NeAz_Ktt6P7KiZGQ0vjxQMwZIH-PSuLaV-nQZKpIDRpEfd4D3X7DLZxUAUtGdvyNwT8rTqcPjB6oj4vuKUzgPTUM_L0dVD_Wqs6LksS8hXM61r5yV72uK_VcX__OO9bp4f?width=1236&height=479&cropmode=none)
 
 By visiting the [linkedin profile](https://www.linkedin.com/in/%C3%A9milie-marseille-4b353a1aa/), we can see that she has gone to Sorbonne University.
 

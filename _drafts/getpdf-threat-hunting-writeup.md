@@ -20,13 +20,14 @@ Forensics, Threat-Hunting, Malware-Analysis
 http.request.method == GET
 ```
 
-![urls](https://bn1304files.storage.live.com/y4mmXHVA4_f8_rptvJ3AYRhc4Jjf9v-JQ_2IyJwHm9Tr8PD-CZO-vH_rYZ9gaKD8v6RlMitdVDpJw60il_NeQB3UcOlceHRilWr9qC1TE0-C5X1xZHsDvqYhYCQTNWidTHV53vFi5ZrnpHi1Fc5UjbGL8L6rYQaIOc794useH_JurBxV-xBI3PG9K3JiUwtRPDF7e-Uew1kvH3muwGY3LfeV7It2HcqvA4qonINTW1rrCg?encodeFailures=1&width=2240&height=260)
+![urls](https://bn1304files.storage.live.com/y4mkLH7_rt_96G8rYCTiXp5xdftFR9aKa0jmaNJCRV-KXPXPbZEN2qYpnaucs1aR2Az3u3HqquOBmX4CdEBTKQ-iMbLXqtjTTSCi88sBu7ym7GQV8A-igmu7OjJia6RMa8rYA-mX-3tmdPxrTcSBtWBYSWBguyQLspBTB14C3Lzd3A7cOyq1xfJ9VoI-OCfDtK-?width=2872&height=334&cropmode=none)
 There are altogether 6 unique URLs after analyzing the pcap file in wireshark.
 Answer: 6
 
 ### What is the URL which contains the JS code?
 
-![jsurl](https://bn1304files.storage.live.com/y4m_sMT6AAoqLe7hkAWZ14UwkmMlTUqpP2a8yphzkwiUDLrojLoQtWikt4UbTDqItuicW-NpI8uob_TSt5xxyd7im1r8fevxwOFwpzl3eJ3H9_J28ScjPI2OxXY7PB0yPu1_T19V6x5YYZ3OLfAtCLUztWHEKn0F9dT59QWLmynGp5WJgle8xzMkvubmR4j6pRGCrgpQAPpbLic7474ynSC-PjIs2jCrMUdI-PSacW8zaQ?encodeFailures=1&width=2864&height=1502)
+![jsurl](https://bn1304files.storage.live.com/y4m6398aFoTRwwSQiQ5ad5wJIMAMNQ--_Dow8jMD-gXlreBH_DjyjK0FGXcnsPviTiYfOVm9vmXenbVFmMtIzoMgfOxeO1j9q1DnJnNmYDGyAx9IWIp1MYviOPSkNNQVJmP-D6XU-7bkSNiOpEDfSxpji2As9vRbXg1u_R0oCD_VTbcZUVDwsUue8_8Rd6w4okG?width=2872&height=1506&cropmode=none)
+
 So the full URL path that contains the JS code is
 <http://blog.honeynet.org.my/forensic_challenge/>
 

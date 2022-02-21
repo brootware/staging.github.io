@@ -34,7 +34,7 @@ What is the computer hostname?
 
 The computer hostname can be found in the network setup log file which is recording the domain join activity. The path to the file is `C:\Windows\debug\NetSetup.LOG`
 
-![netsetup](https://bn1304files.storage.live.com/y4mbJTqryKZecaAfzMVMLEKav0F1602GIIPZAtUoHNRRSJeWg8TsU_kBrjrhwNhgBzm6xVP6hewaVp6L_645W7uWRDOcDmr84BwkzknflsubNmACj_zYkTfdn88MBw3BQPs4D1W9hQu7xYTQ60Ao33JrJoOH-j1_9SZ1_6w9RUhWa7WnfVCogbY9CB6CkmbIC-V6tIhOzoj-mMObxrIK1sdAZ2dOFf1HQCunJZSrnxJqZU?encodeFailures=1&width=1087&height=615)
+![netsetup](https://bn1304files.storage.live.com/y4mvMpR2P8poC6d0ZTWWvXTsqLjViACMRWQpsCMPdMpAHWOJxWCNlUaJh3SB8QcoKDYFWBpxC-8lZLHMfBDgbD5SGEE4krYR0gX00jYodWucO-b2iHacKYJ9Tg829xV2Ep61524jSR5bCHXbaGw0EDomGmJYUraKVIR-SZapRjI-whralFQYoNTwhMDS2LpO-ds?width=1087&height=615&cropmode=none)
 
 ### 2
 
@@ -48,7 +48,7 @@ Using Autopsy, you are able to view registry files through `SYSTEM` registry in 
 
 Open the `SYSTEM` registry file > go to ControlSet001 > Control > TimeZoneInformation > TimeZoneKeyName
 
-![timezone](https://bn1304files.storage.live.com/y4m7u6Gtw_J9so9OpGbKH5fqNZ19do5Z0xUHxKuMXPdWWHiXoUaitLO9PR762MQGxAKzue4hOmmj4OHLyVQ-srCiT7ryfalbwRmKwVyRgRLR2QTi6fa_wtPulVeHTaUNcJOA_1dgAJ90TwzlNuunGdMY4gSQOHUovvUBFJaw-yc9vn_RWuD-ReF4FzcUKLatqkGpv1E9MwFMV1_dL8pj0QT3DTkBeUX8Lg18h4M2VN_Fgg?encodeFailures=1&width=842&height=321)
+![timezone](https://bn1304files.storage.live.com/y4mUHokbOOaRUB7G0OkBXEd47uBdaU7IcsgvsD5wqpIMr5YElLJLs_QkwZnO3sGX2yjvu8g7g52nvjWhONaM2RILGTqlD2zAj_ijxWEij1dTj9QlNy10itkNTFYH0WQHeBf9GX-baqwnhocOyqDueEQeo_vvhYqxh9gXzDtFqBhL4dFdWlAFbpISm7HI9ZtZcn7?width=842&height=321&cropmode=none)
 
 `Pacific Standard Time`
 
@@ -66,7 +66,7 @@ The current windows build number can be found via `SOFTWARE` registry within Aut
 
 Open the `SOFTWARE` registry file > Microsoft > Windows NT > CurrentVersion
 
-![buildversion](https://bn1304files.storage.live.com/y4mUO5CYgH6yHIpc81beod48PNNBQ0VH2PqrM0jtbNCdv5UO_frCUHZ1baT7rr5XGlmIUsNpLDDxzgQ4WcQm_tEz8sw6pA52qrCA87CQH1Y9OX_eaMfPZ1DzRbXMqoGZEyL3-OX3dpBmWJxWcsZd4ORRhoVfv-GvVkGLD9VLDaP-n2K51iz-d9Ao2wZUroLwGEyDzEJ63Jb_Tl-6iZMwzVrWynKeErtlvQ3A7VjcudcNuU?encodeFailures=1&width=1750&height=794)
+![buildversion](https://bn1304files.storage.live.com/y4mUPxSENPIwlWhqg6TqiSsBJq_-m8_MysmMFaVdGeokC3itbe0hhRkNORbNKkcwDk21ow23lDBAg0ACAoNS7kCkgBBxiBLwik7xDuUiZxH11W4xd075jj65o1ya3AsiX3Vd7hIluDDo-BCwbD7P3cszc8BazlayV9vRHkqQ6AJsDbp3xHkCRsAV53DItsChdPz?width=1750&height=794&cropmode=none)
 
 ### 4
 
@@ -90,7 +90,7 @@ The domain of the computer can be found in previous `SYSTEM` registry as follow.
 
 Open the `SYSTEM` registry file > go to ControlSet002 > Services > Tcpip > Parameters
 
-![domain](https://bn1304files.storage.live.com/y4mgVREtJlNKr-fqB3CiAiN-vIh6DsXRAr1qe_UvfubOs2oB7FBYeYzCUFj1YgmszOfCNLqD2T4kdr1FlSSzkziW4aKYEs7EqAhuEyCg9qCN6wyf8SYCdgtFf9zCoPUSS74ax7OljZvLdJyuqh4VtUK3pm2eAi1mNa8j2VJJYaqe0lb53kij116u7VyqZ_wMfjRMsLWtiEdfB4HaSTkxyKTJJLJoVhImVALVGC89UquZlo?encodeFailures=1&width=1866&height=1118)
+![domain](https://bn1304files.storage.live.com/y4mLpXSz-vKnFRNVNs-s3a_oP8RHtsy9QJi-Xtauy0ySpmJ18CjO7I19C81BqU3GvJwQA_TAa7TpXV1aFBeMcwrkr4J-KeKSwozXgg8wtnEqabcB2PTbyllj7LomMFLwkZDg6u4PSyUngLV-EIvi0ZKurb0xPl8l_UU33A2hpJ9iFs623pwpxCSOK_T48hatDqu?width=1866&height=1118&cropmode=none)
 
 ### 6
 
@@ -100,7 +100,7 @@ When was myoussef user created?
 
 From Autopsy, go to OS Accounts under the tree view on the left and search for the user **myoussef** in the results as below.
 
-![image](https://bn1304files.storage.live.com/y4mGpv_F3XK4nGanU6LDQg_wXuLDHtpj1ID5BtE9bTHg-jw6iyHyfCRSklXb4udDShiERJZmb64TLdQZZchlwUg8om-K1m4z4HMKFZHhBdLRSB-S_h3yq088Kkz048_czgOLjoL5xZYH2UrLrlC3u8BgKZeI8T3U5bYYN__sk6WYJNUiZVM5ci8hRSL8aCdDwFrWoLV1hxqG-HA3d6gC8jkxsoUaqH9ThroVoy07zCGTIY?encodeFailures=1&width=1263&height=727)
+![image](https://bn1304files.storage.live.com/y4m0bXXTErxVKX3e5d3bzL3ORtvdvj4t8gPt2EsjGRJp-LGUYhcBIHGL_2t-03uQnJ86L9D7hOT_siH5jerbD-InD5dSKm3zgzenP4FSTDZwjJoFyFJ-FfaCdnLzyH0ZUlKdSJIh7auyV0gCy8yXDejGHpCyLSSrmKiAnda2i5SUmqfBEsCGr_lh3rZKqDA51P7?width=1263&height=727&cropmode=none)
 
 ### 7
 
@@ -110,7 +110,7 @@ What is the user mhasan password hint?
 
 We can see from the results that mhasan's password hint is a linkedin profile.
 
-![image](https://bn1304files.storage.live.com/y4micuGa0VH-ovWswZ6EzPOtBLg_c4u8V02cc9p2LJI5OjGeRKfCWti8ZMy5fEaulj-cYNMpU_LQLwDP7eRCm7GGP60mgvdJEtuRBYt852Qt3guTGkAsl_Yapp8MWI1S22eUtS2R1kW45zQd-oNpLEwEJY_GZur6YNZwA6zsmzwKIOc_snhd5bVJ7m9jFkGjW-pL2zt8oU1et3MGGbWTVMiQnOvQsW9k44OBmTeTaGpl7k?encodeFailures=1&width=1263&height=727)
+![image](https://bn1304files.storage.live.com/y4mm3hPXnFnsTIm-BUBauioSRmclK-Gv2BqmtotOdOnQ-HsWS5vZs-JKc0LeeZKg8SPsNk17l4TX0mJsYdpYZgfNJYog1w7GSTlWP9LG41WIz5XA6DBxmjiHfJnQaHOA8IhyPkQNaamoShXQ6KLE2t0YGQkhSegQDOlgd6M0MewevNBvJDCBjgRs7PkI0orhDsi?width=1263&height=727&cropmode=none)
 
 ### 8
 
@@ -120,7 +120,7 @@ What is the version of the VMware product installed on the machine?
 
 The version of VMWare product installed can be checked via *Installed programs* can be shown under *Data Artifacts* > *Installed Programs*
 
-![image](https://bn1304files.storage.live.com/y4mwA2vCw1haeuFwJETHlucmdHCO97vtCWhV0Ok2ZyPhFEDvE23A95ms_JDlNs7CQfhHAQ5Rjqt6Yh4xtxvyfy8UnmiIE31HoDmX8APFzoYGBglahBSh_iDTQzUl4l2jqAdqrBCv9H2TgR7ZxIWN4A9JCOwtjK0qkO6kqZflqEZQwzR0ivCuPmPuNmWMMiw6bnE5Mzduw0VzfKaEoYnl0YkYGYkHj4zosRvHsoaMkVNAPs?encodeFailures=1&width=945&height=84)
+![image](https://bn1304files.storage.live.com/y4mG-18VENRg3Y3Fz-D20P6jT_u46bItT6azYAOnkhzgcXTbdQa4hNn1I4Ydk4ujb8mtZAY36FtFwY2uXMVj-A7vVR_wI61aU7bAr2-EEm1oujtvnNTQAPCaxz9GSi1S0awXKijh8VMARP_qkr3Mwi9kIDH_MShMp5OOixyb5RojMXC4cHSZ5q36EycGcW5FLjt?width=945&height=84&cropmode=none)
 
 ### 9
 
@@ -140,7 +140,7 @@ What is the log4j library log level specified in the configuration file?
 
 This needed some digging as the log4j.properties is the main config file that keeps log4j configurations in key-value pairs. So a keyword search was done via Autopsy to look for log4j.properties file within the disk.
 
-![image](https://bn1304files.storage.live.com/y4mUJ2QqivuVvZdwQx_WryybKHkkmrNMJ21W59cOPOv1ryYxYoryjyAPqEdk-9yQIu005WgboSV3ETIIGATltHjstcFStZuiph2BD3mcHwqXKIA6ikJ52tE3vsvcpunpHEMGhJtx0B5fWxMC0x2exh6pwol_fPL2y3opxO5MelT9RqVX8FV9D0c6VihKuiXOIvBmFA8Z0QwTO8LHRL7ct8j8E5Cbmpg1gf08x8R2Gn41fw?encodeFailures=1&width=2240&height=1312)
+![image](https://bn1304files.storage.live.com/y4mwChnRyY8rOnBNu6xgROT2-ISrDlmrBvxgsau0sbEY4_OJqhSZXHo1xP81Iau_N0qY4XTDiwmLgBskBVsYDYF3NyeNqbm-IFc3aFQZIaLSF96bQA-EzUonLAqYOFyVqmKVXdbdqnE0DBf81racn0okKG0KemSdsuQCKTU6b_-hxLOZ0YwQ-CfaUgW3xBqAb3U?width=2304&height=1350&cropmode=none)
 
 ### 11
 
@@ -261,7 +261,7 @@ The exe can be discovered in the below path.
 
 Click on `NTUSER.DAT` and expand SOFTWARE > Microsoft > Windows > CurrentVersion, then click on RunOnce
 
-![image](https://bn1304files.storage.live.com/y4mP2NX1n_VSJjPkROjPUHNSoLhhCWCV3LVkYaCUa6ioElcT1fLW-n2jZCWXhhCF9eC-g2HWUexz_5w7Mbg7Dyk2rCWlhNkpq2znKDSgtyrJMvCXwChjyc0ClvfznZ-smNmaTKmn0dBdMaIFn_tyy85vKO0WbG_L9_sujO3Pdt2JtfOS1NZFXF9sN4SHWybKW1yx5nTZ6kVtag493d8TiLttME2p5yJMauvXoA2d_p-4dk?encodeFailures=1&width=2122&height=1372)
+![image](https://bn1304files.storage.live.com/y4m-MfURx-wckc2prfwd5uehJGrZjPqAnVYEISxG2yXNT_apP62yceHAzQOuXi-WnER10oyK9wZA15UzD7JdbLKXUyVesSlrjIef6oBapnt9NfgvSwWPbmbal90SgFnD1s9qey23mKqeqUSFg2Ue_ijOrS5tMv01bz0eYgUyGKBu0rVL6k928il8QjGgfttGKJU?width=2122&height=1372&cropmode=none)
 
 ### 22
 
