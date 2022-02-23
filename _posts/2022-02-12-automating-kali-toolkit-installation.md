@@ -7,7 +7,11 @@ tags: [Projects, security-toolkit, Ansible, Automation]
 ---
 ## Introduction
 
-As security professionals, it could be very time consuming to spin up a kali machine with all the tools needed to do any form of Red or Blue team work like bug bounty, threat hunting and malware analysis or even to play Capture The Flag (CTF) competitions. To embark on this project, here is a checklist of things borrowed from the Infrastructure-As-Code (IAC) philosophy of DevOps to fit my needs. The automation tool has to be:
+As security professionals, it could be very time consuming to spin up a kali machine with all the tools needed to do any form of Red or Blue team work like bug bounty, threat hunting and malware analysis or even to play Capture The Flag (CTF) competitions.
+
+>TLDR: I just need a kali up and running FAAAAAST!! -> <https://github.com/brootware/kali-up>
+
+To embark on this project, here is a checklist of things borrowed from the Infrastructure-As-Code (IAC) philosophy of DevOps to fit my needs. The automation tool has to be:
 
 - Portable across platform. It has to be distro agnostic, able to run anywhere: A workstation or a VM running Linux.
 - Has to be extensible. More tools can be added and more customization can be done like adding a vagrant file with a provisioner to spin up a VM with all the tools and dependency installed with one command line.
