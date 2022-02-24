@@ -3,7 +3,7 @@ layout: post
 title: Automating kali toolkit installation
 date: 2022-02-12 17:53 +0800
 categories: [Projects, security-toolkit]
-tags: [Projects, security-toolkit, Ansible, Automation]
+tags: [Projects, security-toolkit, Ansible, Automation, DevOps]
 ---
 ## Introduction
 
