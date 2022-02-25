@@ -11,7 +11,7 @@ Welcome! This is a personal blog site to share my CTF writeups, Blue Team Techni
 ## Specialized in
 
 - Cloud, DevOps / Site Reliability Engineering
-- Engineering productivity [tools like these](https://brootware.github.io/categories/security-toolkit/).
+- Engineering productivity tools mainly focusing on Developer and security testing. [More details here](https://brootware.github.io/categories/security-toolkit/).
 - Cyber Security (Blue Team)
 
 ## Some of my credentials
