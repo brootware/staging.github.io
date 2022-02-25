@@ -11,7 +11,7 @@ tags:
 ---
 ## Introduction
 
-As a technology professional, I am agnostic when it comes to choosing operating systems. The only thing I am concerned about is how the hardware and tools provided to me will help me to be productive.
+As a technology professional, I am agnostic when it comes to choosing operating systems. The only thing I am concerned about is how the hardware and tools provided to me will help me to be productive and at the same time protect my data and privacy in an increasingly surveillent society.
 
 ## Finding any existing open source projects
 
