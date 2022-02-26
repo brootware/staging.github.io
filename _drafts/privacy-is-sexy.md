@@ -19,7 +19,7 @@ So I have both Windows and MacOS platforms running on my devices and virtual mac
 
 ## A privacy.sexy web app
 
-After searching around, I come across a project called privacy.sexy. A web application with really nice user interface that is meant for
+After searching around, I come across a project called [privacy.sexy](https://privacy.sexy). A web application with really nice user interface for normal everyday users. The users can go to the web page, find security features explained in plain english that they can turn on using batch (for Windows) and bash (for MacOs) scripts.
 
 ## Turning it into cli for Mac and Windows
 
