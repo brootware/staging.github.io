@@ -11,11 +11,15 @@ tags:
 ---
 ## Introduction
 
-As a technology professional, I am agnostic when it comes to choosing operating systems. The only thing I am concerned about is how the hardware and tools provided to me will help me to be productive and at the same time protect my data and privacy in an increasingly surveillent society.
+As a technology professional, I am agnostic when it comes to operating systems. The only thing I am concerned about is how the hardware and tools I use will help me be productive and at the same time protect my data and privacy in an increasingly surveillent society.
 
 ## Finding any existing open source projects
 
+So I have both Windows and MacOS platforms running on my devices and virtual machines that I will need to do security and privacy hardening on personally. Just like any other tech professional with a github account, I searched for any existing tools that I could use to not reinvent the wheel. Usually a lot of time are lost and progression is slow if you do not know [How to stand on shoulders of giant](https://www.freecodecamp.org/news/how-to-stand-on-shoulders-16e8cfbc127b/). A recommended read by Quincy Larson, freecodecamp's founder.
+
 ## A privacy.sexy web app
+
+After searching around, I come across a project called privacy.sexy. A web application with really nice user interface that is meant for
 
 ## Turning it into cli for Mac and Windows
 
