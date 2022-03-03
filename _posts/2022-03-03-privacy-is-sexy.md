@@ -43,7 +43,7 @@ So a Bash script cli app for MacOS and Powershell script cli app for Windows is 
 
 ## Challenges faced and how they're resolved
 
-As I started developing cli apps, I come across a few challenges.
+As I started developing, I come across a few challenges.
 
 Firstly the initial script was very monolithic. All of the functions for privacy cleanup, security hardening were all contained in 1 script. Check out the [commit history](https://github.com/brootware/privacy-sexy-lite/commit/b59d1d3398cbe180b28bf089b538328321f0fa1c#diff-78cab4b59ce0ad211b75d3bd17bbf1eec2bede97ae38cec7c66b878e7d7ad69b) here. From experience this could cause headaches in the future.
 
