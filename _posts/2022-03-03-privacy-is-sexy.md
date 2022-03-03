@@ -92,4 +92,4 @@ Arugments can be passed to the app too to run the security hardening directly fr
 
 ## Conclusion
 
-Thank you for reading this short blog, please do give the app a try at <https://github.com/brootware/privacy-sexy-lite>. And if you ran into any issues, please log [an issue here](https://github.com/brootware/privacy-sexy-lite/issues).
+Thank you for reading this short blog, please do give the app a try at <https://github.com/brootware/privacy-sexy-lite>. And if you ran into any issues, please log [it here](https://github.com/brootware/privacy-sexy-lite/issues).
