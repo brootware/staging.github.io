@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Beginner picoMini 2022 password crack 5
+title: Beginner picoMini 2022 password crack 5 🚩
 date: 2022-01-15 10:22 +0800
 categories: [CTF, Reverse-Engineering, Cryptography]
 tags: [CTF, Cryptography, Reverse-Engineering]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lespion OSINT Challenge
+title: Lespion OSINT Challenge 🕵 🔎
 categories:
 - CTF
 - OSINT

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Looking Glass Hack The Box Firewalker CTF
+title: Looking Glass Hack The Box Firewalker CTF 🔎 💉
 date: 2022-01-14 15:03 +0800
 categories:
 - CTF

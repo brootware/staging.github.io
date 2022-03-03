@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Detecting and defending against log4j attacks
+title: Detecting and defending against log4j attacks 🪵 4️⃣ 🐚
 categories:
 - CTF
 - Forensics

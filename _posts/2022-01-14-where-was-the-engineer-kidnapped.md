@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stack the flags. Where was the engineer kidnapped?
+title: Stack the flags. Where was the engineer kidnapped? 🕵 🔎
 date: 2022-01-14 16:15 +0800
 categories: [CTF, OSINT]
 tags: [CTF, OSINT]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Bucket - Cloud Security
+title: AWS Bucket - Cloud Security ☁️
 date: 2022-02-05 17:16 +0800
 categories: [CTF, Cloud-Security, Incident-Response]
 tags: [CTF, Cloud-Security, Incident-Response, Blue-team]

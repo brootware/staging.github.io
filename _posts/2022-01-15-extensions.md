@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extensions
+title: Extensions 🚩
 date: 2022-01-15 08:39 +0800
 categories: [CTF, Forensics]
 tags: [CTF, Forensics]
