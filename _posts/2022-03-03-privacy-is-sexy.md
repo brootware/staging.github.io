@@ -32,10 +32,10 @@ There is also an desktop version of the app avialable for download that you can 
 
 Being a power user with multiple sandbox VMs I want to run these scripts on, it made sense for me to wrap all the standard recommended settings in a cli app that I can provision through vagrant. Simply put the cli app has to be :
 
-- [ ] Portable. (Cross platofrm for both Mac and Windows)
-- [ ] Group and modularize standard recommended hardening functions
-- [ ] Easily invoked via command line interface for automation
-- [ ] Should not break any systems
+- [x] Portable. (Cross platofrm for both Mac and Windows)
+- [x] Group and modularize standard recommended hardening functions
+- [x] Easily invoked via command line interface for automation
+- [x] Should not break any systems
 
 > However I'd still advise you to use with caution as different machines could have different effect after running the commands.
 
