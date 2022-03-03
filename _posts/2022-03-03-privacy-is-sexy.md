@@ -12,7 +12,7 @@ date: 2022-03-03 19:45 +0800
 ---
 ## Introduction
 
-As a technology professional, I am agnostic when it comes to operating systems. The only thing I am concerned about is how the hardware and tools I use will help me be productive and at the same time protect my data and privacy in an increasingly surveillent society. For today I will be going through my experience of creating a CLI app, challenges faced and how they're solved.
+As a technology professional, I am agnostic when it comes to operating systems. The only thing I am concerned about is how the hardware and tools I use will help me be productive and at the same time protect my data and privacy in an increasingly surveillent society. For today I will be going through my experience of creating a CLI app to automate my security and privacy hardening process, challenges faced and how they're resolved.
 
 > You can check out the project here <https://github.com/brootware/privacy-sexy-lite>
 
@@ -26,13 +26,14 @@ After searching around, I come across a project called [privacy.sexy](https://pr
 
 ![privacy](https://bn1304files.storage.live.com/y4m__zDGxSSnWqMd9bHqBgki23x0NllXa3rQxVyv50LTsDUt84fTRSGpqx40tr8-kGz4H6zwoVlpp-bYHmmE7AQfJH-D__c7S_mDnHslYDh8V5U9LFzkdp1wN_kXnskoUaWffTLDGE_AvXmbC53jO4rv2fMn9uBCjhlHMNegiwH1U0sD9vlvhxhhEdDOsNjR2-I?width=2720&height=1512&cropmode=none)
 
-There is also an desktop version of the app avialable for download that you can view the scripts offline.
+There is also an desktop version of the app avialable for download that you can view the scripts offline. However, the web app is intended for users to manually run the script one at a time.
 
 ## Turning it into cli app for Mac and Windows
 
 Being a power user with multiple sandbox VMs I want to run these scripts on, it made sense for me to wrap all the standard recommended settings in a cli app that I can provision through vagrant. Simply put the cli app has to be :
 
 - [ ] Portable. (Cross platofrm for both Mac and Windows)
+- [ ] Group and modularize standard recommended hardening functions
 - [ ] Easily invoked via command line interface for automation
 - [ ] Should not break any systems
 
@@ -80,6 +81,14 @@ function remove_bloatware {
     & '.\batch_scripts\remove_bloatware.bat'
 }
 ```
+
+With this solution, I have grouped all the common functions and made it a lot more modular. Below is a screenshot of a cli app. A user is able to choose what he or she wants to do from the menu.
+
+![cliapp](https://bn1304files.storage.live.com/y4maV5h8FFlltrlEPLneNoOWiHXIyDJ3LL-vf_Exjgq2P4enQzqzBfQyJwmHI19S_-7sawppX1nIab5y9hEKNYFTDxZ9MHZEpkj3g_DU_MYaaQclDVaW_S-NdNshXbKUAd4YwdnsH7fbH24ODwHEappm51_Ifr3dXPGRKcK3ykkC8AwPASXWg36sLsvkKT41Ssp?width=1720&height=720&cropmode=none)
+
+Arugments can be passed to the app too to run the security hardening directly from commandline
+
+![cliargument](https://bn1304files.storage.live.com/y4mXntt0zNQCxnQVdSpHV-1JShM25y19SO-C6bxMB0nUPlzoO0Fhsz-Zsp1HsKiav6cgec9mycYAM2pc2M1yENpGa0Ubd2fP0z-CoNgjJ8zNqnMkC0nJaIZ5cfRWJjlTbLSdlNOEuPx6oERXzNJLGWqPFvsMrk4b36F5fi_SoOtA223OP58OJNXSeKX_iV2ZxLd?width=1244&height=342&cropmode=none)
 
 ## Conclusion
 
