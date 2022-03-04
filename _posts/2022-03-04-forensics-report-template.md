@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Forensics report template
+title: Forensics report template 🕵️ 📝
 categories:
 - General-tech
 - Misc
@@ -9,9 +9,11 @@ tags:
 - Misc
 - Report-writing
 - Forensics
+date: 2022-03-04 18:18 +0800
 ---
+The following is a quick blog entry on general guideline template of how a forensics investigation report should be structured. Based on the course [Writing forensics Report](https://academy.cyber5w.com/courses/take/writing-forensics-report/pdfs/24032338-forensics-report-sections). It is recommended to write the report in Microsoft word or Google Doc as they have tracking mechanisms and version history of the changes. If you want to have a [copy of the template](https://docs.google.com/document/d/1OdZub2M0L8m3Ib5fDquMPZG7LlYfzdKqrrShCVNuT1I/edit?usp=sharing) you can get the google doc I made from here.
 
-The following is a quick blog entry on general guideline template of how a forensics investigation report should be structured. Based on the course [Writing forensics Report](https://academy.cyber5w.com/courses/take/writing-forensics-report/pdfs/24032338-forensics-report-sections). It is recommended to write the report in Microsoft word or Google Doc as they have tracking mechanisms and version history of the changes. You can also use git for controlling version history and write in markdown.
+You can also use git for controlling version history and write in markdown.
 
 ## Title page
 
