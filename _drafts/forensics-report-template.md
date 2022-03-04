@@ -11,7 +11,7 @@ tags:
 - Forensics
 ---
 
-The following is a quick blog entry on general guideline template of how a forensics investigation report should be structured. Based on the course [Writing forensics Report](https://academy.cyber5w.com/courses/take/writing-forensics-report/pdfs/24032338-forensics-report-sections).
+The following is a quick blog entry on general guideline template of how a forensics investigation report should be structured. Based on the course [Writing forensics Report](https://academy.cyber5w.com/courses/take/writing-forensics-report/pdfs/24032338-forensics-report-sections). It is recommended to write the report in Microsoft word or Google Doc as they have tracking mechanisms and version history of the changes. You can also use git for controlling version history and write in markdown.
 
 ## Title page
 
