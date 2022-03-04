@@ -65,7 +65,7 @@ This section contains valuable information related to the case, such as:
 - This section is considered the longest section in the report because it includes the whole investigation from A to Z.
 - The table below is an example of the software specifications included in the analysis section.
 | Tools Name            | Version | Company Name       | Description      |
-|-----------------------|---------|--------------------|------------------|
+|:----------------------|:--------|:-------------------|:-----------------|
 | FTK Imager            | 4.5.0.3 | AccessData         | Data Imaging tool|
 | 010 Editor            | 11.0.1  | SweetScapeSoftware | Data Editor Tool |
 | Arsenal Image Mounter | 3.3.138 | Arsenal Recon      | Image Mounting Tool|
