@@ -86,7 +86,7 @@ With this solution, I have grouped all the common functions and made it a lot mo
 
 ![cliapp](https://bn1304files.storage.live.com/y4maV5h8FFlltrlEPLneNoOWiHXIyDJ3LL-vf_Exjgq2P4enQzqzBfQyJwmHI19S_-7sawppX1nIab5y9hEKNYFTDxZ9MHZEpkj3g_DU_MYaaQclDVaW_S-NdNshXbKUAd4YwdnsH7fbH24ODwHEappm51_Ifr3dXPGRKcK3ykkC8AwPASXWg36sLsvkKT41Ssp?width=1720&height=720&cropmode=none)
 
-Arugments can be passed to the app too to run the security hardening directly from commandline
+Arguments can be passed to the app too to run the security hardening directly from commandline
 
 ![cliargument](https://bn1304files.storage.live.com/y4mXntt0zNQCxnQVdSpHV-1JShM25y19SO-C6bxMB0nUPlzoO0Fhsz-Zsp1HsKiav6cgec9mycYAM2pc2M1yENpGa0Ubd2fP0z-CoNgjJ8zNqnMkC0nJaIZ5cfRWJjlTbLSdlNOEuPx6oERXzNJLGWqPFvsMrk4b36F5fi_SoOtA223OP58OJNXSeKX_iV2ZxLd?width=1244&height=342&cropmode=none)
 
