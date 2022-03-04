@@ -64,6 +64,7 @@ This section contains valuable information related to the case, such as:
   - It is very important to document all investigation details which help other investigators to validate the findings.
 - This section is considered the longest section in the report because it includes the whole investigation from A to Z.
 - The table below is an example of the software specifications included in the analysis section.
+
 | Tools Name            | Version | Company Name       | Description      |
 |:----------------------|:--------|:-------------------|:-----------------|
 | FTK Imager            | 4.5.0.3 | AccessData         | Data Imaging tool|
