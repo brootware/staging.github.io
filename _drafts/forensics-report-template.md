@@ -42,7 +42,7 @@ This section contains valuable information related to the case, such as:
 ## The Executive Summary
 
 - When the investigation contains a separation of duties, the law enforcement agencies will clarify the duties of the investigators in this section.
-- The executive summary should be written in clear, short, and concise sentenses/paragraphs with no more than 10 percent of the engire report to help the non-technical user to understand the investigation.
+- The executive summary should be written in clear, short, and concise sentences/paragraphs with no more than 10 percent of the entire report to help the non-technical user to understand the investigation.
 
 ## Investigation Scope
 
@@ -51,7 +51,7 @@ This section contains valuable information related to the case, such as:
 
 ## Analysis Summary
 
-- This section contains all the obtained artifacts and the importance of holding them, especially when deliverying the evidence to the court.
+- This section contains all the obtained artifacts and the importance of holding them, especially when delivering the evidence to the court.
 
 - Besides that, it contains a technical summary of the whole case.
 
