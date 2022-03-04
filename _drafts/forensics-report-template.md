@@ -37,7 +37,7 @@ This section contains valuable information related to the case, such as:
 - [ ] The department or organization that requests the report
 - [ ] the participants of the investigation(the investigators, the victim(s), and the suspect, with information about all of them).
 - [ ] Also, it contains the lists of the interrogated or reviewed people
-- [ ] Besides that, any search warrants, or authorization for the examination or investigatoin of the evidence.
+- [ ] Besides that, any search warrants, or authorization for the examination or investigation of the evidence.
 
 ## The Executive Summary
 
