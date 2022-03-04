@@ -71,7 +71,7 @@ This section contains valuable information related to the case, such as:
 ## Conclusion
 
 - It contains the summary of the report with the most significant information : **"findings"** that could help the decision-makers to make their decisions based upon the findings and evidence.
-- Furthermore, it contains security recommendations besides the next steps after the investgation to solve the case.
+- Furthermore, it contains security recommendations besides the next steps after the investigation to solve the case.
 
 ## Exhibits
 
