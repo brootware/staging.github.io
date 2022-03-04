@@ -58,9 +58,9 @@ This section contains valuable information related to the case, such as:
 ## Analysis
 
 - In this section, the investigators document all the steps used during the examination/investigation of the case.
-- Also, they should include all hardware and software specifications utilized in the examination/investiation, as well as the make, model, and serial number for hardware, and the manufacturer and version number for the software.
+- Also, they should include all hardware and software specifications utilized in the examination/investigation, as well as the make, model, and serial number for hardware, and the manufacturer and version number for the software.
   - It is very important to document all investigation details which help other investigators to validate the findings.
-- This seciton is considered the longest section in the report because it includes the whole investigation from A to Z.
+- This section is considered the longest section in the report because it includes the whole investigation from A to Z.
 - The table below is an example of the software specifications included in the analysis section.
 | Tools Name            | Version | Company Name       | Description      |
 |-----------------------|---------|--------------------|------------------|
