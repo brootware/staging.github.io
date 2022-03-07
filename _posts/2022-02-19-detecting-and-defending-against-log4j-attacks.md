@@ -10,6 +10,8 @@ tags:
 - Log4j
 - Log4shell
 - Reverse-Engineering
+- DFIR
+- Blue-team
 date: 2022-02-19 15:45 +0800
 ---
 Point: 2000
