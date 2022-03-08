@@ -255,3 +255,4 @@ b5bdd048030cd26ab2d0e7f7e351224d  -
 ## Helpful sources
 
 <https://obscurite.hateblo.jp/entry/2022/02/28/003408>
+<https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf>
