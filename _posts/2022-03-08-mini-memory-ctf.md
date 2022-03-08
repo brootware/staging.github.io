@@ -1,8 +1,15 @@
 ---
 layout: post
-title: Mini Memory CTF 🕵️ 💻 
-categories: [CTF, Forensics]
-tags: [CTF, Memory-Forensics, DFIR, Blue-team]
+title: "Mini Memory CTF \U0001F575️ \U0001F4BB"
+categories:
+- CTF
+- Forensics
+tags:
+- CTF
+- Memory-Forensics
+- DFIR
+- Blue-team
+date: 2022-03-08 20:49 +0800
 ---
 ## Category
 
@@ -11,8 +18,6 @@ Forensics
 ## Challenge Details
 
 This Mini Memory CTF contest has ended, but you can still play! This is an excellent opportunity to get some hands-on practice with memory forensics. You'll find the questions below, as well as a link to download the memory sample needed to answer those questions. When you've completed the challenge, download the solutions guide to check your work.
-
-***If you enjoy this video, please consider supporting 13Cubed on Patreon at patreon.com/13cubed.***
 
 👉 Memory Sample
 <https://drive.google.com/drive/folders/1E-i2RTUBXBGUd_Xz0k67kFOpHcr6WX8J>
@@ -120,10 +125,133 @@ bc05ca60f2f0d67d0525f41d1d8f8717  -
 
 Find the running rogue (malicious) process and dump its memory to disk. You'll find the 32-character flag within that process's memory.
 
+To dump the memory of the malicious process id, run as below.
+
+```bash
+$ vol.py -f memdump.mem --profile Win10x64_17134 memdump -p 8560 --dump-dir=.
+Volatility Foundation Volatility Framework 2.6.1
+************************************************************************
+Writing svchost.exe [  8560] to 8560.dmp
+```
+
+We can look for the flag string by using the below command:
+
+```bash
+$ strings 8560.dmp | grep fl | less
+dflt
+dflt
+dfltdflt
+                                        "contents": "da391kdasdaadsssssss    t.h.e. fl.ag.is. M2ExOTY5N2YyOTA5NWJjMjg5YTk2ZTQ1MDQ2Nzk2ODA=",
+```
+
+The flag string is base64 encoded. the string can be decoded as below which is an md5 hash.
+
+```bash
+$ echo "M2ExOTY5N2YyOTA5NWJjMjg5YTk2ZTQ1MDQ2Nzk2ODA=" | base64 -d
+3a19697f29095bc289a96e4504679680
+```
+
 ### Question #3
 
 What is the MAC address of this machine's default gateway? The flag is the MD5 hash of that MAC address in uppercase with dashes (-) as delimiters. Example: 01-00-A4-FB-AF-C2.
 
+First thought was to use netscan plugin to find the network interfaces but the plugin is actually only showing active connections. So after a little cheating and going through the writeup of the CTF, I used the registry dump approach to check the mac address from SOFTWARE hive.
+
+```bash
+$ vol.py -f memdump.mem --profile Win10x64_17134 dumpregistry --dump-dir=.
+$ ll
+total 7413664
+drwxrwxr-x 2 sansforensics sansforensics       4096 Mar  8 12:11 ./
+drwxrwxr-x 4 sansforensics root                4096 Mar  8 11:11 ../
+-rw-rw-r-- 1 sansforensics sansforensics  776687616 Mar  8 12:04 8560.dmp
+-rw-rw-r-- 1 sansforensics sansforensics 5368709120 Aug  6  2018 memdump.mem
+-rw-rw-r-- 1 sansforensics sansforensics 1366877880 Mar  8 11:10 minictf.zip
+-rw-rw-r-- 1 sansforensics sansforensics     151552 Mar  8 12:11 registry.0xffffd38985466000.HARDWARE.reg
+-rw-rw-r-- 1 sansforensics sansforensics      32768 Mar  8 12:10 registry.0xffffd38985e5a000.BCD.reg
+-rw-rw-r-- 1 sansforensics sansforensics   72097792 Mar  8 12:11 registry.0xffffd38985eb3000.SOFTWARE.reg
+-rw-rw-r-- 1 sansforensics sansforensics     270336 Mar  8 12:10 registry.0xffffd38986a96000.DEFAULT.reg
+-rw-rw-r-- 1 sansforensics sansforensics      32768 Mar  8 12:11 registry.0xffffd38986bba000.SECURITY.reg
+-rw-rw-r-- 1 sansforensics sansforensics      40960 Mar  8 12:10 registry.0xffffd38986bc4000.SAM.reg
+-rw-rw-r-- 1 sansforensics sansforensics     176128 Mar  8 12:10 registry.0xffffd38986cd0000.NTUSERDAT.reg
+-rw-rw-r-- 1 sansforensics sansforensics     319488 Mar  8 12:11 registry.0xffffd38986dc6000.BBI.reg
+-rw-rw-r-- 1 sansforensics sansforensics     196608 Mar  8 12:10 registry.0xffffd38986dea000.NTUSERDAT.reg
+-rw-rw-r-- 1 sansforensics sansforensics    1093632 Mar  8 12:10 registry.0xffffd389873c1000.ntuserdat.reg
+-rw-rw-r-- 1 sansforensics sansforensics    3076096 Mar  8 12:10 registry.0xffffd389873fb000.UsrClassdat.reg
+-rw-rw-r-- 1 sansforensics sansforensics     839680 Mar  8 12:10 registry.0xffffd38987c56000.Amcachehve.reg
+-rw-rw-r-- 1 sansforensics sansforensics     114688 Mar  8 12:11 registry.0xffffd389892e2000.ActivationStoredat.reg
+-rw-rw-r-- 1 sansforensics sansforensics     339968 Mar  8 12:11 registry.0xffffd389893e4000.ActivationStoredat.reg
+-rw-rw-r-- 1 sansforensics sansforensics       8192 Mar  8 12:11 registry.0xffffd38989490000.settingsdat.reg
+-rw-rw-r-- 1 sansforensics sansforensics      49152 Mar  8 12:11 registry.0xffffd389894a0000.settingsdat.reg
+-rw-rw-r-- 1 sansforensics sansforensics     188416 Mar  8 12:11 registry.0xffffd3898a6e6000.dosvcStatedat.reg
+-rw-rw-r-- 1 sansforensics sansforensics      28672 Mar  8 12:10 registry.0xffffd3898c555000.settingsdat.reg
+-rw-rw-r-- 1 sansforensics sansforensics      28672 Mar  8 12:10 registry.0xffffd3898ca19000.ActivationStoredat.reg
+-rw-rw-r-- 1 sansforensics sansforensics     200704 Mar  8 12:11 registry.0xffffd3898e2c7000.ActivationStoredat.reg
+-rw-rw-r-- 1 sansforensics sansforensics       8192 Mar  8 12:11 registry.0xffffd3898e336000.settingsdat.reg
+```
+
+We can then use the regripper to dump the registry settings as below.
+
+```bash
+rip.pl -r registry.0xffffd38985eb3000.SOFTWARE.reg -f software > out
+```
+
+However if you are running the rip.pl in sansforensics workstation, you will run into an error saying `Global symbol "$plugindir" requires explicit package name`. I searched around to solve that issue and come across [a blog that addresses this issue](https://obscurite.hateblo.jp/entry/2022/02/28/003408).
+
+After resolving and searching for Mac address as below, I was able to get the md5 hash of the address.
+
+```bash
+$ cat out | grep "DefaultGatewayMac"
+  DefaultGatewayMac: 00-50-56-FE-D8-07
+```
+
+```bash
+$ echo -n "00-50-56-FE-D8-07" | md5sum
+6496d43b622a2ad241b4d08699320f4e  -
+```
+
 ### Question #4
 
 Find the full path of the browser cache created when an analyst visited "www.13cubed.com." The path will begin with "Users\." Convert the path to uppercase. The flag is the MD5 hash of that string.
+
+The question is quite tough and again had to use some help from the writeup to find out about the mftparser plugin which scans and parse entries in the Windows NTFS Master File Table (MFT).
+
+```bash
+$ vol.py -f memdump.mem --profile Win10x64_17134 mftparser > ntfspath
+Volatility Foundation Volatility Framework 2.6.1
+
+WARNING : volatility.debug    : NoneObject as string: Unable to read 1 bytes from 1024
+WARNING : volatility.debug    : NoneObject as string: Array BirthDomainID invalid member 9
+WARNING : volatility.debug    : NoneObject as string: Array BirthDomainID invalid member 10
+WARNING : volatility.debug    : NoneObject as string: Array BirthDomainID invalid member 11
+WARNING : volatility.debug    : NoneObject as string: Array BirthDomainID invalid member 12
+WARNING : volatility.debug    : NoneObject as string: Array BirthDomainID invalid member 13
+WARNING : volatility.debug    : NoneObject as string: Array BirthDomainID invalid member 14
+WARNING : volatility.debug    : NoneObject as string: Array BirthDomainID invalid member 15
+```
+
+We can search for 13cubed term as below from the mftparser output.
+
+```bash
+$ cat ntfspath | grep 13cubed
+2018-08-01 19:29:27 UTC+0000 2018-08-01 19:29:27 UTC+0000   2018-08-01 19:29:27 UTC+0000   2018-08-01 19:29:27 UTC+0000   Users\CTF\AppData\Local\Packages\MICROS~1.MIC\AC\#!001\MICROS~1\Cache\AHF2COV9\13cubed[1].htm
+```
+
+Since the question wants the path to be in all upper case, below bash commands are run to convert and get the md5 hash of the path.
+
+```bash
+$ cubepath='Users\CTF\AppData\Local\Packages\MICROS~1.MIC\AC\#!001\MICROS~1\Cache\AHF2COV9\13cubed[1].htm'
+
+$ capped=${cubepath^^}
+
+$ echo $capped
+USERS\CTF\APPDATA\LOCAL\PACKAGES\MICROS~1.MIC\AC\#!001\MICROS~1\CACHE\AHF2COV9\13CUBED[1].HTM
+```
+
+```bash
+$ echo -n $capped | md5sum
+b5bdd048030cd26ab2d0e7f7e351224d  -
+```
+
+## Helpful sources
+
+<https://obscurite.hateblo.jp/entry/2022/02/28/003408>
