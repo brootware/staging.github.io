@@ -11,6 +11,9 @@ tags:
 - Blue-team
 date: 2022-03-08 20:49 +0800
 ---
+
+<a><img src="https://img.shields.io/badge/completed-mini%20memory%20ctf-brightgreen" /></a>
+
 ## Category
 
 Forensics
