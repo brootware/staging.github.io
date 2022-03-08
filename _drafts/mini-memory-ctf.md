@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mini Memory CTF
+title: Mini Memory CTF 🕵️ 💻 
 categories: [CTF, Forensics]
 tags: [CTF, Memory-Forensics, DFIR, Blue-team]
 ---
