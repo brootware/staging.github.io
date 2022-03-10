@@ -10,6 +10,7 @@ tags:
 - DFIR
 - Blue-team
 - Windows-Forensics
+date: 2022-03-10 20:10 +0800
 ---
 
 <a href="https://blueteamlabs.online/achievement/share/challenge/12792/1"><img src="https://img.shields.io/badge/completed-Memory%20Analysis%20--%20Ransomware-brightgreen" /></a>
