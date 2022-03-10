@@ -9,6 +9,7 @@ tags:
 - CTF
 - DFIR
 - Blue-team
+- Windows-Forensics
 ---
 
 <a href="https://blueteamlabs.online/achievement/share/challenge/12792/1"><img src="https://img.shields.io/badge/completed-Memory%20Analysis%20--%20Ransomware-brightgreen" /></a>

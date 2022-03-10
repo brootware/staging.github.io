@@ -7,6 +7,7 @@ categories:
 tags:
 - CTF
 - Memory-Forensics
+- Windows-Forensics
 - DFIR
 - Blue-team
 date: 2022-03-08 20:49 +0800
