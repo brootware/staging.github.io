@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Memory Analysis - Ransomware 🖥 👤 💰
+title: Memory Analysis - Ransomware  👤 💰 ⛓️
 categories:
 
 - CTF
