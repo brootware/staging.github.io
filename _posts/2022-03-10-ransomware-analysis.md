@@ -108,6 +108,7 @@ Can you identify what ransomware it is? (Do your research!)
 **WannaCry**
 
 Get the hash of the dumped executable file and search on virus total.
+<https://www.virustotal.com/gui/file/5215d03bf5b6db206a3da5dde0a6cbefc8b4fee2f84b99109b0fce07bd2246d6/detection>
 
 ```bash
 sha256sum executable.2732.exe 
