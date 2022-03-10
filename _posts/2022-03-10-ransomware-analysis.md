@@ -2,7 +2,6 @@
 layout: post
 title: Memory Analysis - Ransomware  👤 💰 ⛓️
 categories:
-
 - CTF
 - Forensics
 tags:
