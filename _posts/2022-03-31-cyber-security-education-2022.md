@@ -14,7 +14,7 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 
 (I will be adding more blue team contents in as and when I am free. So do keep an eye out for them.)
 
-# Free-Beginner-Red-Team-Path
+# Introduction and Pre-Security
 
 ## Level 1 - Intro
 
@@ -24,6 +24,7 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Learn Linux <https://tryhackme.com/room/zthlinux>
 - [ ] Pentesting fundamentals <https://tryhackme.com/room/pentestingfundamentals>
 - [ ] Principles of security <https://tryhackme.com/room/principlesofsecurity>
+- [ ] Red Team Engagements <https://tryhackme.com/room/redteamengagements>
 - [ ] Crash Course Pentesting <https://tryhackme.com/room/ccpentesting>
 
 **Introductory CTFs to get your feet wet**
@@ -31,6 +32,8 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Google Dorking <https://tryhackme.com/room/googledorking>
 - [ ] OHsint <https://tryhackme.com/room/ohsint>
 - [ ] Shodan.io <https://tryhackme.com/room/shodan>
+
+# Free-Beginner-Red-Team-Path
 
 ## Level 2 - Tooling
 
@@ -42,8 +45,10 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Hydra <https://tryhackme.com/room/hydra>
 - [ ] Linux Privesc <https://tryhackme.com/room/linuxprivesc>
 - [ ] Web Scanning <https://tryhackme.com/room/rpwebscanning>
+- [ ] Red Team Fundamentals <https://tryhackme.com/room/redteamfundamentals>
+- [ ] Red Team Recon <https://tryhackme.com/room/redteamrecon>
 
-**More introductory CTFs**
+**Red Team Intro CTFs**
 
 - [ ] Vulnversity - <https://tryhackme.com/room/vulnversity>
 - [ ] Blue - <https://tryhackme.com/room/blue>
