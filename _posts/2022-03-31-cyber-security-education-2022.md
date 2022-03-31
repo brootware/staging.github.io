@@ -22,6 +22,8 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Welcome <https://tryhackme.com/jr/welcome>
 - [ ] Intro to Researching <https://tryhackme.com/room/introtoresearch>
 - [ ] Learn Linux <https://tryhackme.com/room/zthlinux>
+- [ ] Pentesting fundamentals <https://tryhackme.com/room/pentestingfundamentals>
+- [ ] Principles of security <https://tryhackme.com/room/principlesofsecurity>
 - [ ] Crash Course Pentesting <https://tryhackme.com/room/ccpentesting>
 
 **Introductory CTFs to get your feet wet**
