@@ -13,7 +13,7 @@ date: 2022-03-31 18:41 +0800
 ---
 
 <p align="center">
-<img src="https://github.com/brootware/Cyber-Security-Education/blob/main/assets/purpleteam.png?raw=true" />
+<img src="https://github.com/brootware/Cyber-Security-University/blob/main/assets/purpleteam.png?raw=true" />
 <br />
 <i>Because Education should be free.</i>
 </p>
@@ -24,13 +24,13 @@ There are 3 parts to this blog. Free Beginner Red Team Path, Free Beginner Blue 
 
 If you want to keep track of your progress, you can fork this repo on github and follow the instructions.
 
-<https://github.com/brootware/Cyber-Security-Education>
+<https://github.com/brootware/Cyber-Security-University>
 
 You will find the html code for below badges hidden in the repo.
 
-<a href="https://github.com/brootware/Cyber-Security-Education"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
+<a href="https://github.com/brootware/Cyber-Security-University"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
 
-<a href="https://github.com/brootware/Cyber-Security-Education"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
+<a href="https://github.com/brootware/Cyber-Security-University"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
 
 # Introduction and Pre-Security
 
