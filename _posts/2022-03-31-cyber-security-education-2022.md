@@ -110,9 +110,15 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 > Congratulations!! If you have finished until here. You deserve a badge! Put this in your writeups or git profile. You can continue doing the below CTFs.
 
 <details>
-  <summary>Click here to get your badge!</summary>
+  <summary>Click here to get your red team badge!</summary>
   
-<a href="https://img.shields.io/badge/Completed-Red%20Team%20Path-red"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
+<a href="https://brootware.github.io/posts/cyber-security-education-2022/"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
+
+Copy below and add it to your forked github repo.
+
+```html
+<a href="https://brootware.github.io/posts/cyber-security-education-2022/"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
+```
 
 </details>
 
@@ -196,7 +202,20 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 
 > Congratulations!! If you have finished until here. You deserve a badge! Put this in your writeups or git profile. You can continue doing the below CTFs.
 
-<a href="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
+<a href="https://brootware.github.io/posts/cyber-security-education-2022/"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
+
+<details>
+  <summary>Click here to get your blue team badge!</summary>
+  
+<a href="https://brootware.github.io/posts/cyber-security-education-2022/"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
+
+Copy below and add it to your forked github repo.
+
+```html
+<a href="https://brootware.github.io/posts/cyber-security-education-2022/"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
+```
+
+</details>
 
 # Extremely-Hard-Rooms-to-do
 
