@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyber Security Education \U0001F510 \U0001F575️ \U0001F393
+title: Cyber Security Education 🔐 🕵️ 🎓
 categories:
 - Projects
 - Security Education
