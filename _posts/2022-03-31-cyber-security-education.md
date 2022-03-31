@@ -14,6 +14,10 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 
 (I will be adding more blue team contents in as and when I am free. So do keep an eye out for them.)
 
+If you want to keep track of your progress, you can fork this repo on github and follow the instructions.
+
+<https://github.com/brootware/Cyber-Security-Education>
+
 # Introduction and Pre-Security
 
 ## Level 1 - Intro
