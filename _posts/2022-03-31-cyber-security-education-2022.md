@@ -10,7 +10,7 @@ tags:
 - Free resources
 date: 2022-03-31 18:41 +0800
 ---
-Because Education should be free. There are 3 parts to this blog. Free Beginner Red Team Path, Free Beginner Blue Team Path and Extremely Hard rooms to do.
+Because Education should be free. There are 3 parts to this blog. Free Beginner Red Team Path, Free Beginner Blue Team Path and Extremely Hard rooms to do. (I will be adding more blue team contents in as and when I am free. So do keep an eye out for them.)
 
 # Table of Contents
 
@@ -105,7 +105,11 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] The Great Escape (docker) <https://tryhackme.com/room/thegreatescape>
 - [ ] Solr Exploiting Log4j <https://tryhackme.com/room/solar>
 
-## Level 7 - CTF practice
+> Congratulations!! If you have finished until here. You deserve a badge! Put this in your writeups or git profile. You can continue doing the below CTFs.
+
+<a href="https://img.shields.io/badge/Completed-Red%20Team%20Path-red"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
+
+## CTF practice
 
 - [ ] Post Exploitation Basics <https://tryhackme.com/room/postexploit>
 - [ ] Smag Grotto <https://tryhackme.com/room/smaggrotto>
@@ -117,7 +121,7 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Break out the cage <https://tryhackme.com/room/breakoutthecage1>
 - [ ] Lian Yu <https://tryhackme.com/room/lianyu>
 
-## Level 8 - Windows
+## Windows
 
 - [ ] Attacktive Directory <https://tryhackme.com/room/attacktivedirectory>
 - [ ] Retro <https://tryhackme.com/room/retro>
@@ -183,6 +187,10 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Windows x64 Assembly <https://tryhackme.com/room/win64assembly>
 - [ ] JVM reverse engineering <https://tryhackme.com/room/jvmreverseengineering>
 - [ ] Get PDF (Malicious Document) <https://cyberdefenders.org/blueteam-ctf-challenges/47>
+
+> Congratulations!! If you have finished until here. You deserve a badge! Put this in your writeups or git profile. You can continue doing the below CTFs.
+
+<a href="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
 
 # Extremely-Hard-Rooms-to-do
 
