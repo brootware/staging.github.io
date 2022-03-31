@@ -117,7 +117,9 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 Copy below and add it to your forked github repo.
 
 ```html
+
 <a href="https://brootware.github.io/posts/cyber-security-education-2022/"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
+
 ```
 
 </details>
@@ -202,8 +204,6 @@ Copy below and add it to your forked github repo.
 
 > Congratulations!! If you have finished until here. You deserve a badge! Put this in your writeups or git profile. You can continue doing the below CTFs.
 
-<a href="https://brootware.github.io/posts/cyber-security-education-2022/"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
-
 <details>
   <summary>Click here to get your blue team badge!</summary>
   
@@ -212,7 +212,9 @@ Copy below and add it to your forked github repo.
 Copy below and add it to your forked github repo.
 
 ```html
+
 <a href="https://brootware.github.io/posts/cyber-security-education-2022/"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
+
 ```
 
 </details>
