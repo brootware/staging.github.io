@@ -10,14 +10,16 @@ tags:
 - Free resources
 date: 2022-03-31 18:41 +0800
 ---
-Because Education should be free. There are 3 parts to this blog. Free Beginner Red Team Path, Free Beginner Blue Team Path and Extremely Hard rooms to do. (I will be adding more blue team contents in as and when I am free. So do keep an eye out for them.)
+Because Education should be free. There are 3 parts to this blog. Free Beginner Red Team Path, Free Beginner Blue Team Path and Extremely Hard rooms to do. The rooms are linear in nature of difficulty. So it's recommended to do in order. But you can still jump around and skip some rooms If you find that you are already familiar with the concepts.
+
+(I will be adding more blue team contents in as and when I am free. So do keep an eye out for them.)
 
 # Table of Contents
 
-1. [BeginnerRedTeam](#Free-Beginner-Red-Team-Path)
-2. [BeginnerBlueTeam](#Free-Beginner-Red-Team-Path)
-3. [ExtremelyHardRooms](#Extremely-Hard-rooms-to-do)
-4. [MarkDownVersion](#Markdown-Version)
+- [Red Team Path](#Free-Beginner-Red-Team-Path)
+- [Blue Team Path](#Free-Beginner-Red-Team-Path)
+- [Hard Rooms to do](#Extremely-Hard-rooms-to-do)
+- [Mark Down Version](#Markdown-Version)
 
 # Free-Beginner-Red-Team-Path
 
