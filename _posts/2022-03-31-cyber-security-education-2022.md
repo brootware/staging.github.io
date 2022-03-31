@@ -14,13 +14,6 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 
 (I will be adding more blue team contents in as and when I am free. So do keep an eye out for them.)
 
-# Table of Contents
-
-- [Red Team Path](/_posts/2022-03-31-cyber-security-education-2022.md#/Free-Beginner-Red-Team-Path)
-- [Blue Team Path](/_posts/2022-03-31-cyber-security-education-2022.md#/Free-Beginner-Blue-Team-Path)
-- [Hard Rooms to do](/_posts/2022-03-31-cyber-security-education-2022.md#/Extremely-Hard-rooms-to-do)
-- [Mark Down Version](/_posts/2022-03-31-cyber-security-education-2022.md#/Markdown-Version)
-
 # Free-Beginner-Red-Team-Path
 
 ## Level 1 - Intro
