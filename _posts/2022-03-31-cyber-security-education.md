@@ -15,7 +15,7 @@ date: 2022-03-31 18:41 +0800
 <p>
 <img src="https://github.com/brootware/Cyber-Security-University/blob/main/assets/purpleteam.png?raw=true" />
 <br />
-<i>Because Education should be free.</i>
+<i align="center">Because Education should be free.</i>
 </p>
 
 There are 3 parts to this blog. Free Beginner Red Team Path, Free Beginner Blue Team Path and Extremely Hard rooms to do. The rooms are linear in nature of difficulty. So it's recommended to do in order. But you can still jump around and skip some rooms If you find that you are already familiar with the concepts.
