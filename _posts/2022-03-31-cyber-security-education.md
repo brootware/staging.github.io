@@ -3,11 +3,11 @@ layout: post
 title: Cyber Security Education 🔐 🕵️ 🎓
 categories:
 - Projects
-- Security Education
+- Security-Education
 tags:
 - Projects
-- Security Education
-- Free resources
+- Security-Education
+- Free-resources
 date: 2022-03-31 18:41 +0800
 ---
 
