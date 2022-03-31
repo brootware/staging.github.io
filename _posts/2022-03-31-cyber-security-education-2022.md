@@ -111,7 +111,7 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 
 <a href="https://img.shields.io/badge/Completed-Red%20Team%20Path-red"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
 
-## CTF practice
+## Bonus CTF practice
 
 - [ ] Post Exploitation Basics <https://tryhackme.com/room/postexploit>
 - [ ] Smag Grotto <https://tryhackme.com/room/smaggrotto>
@@ -123,7 +123,7 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Break out the cage <https://tryhackme.com/room/breakoutthecage1>
 - [ ] Lian Yu <https://tryhackme.com/room/lianyu>
 
-## Windows
+## Bonus Windows
 
 - [ ] Attacktive Directory <https://tryhackme.com/room/attacktivedirectory>
 - [ ] Retro <https://tryhackme.com/room/retro>
@@ -151,7 +151,6 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Juicy Details <https://tryhackme.com/room/juicydetails>
 - [ ] Carnage <https://tryhackme.com/room/c2carnage>
 - [ ] Squid Game <https://tryhackme.com/room/squidgameroom>
-- [ ] Attacktive Directory <https://tryhackme.com/room/attacktivedirectory>
 - [ ] Splunk Boss of the SOC V1 <https://tryhackme.com/room/bpsplunk>
 - [ ] Splunk Boss of the SOC V2 <https://cyberdefenders.org/blueteam-ctf-challenges/16>
 - [ ] Splunk Boss of the SOC V3 <https://cyberdefenders.org/blueteam-ctf-challenges/8>
@@ -217,7 +216,7 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 ## Red Team Markdown Version
 
 ```markdown
-# Free Beginner Red Team Path
+# Introduction and Pre-Security
 
 ## Level 1 - Intro
 
@@ -225,6 +224,9 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Welcome <https://tryhackme.com/jr/welcome>
 - [ ] Intro to Researching <https://tryhackme.com/room/introtoresearch>
 - [ ] Learn Linux <https://tryhackme.com/room/zthlinux>
+- [ ] Pentesting fundamentals <https://tryhackme.com/room/pentestingfundamentals>
+- [ ] Principles of security <https://tryhackme.com/room/principlesofsecurity>
+- [ ] Red Team Engagements <https://tryhackme.com/room/redteamengagements>
 - [ ] Crash Course Pentesting <https://tryhackme.com/room/ccpentesting>
 
 **Introductory CTFs to get your feet wet**
@@ -232,6 +234,10 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Google Dorking <https://tryhackme.com/room/googledorking>
 - [ ] OHsint <https://tryhackme.com/room/ohsint>
 - [ ] Shodan.io <https://tryhackme.com/room/shodan>
+```
+
+```markdown
+# Free-Beginner-Red-Team-Path
 
 ## Level 2 - Tooling
 
@@ -243,8 +249,10 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Hydra <https://tryhackme.com/room/hydra>
 - [ ] Linux Privesc <https://tryhackme.com/room/linuxprivesc>
 - [ ] Web Scanning <https://tryhackme.com/room/rpwebscanning>
+- [ ] Red Team Fundamentals <https://tryhackme.com/room/redteamfundamentals>
+- [ ] Red Team Recon <https://tryhackme.com/room/redteamrecon>
 
-**More introductory CTFs**
+**Red Team Intro CTFs**
 
 - [ ] Vulnversity - <https://tryhackme.com/room/vulnversity>
 - [ ] Blue - <https://tryhackme.com/room/blue>
@@ -303,7 +311,7 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] The Great Escape (docker) <https://tryhackme.com/room/thegreatescape>
 - [ ] Solr Exploiting Log4j <https://tryhackme.com/room/solar>
 
-## Level 7 - CTF practice
+## Bonus CTF practice
 
 - [ ] Post Exploitation Basics <https://tryhackme.com/room/postexploit>
 - [ ] Smag Grotto <https://tryhackme.com/room/smaggrotto>
@@ -315,7 +323,7 @@ Because Education should be free. There are 3 parts to this blog. Free Beginner 
 - [ ] Break out the cage <https://tryhackme.com/room/breakoutthecage1>
 - [ ] Lian Yu <https://tryhackme.com/room/lianyu>
 
-## Level 8 - Windows
+## Bonus Windows
 
 - [ ] Attacktive Directory <https://tryhackme.com/room/attacktivedirectory>
 - [ ] Retro <https://tryhackme.com/room/retro>
