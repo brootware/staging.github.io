@@ -12,7 +12,7 @@ tags:
 date: 2022-03-31 18:41 +0800
 ---
 
-<p align="center">
+<p>
 <img src="https://github.com/brootware/Cyber-Security-University/blob/main/assets/purpleteam.png?raw=true" />
 <br />
 <i>Because Education should be free.</i>
