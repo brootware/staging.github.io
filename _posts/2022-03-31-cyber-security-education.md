@@ -111,22 +111,7 @@ If you want to keep track of your progress, you can fork this repo on github and
 - [ ] The Great Escape (docker) <https://tryhackme.com/room/thegreatescape>
 - [ ] Solr Exploiting Log4j <https://tryhackme.com/room/solar>
 
-> Congratulations!! If you have finished until here. You deserve a badge! Put this in your writeups or git profile. You can continue doing the below CTFs.
-
-<details>
-  <summary>Click here to get your red team badge!</summary>
-
-<a href="https://brootware.github.io/posts/cyber-security-education/"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a>
-
-<p> Copy below and add it to your forked github repo </p>
-
-```html
-
-<!-- <a href="https://brootware.github.io/posts/cyber-security-education/"><img src="https://img.shields.io/badge/Completed-Red%20Team%20Path-red" /></a> -->
-
-```
-
-</details>
+> Congratulations!! You have finished Red Team Path and are now familiar with red team concepts
 
 ## Bonus CTF practice
 
@@ -206,22 +191,7 @@ If you want to keep track of your progress, you can fork this repo on github and
 - [ ] JVM reverse engineering <https://tryhackme.com/room/jvmreverseengineering>
 - [ ] Get PDF (Malicious Document) <https://cyberdefenders.org/blueteam-ctf-challenges/47>
 
-> Congratulations!! If you have finished until here. You deserve a badge! Put this in your writeups or git profile. You can continue doing the below CTFs.
-
-<details>
-  <summary>Click here to get your blue team badge!</summary>
-  
-<a href="https://brootware.github.io/posts/cyber-security-education/"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
-
-<p> Copy below and add it to your forked github repo </p>
-
-```html
-
-<!-- <a href="https://brootware.github.io/posts/cyber-security-education/"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a> -->
-
-```
-
-</details>
+> Congratulations!! You have finished Blue Team Path and are now familiar with blue team concepts
 
 # Extremely-Hard-Rooms-to-do
 
