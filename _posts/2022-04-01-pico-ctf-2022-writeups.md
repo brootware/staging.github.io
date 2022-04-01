@@ -20,7 +20,7 @@ date: 2022-04-01 11:45 +0800
 Can you get the flag?
 Go to this website and see what you can discover.
 
-`picoCTF{j5_15_7r4n5p4r3n7_6309e949}`
+Flag : `picoCTF{j5_15_7r4n5p4r3n7_6309e949}`
 
 First we tried to login using random username and password to get the login failed message. We can check the source of the web page and see that there is a php function that's using password to create a flagfile.
 
@@ -37,16 +37,15 @@ We can find the flag after successfully logging in.
 
 Can you get the flag?
 Go to this website and see what you can discover.
+Flag : `picoCTF{1nclu51v17y_1of2_f7w_2of2_f4593d9d}`
 
 In style.css
 
-```/*picoCTF{1nclu51v17y_1of2_*/```
+`/*picoCTF{1nclu51v17y_1of2_*/`
 
 In script.js
 
-```//  f7w_2of2_f4593d9d}```
-
-Flag `picoCTF{1nclu51v17y_1of2_f7w_2of2_f4593d9d}`
+`//  f7w_2of2_f4593d9d}`
 
 ### Inspect HTML
 
@@ -61,7 +60,8 @@ Can you get the flag?
 Go to this website and see what you can discover.
 
 Change the cookie value `isAdmin` from `0` to `1` to see the flag.
-```picoCTF{gr4d3_A_c00k13_dcb9f091}```
+
+Flag : `picoCTF{gr4d3_A_c00k13_dcb9f091}`
 
 ### Search source
 
@@ -82,7 +82,7 @@ Check this out.
 2. Decode the base64 strings
 3. The path will decode to /js/myfile.txt
 4. Navigate to the path and you will see the flag.
-`picoCTF{Who_D03sN7_L1k5_90B0T5_a4f5cc70}`
+Flag : `picoCTF{Who_D03sN7_L1k5_90B0T5_a4f5cc70}`
 
 ### Forbidden Paths
 
@@ -93,7 +93,7 @@ We know that the website files live in /usr/share/nginx/html/ and the flag is at
 Craft the below LFI exploit to read the contents of flag.txt file using relative path.
 `../../../../flag.txt`
 
-`picoCTF{7h3_p47h_70_5ucc355_26b22ab3}`
+Flag : `picoCTF{7h3_p47h_70_5ucc355_26b22ab3}`
 
 ### Secrets
 
@@ -130,7 +130,7 @@ By diving deeper into the hidden folder and finally we are able to see the `secr
 
 ![found](https://bn1304files.storage.live.com/y4mDF3Ud4FIK71TAbICUfUskJktZc0q8VIwZnUw3D9yk77S7jRv025RGSDUa9x6Y3xCT_NDrPDY-wN06TL5RLVUHeqzxkjMKrBC-9wP8IfUMOvlOMSOd9AofhPu5PJAZgRxm7r-7F7Tc_vpSgjCtvMmtq7DisJee7q7v_q6RU2zDfcTGYOj9bKFXxZbRKGxMQxL?width=2860&height=1658&cropmode=none)
 
-`picoCTF{succ3ss_@h3n1c@10n_34327aaf}`
+Flag : `picoCTF{succ3ss_@h3n1c@10n_34327aaf}`
 
 ### SQL Direct
 
@@ -165,6 +165,8 @@ pico=# SELECT * FROM flags;
 (3 rows)
 ```
 
+Flag : `picoctf{L3arN_S0m3_5qL_t0d4Y_0414477f}`
+
 ### SQLiLite
 
 Can you login to this website?
@@ -176,7 +178,7 @@ password:admin'--
 
 ![flag](https://bn1304files.storage.live.com/y4mFPqWhF-8azrwfd5EeDRY5z_n35EMCrAVdgqc0MKXI7VzpYb26iFk99pFhW3epEqULswunY7GZQCVkydiBtFmLJSwOwmUfsveKNla2eXT-urQSSZcIu1osgUMSAY8u5_6d7cB7UhOvCBz6bi0qQ51tASoQcuQAlmSaq4G9QfMLzLHHUSwsW48V8Aji3-IOj7b?width=2872&height=1656&cropmode=none)
 
-Your flag is: picoCTF{L00k5_l1k3_y0u_solv3d_it_33d32a56}
+Your flag is: `picoCTF{L00k5_l1k3_y0u_solv3d_it_33d32a56}`
 
 ## Forensics
 
@@ -189,6 +191,8 @@ strings drawing.flag.svg
 picoCTF{3nh4nc3d_58bd3420}
 ```
 
+Flag : `picoCTF{3nh4nc3d_58bd3420}`
+
 ### Lookey here
 
 Attackers have hidden information in a very large mass of data in the past, maybe they are still doing it.
@@ -197,6 +201,8 @@ Attackers have hidden information in a very large mass of data in the past, mayb
 grep 'pico' anthem.flag.txt 
       we think that the men of picoCTF{gr3p_15_@w3s0m3_429334b2}
 ```
+
+Flag : `picoCTF{gr3p_15_@w3s0m3_429334b2}`
 
 ### File types
 
@@ -302,6 +308,8 @@ file: ASCII text
 picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_5a8375e0}
 ```
 
+Flag: `picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_5a8375e0}`
+
 ### Packets Primer
 
 Download the packet capture file and use packet analysis software to find the flag.
@@ -323,6 +331,8 @@ p&Na28
 p&Na
 ```
 
+Flag : `picoCTF{p4ck37_5h4rk_7d32b1de}`
+
 ### Redaction gone wrong
 
 Now you DON’T see me.
@@ -332,7 +342,7 @@ Use wondershare pdf to move the redacted portions as per screenshot below.
 
 ![image](https://bn1304files.storage.live.com/y4m4t6cEqcHGy2WTGrLAU8mK0nELR3ymhEt7hNixDuJzyuvBlzcAG2T_ygUPB9Nj5rhw1g76QQXcPkTMaK8t9FaYtQT2RCI8P07fzu2UQKXiUm54n53n9epf__DSj3tAwP4_r-2-xM6oUVrLaMB0pQM_Id5ndNRgp8VyU-pgwEQysP3PwER2PwEs1W9mo5R49av?width=2876&height=1334&cropmode=none)
 
-```picoCTF{C4n_Y0u_S33_m3_fully}```
+Flag : `picoCTF{C4n_Y0u_S33_m3_fully}`
 
 ### sleuthkit intro
 
@@ -360,6 +370,8 @@ Length in sectors: 0000202752
 Great work!
 picoCTF{mm15_f7w!}
 ```
+
+Flag : `picoCTF{mm15_f7w!}`
 
 ### sleuthkit apprentice
 
@@ -394,6 +406,8 @@ Contents Of File: /3/root/my_folder/flag.uni.txt
 �p�i�c�o�C�T�F�{�b�y�7�3�_�5�u�r�f�3�r�_�4�2�0�2�8�1�2�0�}�
 picoCTF{by73_5urf3r_42028120}
 ```
+
+Flag : `picoCTF{by73_5urf3r_42028120}`
 
 ### Eavesdrop
 
@@ -440,6 +454,8 @@ data  file.txt  salted  salt.pcap
 ➜  salt cat file.txt
 picoCTF{nc_73115_411_77b05957}
 ```
+
+Flag : `picoCTF{nc_73115_411_77b05957}`
 
 ### Operation-Oni
 
@@ -498,6 +514,8 @@ ctf-player@challenge:~$ cat flag.txt
 picoCTF{k3y_5l3u7h_af277f77}
 ctf-player@challenge:~$
 ```
+
+Flag : `picoCTF{k3y_5l3u7h_af277f77}`
 
 ### Operation Orchid
 
@@ -569,6 +587,8 @@ run: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked,
 The flag is: picoCTF{U51N6_Y0Ur_F1r57_F113_5578e314}
 ```
 
+Flag : `picoCTF{U51N6_Y0Ur_F1r57_F113_5578e314}`
+
 ### file-run2
 
 Another program, but this time, it seems to want some input. What happens if you try to run it on the command line with input "Hello!"?
@@ -579,6 +599,8 @@ Download the program here.
 ➜  file-run2 ./run Hello!
 The flag is: picoCTF{F1r57_4rgum3n7_981abfb5}
 ```
+
+Flag : `picoCTF{F1r57_4rgum3n7_981abfb5}`
 
 ### GDB Test Drive
 
@@ -609,6 +631,8 @@ Continuing at 0x55555555532f.
 picoCTF{d3bugg3r_dr1v3_93b87433}
 (gdb) ior 1 (process 23118) exited normally]
 ```
+
+Flag : `picoCTF{d3bugg3r_dr1v3_93b87433}`
 
 ### patchme.py
 
@@ -673,6 +697,8 @@ Please enter correct password for flag: haha
 Welcome back... your flag, user:
 picoCTF{p47ch1ng_l1f3_h4ck_4d5af99c}
 ```
+
+Flag : `picoCTF{p47ch1ng_l1f3_h4ck_4d5af99c}`
 
 ### Safe Opener
 
@@ -740,7 +766,7 @@ cGwzYXMzX2wzdF9tM18xbnQwX3RoM19zYWYz
 Sesame open
 ```
 
-`picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}`
+Flag : `picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}`
 
 ### unpackme.py
 
@@ -781,6 +807,8 @@ b"\npw = input('What\\'s the password? ')\n\nif pw == 'batteryhorse':\n  print('
 What's the password? batteryhorse
 picoCTF{175_chr157m45_8aef58d2}
 ```
+
+Flag : `picoCTF{175_chr157m45_8aef58d2}`
 
 ### bloat.py
 
@@ -864,6 +892,8 @@ Please enter correct password for flag: happychance
 Welcome back... your flag, user:
 picoCTF{d30bfu5c4710n_f7w_c47f9e9c}
 ```
+
+Flag : `picoCTF{d30bfu5c4710n_f7w_c47f9e9c}`
 
 ### Fresh java
 
@@ -1092,7 +1122,7 @@ picoCTF{700l1ng_r3qu1r3d_126c59f0}
 Valid key
 ```
 
-`picoCTF{700l1ng_r3qu1r3d_126c59f0}`
+Flag : `picoCTF{700l1ng_r3qu1r3d_126c59f0}`
 
 ### Bbbbloat
 
@@ -1205,7 +1235,7 @@ child exited with status 0
 ==> Process finished
 ```
 
-`picoCTF{cu7_7h3_bl047_2d7aeca1}`
+Flag : `picoCTF{cu7_7h3_bl047_2d7aeca1}`
 
 ### unpackme
 
@@ -1298,52 +1328,7 @@ picoCTF{up><_m3_f7w_ed7b0850}
 [Inferior 1 (process 67587) exited normally]
 ```
 
-`picoCTF{up><_m3_f7w_ed7b0850}`
-
-### keygenme
-
-Can you get the flag?
-Reverse engineer this binary.
-
-```bash
-➜  keygenme r2 -d keygenme 
-Process with PID 68278 started...
-= attach 68278 68278
-bin.baddr 0x56054b1a2000
-Using 0x56054b1a2000
-asm.bits 64
-Warning: r_bin_file_hash: file exceeds bin.hashlimit
- -- r2-goverity: found corruption - please eliminate!
-[0x7fc99f326100]> aaa
-[x] Analyze all flags starting with sym. and entry0 (aa)
-[x] Analyze function calls (aac)
-[x] Analyze len bytes of instructions for references (aar)
-[x] Check for objc references
-[x] Check for vtables
-[TOFIX: aaft can't run in debugger mode.ions (aaft)
-[x] Type matching analysis for all functions (aaft)
-[x] Propagate noreturn information
-[x] Use -AA or aaaa to perform additional experimental analysis.
-[0x7fc99f326100]> afll
-address            size  nbbs edges    cc cost          min bound range max bound          calls locals args xref frame name
-================== ==== ===== ===== ===== ==== ================== ===== ================== ===== ====== ==== ==== ===== ====
-0x000056054b1a3120   46     1     0     1   15 0x000056054b1a3120    46 0x000056054b1a314e     1    0      1    0     8 entry0
-0x000056054b1a5fe0 4121     1     0     1 2060 0x000056054b1a5fe0  4121 0x000056054b1a6ff9     0    0      0    1     0 reloc.__libc_start_main
-0x000056054b1a30b0   11     1     0     1    4 0x000056054b1a30b0    11 0x000056054b1a30bb     0    0      0    1     0 sym.imp.printf
-0x000056054b1a30c0   11     1     0     1    4 0x000056054b1a30c0    11 0x000056054b1a30cb     0    0      0    2     0 sym.imp.puts
-0x000056054b1a2000  250     6     6     6  118 0x000056054b1a2000   241 0x000056054b1a20f1     0    0      3    0     8 loc.imp.__gmon_start
-0x000056054b1a30d0   11     1     0     1    4 0x000056054b1a30d0    11 0x000056054b1a30db     0    0      0    1     0 sym.imp.fgets
-0x000056054b1a30e0   11     1     0     1    4 0x000056054b1a30e0    11 0x000056054b1a30eb     0    0      0    0     0 sym.imp.strlen
-0x000056054b1a30f0   11     1     0     1    4 0x000056054b1a30f0    11 0x000056054b1a30fb     0    0      0    0     0 sym.imp.MD5
-0x000056054b1a3100   11     1     0     1    4 0x000056054b1a3100    11 0x000056054b1a310b     0    0      0    0     0 sym.imp.sprintf
-0x000056054b1a3110   11     1     0     1    4 0x000056054b1a3110    11 0x000056054b1a311b     0    0      0    1     0 sym.imp.__stack_chk_fail
-0x000056054b1a3200   60     5     5     4   22 0x000056054b1a3180   137 0x000056054b1a3209     0    0      0    0     0 entry.init0
-0x000056054b1a31c0   54     5     5     4   24 0x000056054b1a31c0    57 0x000056054b1a31f9     2    0      0    0     8 entry.fini0
-0x000056054b1a30a0   11     1     0     1    4 0x000056054b1a30a0    11 0x000056054b1a30ab     0    0      0    1     0 fcn.56054b1a30a0
-0x000056054b1a3150   34     4     4     4   14 0x000056054b1a3150    41 0x000056054b1a3179     0    0      0    1     0 fcn.56054b1a3150
-0x000056054b1a348b  144     6     6     4   51 0x000056054b1a348b   144 0x000056054b1a351b     6    4      2    1    72 main
-
-```
+Flag : `picoCTF{up><_m3_f7w_ed7b0850}`
 
 ## Cryptography
 
@@ -1392,6 +1377,8 @@ readFileNDecode()
 picoCTF{R0UND_N_R0UND_8C863EE7}
 ```
 
+Flag : `picoCTF{R0UND_N_R0UND_8C863EE7}`
+
 ### substitution0
 
 A message has come in but it seems to be all scrambled. Luckily it seems to have the key at the beginning. Can you crack this substitution cipher?
@@ -1427,6 +1414,8 @@ RESPECTING IT.
 
 THE FLAG IS: PICOCTF{5UB5717U710N_3V0LU710N_AA1CC2B7}
 ```
+
+Flag : `PICOCTF{5UB5717U710N_3V0LU710N_AA1CC2B7}`
 
 ### basic-mod2
 
@@ -1494,12 +1483,14 @@ readFileNDecode()
 picoCTF{1NV3R53LY_H4RD_F6747912}
 ```
 
+Flag : `picoCTF{1NV3R53LY_H4RD_F6747912}`
+
 ### Vignere
 
 Can you decrypt this message?
 Decrypt this message using this key "CYLAB". `rgnoDVD{O0NU_WQ3_G1G3O3T3_A1AH3S_e481bf5f}`
 
-`picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_c481du5f}`
+Flag : `picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_c481du5f}`
 Using <https://www.dcode.fr/vigenere-cipher>
 
 ### credstuff
@@ -1508,7 +1499,7 @@ We found a leak of a blackmarket website's login credentials. Can you find the p
 Download the leak here.
 The first user in usernames.txt corresponds to the first password in passwords.txt. The second user corresponds to the second password, and so on.
 
-`picoCTF{C7r1F_54V35_71M3}`
+Flag : `picoCTF{C7r1F_54V35_71M3}`
 
 ![image](https://bn1304files.storage.live.com/y4mV2YsQWbh2VIpNw1ad0aNSTaB9erEuzEMB9qn9DTePZHr4nV4lXLI5qndi1Tx9uN68wZtIGR8eMrOFKm557DhO1xLUbd-H7RWg2F4ChV4SQ3ofSwZJX0kExHhr-HdHcKKfgM6j-uhjSvAPASK1FznFL8Gu29MVGecj0z17Ek40INgP7XotnjmZzjb83Yglk_1?width=2654&height=1620&cropmode=none)
 
@@ -1523,7 +1514,7 @@ Download the message here.
 Put the decoded message in the picoCTF flag format, picoCTF{decoded_message}.
 `Ta _7N6D54hlg:W3D_H3C31N__510ef sHR053F38N43D28 i33___N2`
 
-`picoCTF{WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_55228140}`
+Flag : `picoCTF{WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_55228140}`
 
 Using cyberchef : <https://gchq.github.io/CyberChef/#recipe=Rail_Fence_Cipher_Decode(4,0)&input=VGEgXzdONkQ1NGhsZzpXM0RfSDNDMzFOX181MTBlZiBzSFIwNTNGMzhONDNEMjggaTMzX19fTjI>
 
@@ -1536,7 +1527,7 @@ Download the message here.
 
 `WILh (hjpai lpa wrtikan ijn lbrc) ran r ietn pl wpgtkina hnwkazie wpgtnizizpu. Wpuinhiruih ran tanhnuiny szij r hni pl wjrbbnucnh sjzwj inhi ijnza wanrizdzie, inwjuzwrb (ruy cppcbzuc) hfzbbh, ruy tapobng-hpbdzuc rozbzie. Wjrbbnucnh khkrbbe wpdna r ukgona pl wrincpaznh, ruy sjnu hpbdny, nrwj eznbyh r hiazuc (wrbbny r lbrc) sjzwj zh hkogziiny ip ru pubzun hwpazuc hnadzwn. WILh ran r canri sre ip bnrau r szyn raare pl wpgtkina hnwkazie hfzbbh zu r hrln, bncrb nudzapugnui, ruy ran jphiny ruy tbreny oe grue hnwkazie capkth rapkuy ijn spaby lpa lku ruy tarwizwn. Lpa ijzh tapobng, ijn lbrc zh: tzwpWIL{LA3VK3UWE_4774WF5_4A3_W001_O810YY84}`
 
-`PICOCTF{FR3QU3NCY_4774CK5_4R3_C001_B810DD84}`
+Flag : `picoCTF{FR3QU3NCY_4774CK5_4R3_C001_B810DD84}`
 
 Using <https://www.dcode.fr/monoalphabetic-substitution>
 
@@ -1553,7 +1544,7 @@ The CVE we're looking for is the first recorded remote code execution (RCE) vuln
 With simple googling.
 <https://nsfocusglobal.com/windows-print-spooler-rce-vulnerabilities-cve-2021-1675-cve-2021-34527-mitigation-guide/>
 
-`picoCTF{CVE-2021-34527}`
+Flag : `picoCTF{CVE-2021-34527}`
 
 ### buffer overflow 0
 
@@ -1596,3 +1587,5 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 Input: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 picoCTF{ov3rfl0ws_ar3nt_that_bad_ee2fd2b1}
 ```
+
+Flag : `picoCTF{ov3rfl0ws_ar3nt_that_bad_ee2fd2b1}`
