@@ -74,6 +74,8 @@ Mirror the webpage with wget as below and search the flag in custom css file usi
 wget -m <http://saturn.picoctf.net:56488/index.html>
 ```
 
+Flag : `picoCTF{1nsp3ti0n_0f_w3bpag3s_227d64bd}`
+
 ### Roboto Sans
 
 The flag is somewhere on this web application not necessarily on the website. Find it.
