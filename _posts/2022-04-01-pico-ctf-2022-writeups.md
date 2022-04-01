@@ -1542,9 +1542,9 @@ Using <https://www.dcode.fr/monoalphabetic-substitution>
 
 `CTFS (SHORT FOR CAPTURE THE FLAG) ARE A TYPE OF COMPUTER SECURITY COMPETITION. CONTESTANTS ARE PRESENTED WITH A SET OF CHALLENGES WHICH TEST THEIR CREATIVITY, TECHNICAL (AND GOOGLING) SKILLS, AND PROBLEM-SOLVING ABILITY. CHALLENGES USUALLY COVER A NUMBER OF CATEGORIES, AND WHEN SOLVED, EACH YIELDS A STRING (CALLED A FLAG) WHICH IS SUBMITTED TO AN ONLINE SCORING SERVICE. CTFS ARE A GREAT WAY TO LEARN A WIDE ARRAY OF COMPUTER SECURITY SKILLS IN A SAFE, LEGAL ENVIRONMENT, AND ARE HOSTED AND PLAYED BY MANY SECURITY GROUPS AROUND THE WORLD FOR FUN AND PRACTICE. FOR THIS PROBLEM, THE FLAG IS: PICOCTF{FR3QU3NCY_4774CK5_4R3_C001_B810DD84}`
 
-### Binary Exploitation
+## Binary Exploitation
 
-## CVE-XXXX-XXXXX
+### CVE-XXXX-XXXXX
 
 Enter the CVE of the vulnerability as the flag with the correct flag format:
 picoCTF{CVE-XXXX-XXXXX} replacing XXXX-XXXXX with the numbers for the matching vulnerability.
@@ -1555,7 +1555,7 @@ With simple googling.
 
 `picoCTF{CVE-2021-34527}`
 
-## buffer overflow 0
+### buffer overflow 0
 
 Smash the stack
 Let's start off simple, can you overflow the correct buffer? The program is available here. You can view source here. And connect with it using:
