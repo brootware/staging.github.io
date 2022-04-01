@@ -52,7 +52,8 @@ In script.js
 Can you get the flag?
 Go to this website and see what you can discover.
 
-```<!--picoCTF{1n5p3t0r_0f_h7ml_dd513514}-->```
+Can be found in browser's developer console.
+Flag : ```picoCTF{1n5p3t0r_0f_h7ml_dd513514}```
 
 ### Power Cookie
 
