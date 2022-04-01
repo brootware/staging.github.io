@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Pico CTF 2022 Writeups 🚩 👾 👨🏻‍💻
+title: Pico CTF 2022 Writeups 🚩👾👨🏻‍💻
+categories:
 - CTF
 - General-Skills
 tags:
@@ -10,6 +11,7 @@ tags:
 - Reverse-Engineering
 date: 2022-04-01 11:45 +0800
 ---
+
 
 ## Web exploit
 
