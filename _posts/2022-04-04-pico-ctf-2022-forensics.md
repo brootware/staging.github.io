@@ -13,7 +13,7 @@ tags:
 - picoctf-2022
 ---
 
-# Enhance
+## Enhance
 
 Download this image file and find the flag.
 
@@ -24,7 +24,7 @@ picoCTF{3nh4nc3d_58bd3420}
 
 Flag : `picoCTF{3nh4nc3d_58bd3420}`
 
-# Lookey here
+## Lookey here
 
 Attackers have hidden information in a very large mass of data in the past, maybe they are still doing it.
 
@@ -35,7 +35,7 @@ grep 'pico' anthem.flag.txt
 
 Flag : `picoCTF{gr3p_15_@w3s0m3_429334b2}`
 
-# File types
+## File types
 
 This file was found among some files marked confidential but my pdf reader cannot read it, maybe yours can.
 
@@ -141,7 +141,7 @@ picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_5a8375e0}
 
 Flag: `picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_5a8375e0}`
 
-# Packets Primer
+## Packets Primer
 
 Download the packet capture file and use packet analysis software to find the flag.
 
@@ -164,7 +164,7 @@ p&Na
 
 Flag : `picoCTF{p4ck37_5h4rk_7d32b1de}`
 
-# Redaction gone wrong
+## Redaction gone wrong
 
 Now you DON’T see me.
 This report has some critical data in it, some of which have been redacted correctly, while some were not. Can you find an important key that was not redacted properly?
@@ -175,7 +175,7 @@ Use wondershare pdf to move the redacted portions as per screenshot below.
 
 Flag : `picoCTF{C4n_Y0u_S33_m3_fully}`
 
-# sleuthkit intro
+## sleuthkit intro
 
 Download the disk image and use mmls on it to find the size of the Linux partition. Connect to the remote checker service to check your answer and get the flag.
 Note: if you are using the webshell, download and extract the disk image into /tmp not your home directory.
@@ -204,7 +204,7 @@ picoCTF{mm15_f7w!}
 
 Flag : `picoCTF{mm15_f7w!}`
 
-# sleuthkit apprentice
+## sleuthkit apprentice
 
 Download this disk image and find the flag.
 Note: if you are using the webshell, download and extract the disk image into /tmp not your home directory.
@@ -240,7 +240,7 @@ picoCTF{by73_5urf3r_42028120}
 
 Flag : `picoCTF{by73_5urf3r_42028120}`
 
-# Eavesdrop
+## Eavesdrop
 
 Download this packet capture and find the flag.
 
@@ -288,7 +288,7 @@ picoCTF{nc_73115_411_77b05957}
 
 Flag : `picoCTF{nc_73115_411_77b05957}`
 
-# Operation-Oni
+## Operation-Oni
 
 Download this disk image, find the key and log into the remote machine.
 Note: if you are using the webshell, download and extract the disk image into /tmp not your home directory.
@@ -348,7 +348,7 @@ ctf-player@challenge:~$
 
 Flag : `picoCTF{k3y_5l3u7h_af277f77}`
 
-# Operation Orchid
+## Operation Orchid
 
 Download this disk image and find the flag.
 Note: if you are using the webshell, download and extract the disk image into /tmp not your home directory.
