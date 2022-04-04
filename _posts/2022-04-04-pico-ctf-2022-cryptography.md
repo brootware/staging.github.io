@@ -11,7 +11,7 @@ tags:
 - picoctf-2022
 ---
 
-# basic-mod1
+## basic-mod1
 
 We found this weird message being passed around on the servers, we think we have a working decrpytion scheme.
 Download the message here.
@@ -58,7 +58,7 @@ picoCTF{R0UND_N_R0UND_8C863EE7}
 
 Flag : `picoCTF{R0UND_N_R0UND_8C863EE7}`
 
-# substitution0
+## substitution0
 
 A message has come in but it seems to be all scrambled. Luckily it seems to have the key at the beginning. Can you crack this substitution cipher?
 
@@ -96,7 +96,7 @@ THE FLAG IS: PICOCTF{5UB5717U710N_3V0LU710N_AA1CC2B7}
 
 Flag : `PICOCTF{5UB5717U710N_3V0LU710N_AA1CC2B7}`
 
-# basic-mod2
+## basic-mod2
 
 Description
 
@@ -164,7 +164,7 @@ picoCTF{1NV3R53LY_H4RD_F6747912}
 
 Flag : `picoCTF{1NV3R53LY_H4RD_F6747912}`
 
-# Vignere
+## Vignere
 
 Can you decrypt this message?
 Decrypt this message using this key "CYLAB". `rgnoDVD{O0NU_WQ3_G1G3O3T3_A1AH3S_e481bf5f}`
@@ -172,7 +172,7 @@ Decrypt this message using this key "CYLAB". `rgnoDVD{O0NU_WQ3_G1G3O3T3_A1AH3S_e
 Flag : `picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_c481du5f}`
 Using <https://www.dcode.fr/vigenere-cipher>
 
-# credstuff
+## credstuff
 
 We found a leak of a blackmarket website's login credentials. Can you find the password of the user cultiris and successfully decrypt it?
 Download the leak here.
@@ -186,7 +186,7 @@ Flag : `picoCTF{C7r1F_54V35_71M3}`
 
 Using [caesar-cipher](https://www.dcode.fr/caesar-cipher).
 
-# rail-fence
+## rail-fence
 
 A type of transposition cipher is the rail fence cipher, which is described here. Here is one such cipher encrypted using the rail fence with 4 rails. Can you decrypt it?
 Download the message here.
@@ -199,7 +199,7 @@ Using cyberchef : <https://gchq.github.io/CyberChef/#recipe=Rail_Fence_Cipher_De
 
 `The flag is: WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_55228140`
 
-# substitution1
+## substitution1
 
 A second message has come in the mail, and it seems almost identical to the first one. Maybe the same thing will work again.
 Download the message here.
