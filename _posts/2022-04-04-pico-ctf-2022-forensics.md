@@ -10,6 +10,7 @@ tags:
 - Forensics
 - DFIR
 - Blue-team
+- picoctf-2022
 ---
 
 # Enhance

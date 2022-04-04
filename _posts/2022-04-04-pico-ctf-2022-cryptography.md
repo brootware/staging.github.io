@@ -4,10 +4,10 @@ title: 'Pico CTF 2022: Cryptography 🔒 🕵'
 date: 2022-04-04 11:35 +0800
 categories:
 - CTF
-- Web-exploitation
+- Cryptography
 tags:
 - CTF
-- Web-exploitation
+- Cryptography
 - picoctf-2022
 ---
 
