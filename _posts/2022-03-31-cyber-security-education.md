@@ -361,12 +361,12 @@ This blog post is mainly to keep track and be accountable for myself.
 ## Level 1 - Tools
 
 - [ ] Windows Fundamentals <https://tryhackme.com/room/windowsfundamentals1xbx>
-- [ ] Nessus <https://tryhackme.com/room/rpnessusredux>
+- [x] Nessus <https://tryhackme.com/room/rpnessusredux>
 - [ ] Mitre <https://tryhackme.com/room/mitre>
 - [ ] Yara <https://tryhackme.com/room/yara>
 - [ ] OpenVAS <https://tryhackme.com/room/openvas>
 - [ ] Intro to Honeypots <https://tryhackme.com/room/introductiontohoneypots>
-- [ ] Volatility <https://tryhackme.com/room/bpvolatility>
+- [x] Volatility <https://tryhackme.com/room/bpvolatility>
 - [ ] Red Line <https://tryhackme.com/room/btredlinejoxr3d>
 - [ ] Autopsy <https://tryhackme.com/room/autopsy2ze0>
 
