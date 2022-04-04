@@ -10,7 +10,7 @@ tags:
 - picoctf-2022
 date: 2022-04-01 11:45 +0800
 ---
-# file-run1
+## file-run1
 
 A program has been provided to you, what happens if you try to run it on the command line?
 Download the program here.
@@ -27,7 +27,7 @@ The flag is: picoCTF{U51N6_Y0Ur_F1r57_F113_5578e314}
 
 Flag : `picoCTF{U51N6_Y0Ur_F1r57_F113_5578e314}`
 
-# file-run2
+## file-run2
 
 Another program, but this time, it seems to want some input. What happens if you try to run it on the command line with input "Hello!"?
 Download the program here.
@@ -40,7 +40,7 @@ The flag is: picoCTF{F1r57_4rgum3n7_981abfb5}
 
 Flag : `picoCTF{F1r57_4rgum3n7_981abfb5}`
 
-# GDB Test Drive
+## GDB Test Drive
 
 Can you get the flag?
 Download this binary.
@@ -72,7 +72,7 @@ picoCTF{d3bugg3r_dr1v3_93b87433}
 
 Flag : `picoCTF{d3bugg3r_dr1v3_93b87433}`
 
-# patchme.py
+## patchme.py
 
 Can you get the flag?
 Run this Python program in the same directory as this encrypted flag.
@@ -80,7 +80,7 @@ Run this Python program in the same directory as this encrypted flag.
 patchme.flag.py
 
 ```python
-### THIS FUNCTION WILL NOT HELP YOU FIND THE FLAG --LT ########################
+#### THIS FUNCTION WILL NOT HELP YOU FIND THE FLAG --LT ########################
 def str_xor(secret, key):
     #extend key to secret length
     new_key = key
@@ -138,7 +138,7 @@ picoCTF{p47ch1ng_l1f3_h4ck_4d5af99c}
 
 Flag : `picoCTF{p47ch1ng_l1f3_h4ck_4d5af99c}`
 
-# Safe Opener
+## Safe Opener
 
 Can you open this safe?
 I forgot the key to my safe but this program is supposed to help me with retrieving the lost key. Can you help me unlock my safe?
@@ -206,7 +206,7 @@ Sesame open
 
 Flag : `picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}`
 
-# unpackme.py
+## unpackme.py
 
 Can you get the flag?
 Reverse engineer this Python program.
@@ -248,7 +248,7 @@ picoCTF{175_chr157m45_8aef58d2}
 
 Flag : `picoCTF{175_chr157m45_8aef58d2}`
 
-# bloat.py
+## bloat.py
 
 Can you get the flag?
 Run this Python program in the same directory as this encrypted flag.
@@ -333,7 +333,7 @@ picoCTF{d30bfu5c4710n_f7w_c47f9e9c}
 
 Flag : `picoCTF{d30bfu5c4710n_f7w_c47f9e9c}`
 
-# Fresh java
+## Fresh java
 
 Can you get the flag?
 Reverse engineer this Java program.
@@ -562,7 +562,7 @@ Valid key
 
 Flag : `picoCTF{700l1ng_r3qu1r3d_126c59f0}`
 
-# Bbbbloat
+## Bbbbloat
 
 Can you get the flag?
 Reverse engineer this binary.
@@ -675,7 +675,7 @@ child exited with status 0
 
 Flag : `picoCTF{cu7_7h3_bl047_2d7aeca1}`
 
-# unpackme
+## unpackme
 
 Can you get the flag?
 Reverse engineer this binary.
