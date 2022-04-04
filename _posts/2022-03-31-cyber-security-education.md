@@ -168,7 +168,7 @@ This blog post is mainly to keep track and be accountable for myself.
 
 ## Level 2 - Security Operations
 
-- [ ] Investigating Windows <https://tryhackme.com/room/investigatingwindows>
+- [x] Investigating Windows <https://tryhackme.com/room/investigatingwindows>
 - [ ] Juicy Details <https://tryhackme.com/room/juicydetails>
 - [ ] Carnage <https://tryhackme.com/room/c2carnage>
 - [ ] Squid Game <https://tryhackme.com/room/squidgameroom>
@@ -178,27 +178,27 @@ This blog post is mainly to keep track and be accountable for myself.
 
 ## Level 3 - Beginner Forensics
 
-- [ ] Martryohka doll <https://play.picoctf.org/practice/challenge/129?category=4&page=1&solved=0>
-- [ ] Glory of the Garden <https://play.picoctf.org/practice/challenge/44?category=4&page=1&solved=0>
-- [ ] Packets Primer <https://play.picoctf.org/practice/challenge/286?category=4&page=2&solved=0>
-- [ ] Wireshark doo doo doo <https://play.picoctf.org/practice/challenge/115?category=4&page=1&solved=0>
-- [ ] Wireshark two two two <https://play.picoctf.org/practice/challenge/110?category=4&page=1&solved=0>
-- [ ] Trivial flag transfer protocol <https://play.picoctf.org/practice/challenge/103?category=4&page=1&solved=0>
-- [ ] What Lies within <https://play.picoctf.org/practice/challenge/74?category=4&page=2&solved=0>
-- [ ] Illumination <https://app.hackthebox.com/challenges/illumination>
+- [x] Martryohka doll <https://play.picoctf.org/practice/challenge/129?category=4&page=1&solved=0>
+- [x] Glory of the Garden <https://play.picoctf.org/practice/challenge/44?category=4&page=1&solved=0>
+- [x] Packets Primer <https://play.picoctf.org/practice/challenge/286?category=4&page=2&solved=0>
+- [x] Wireshark doo doo doo <https://play.picoctf.org/practice/challenge/115?category=4&page=1&solved=0>
+- [x] Wireshark two two two <https://play.picoctf.org/practice/challenge/110?category=4&page=1&solved=0>
+- [x] Trivial flag transfer protocol <https://play.picoctf.org/practice/challenge/103?category=4&page=1&solved=0>
+- [x] What Lies within <https://play.picoctf.org/practice/challenge/74?category=4&page=2&solved=0>
+- [x] Illumination <https://app.hackthebox.com/challenges/illumination>
 - [ ] Emo <https://app.hackthebox.com/challenges/emo>
 - [ ] Obsecure <https://app.hackthebox.com/challenges/obscure>
-- [ ] Bucket - Cloud Security Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/84>
+- [x] Bucket - Cloud Security Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/84>
 
 ## Level 4 - Memory & Disk Forensics
 
-- [ ] Sleuthkit Intro <https://play.picoctf.org/practice/challenge/301?category=4&page=2&solved=0>
-- [ ] Reminiscent <https://app.hackthebox.com/challenges/reminiscent>
+- [x] Sleuthkit Intro <https://play.picoctf.org/practice/challenge/301?category=4&page=2&solved=0>
+- [x] Reminiscent <https://app.hackthebox.com/challenges/reminiscent>
 - [ ] Hunter - Windows Disk Image Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/32>
 - [ ] Spotlight - Mac Disk Image Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/34>
 - [ ] Ulysses -  Linux Disk Image Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/41>
 - [ ] Banking Troubles - Windows Memory Image Forensics
-- [ ] Detect Log4J <https://cyberdefenders.org/blueteam-ctf-challenges/86>
+- [x] Detect Log4J <https://cyberdefenders.org/blueteam-ctf-challenges/86>
 
 ## Level 5 - Malware and Reverse Engineering
 
