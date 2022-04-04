@@ -33,23 +33,27 @@ You will find the html code for below badges hidden in the repo.
 
 <a href="https://github.com/brootware/Cyber-Security-University"><img src="https://img.shields.io/badge/Completed-Blue%20Team%20Path-blue" /></a>
 
+This blog post is mainly to keep track and be accountable for myself.
+
 # Introduction and Pre-Security
 
 ## Level 1 - Intro
 
-- [ ] OpenVPN <https://tryhackme.com/room/openvpn>
-- [ ] Welcome <https://tryhackme.com/jr/welcome>
-- [ ] Intro to Researching <https://tryhackme.com/room/introtoresearch>
-- [ ] Learn Linux <https://tryhackme.com/room/zthlinux>
-- [ ] Pentesting fundamentals <https://tryhackme.com/room/pentestingfundamentals>
-- [ ] Principles of security <https://tryhackme.com/room/principlesofsecurity>
+- [x] OpenVPN <https://tryhackme.com/room/openvpn>
+- [x] Welcome <https://tryhackme.com/jr/welcome>
+- [x] Intro to Researching <https://tryhackme.com/room/introtoresearch>
+- [x] Linux Fundamentals 1 <https://tryhackme.com/room/linuxfundamentalspart1>
+- [x] Linux Fundamentals 2 <https://tryhackme.com/room/linuxfundamentalspart2>
+- [x] Linux Fundamentals 3 <https://tryhackme.com/room/linuxfundamentalspart3>
+- [x] Pentesting fundamentals <https://tryhackme.com/room/pentestingfundamentals>
+- [x] Principles of security <https://tryhackme.com/room/principlesofsecurity>
 - [ ] Red Team Engagements <https://tryhackme.com/room/redteamengagements>
 - [ ] Crash Course Pentesting <https://tryhackme.com/room/ccpentesting>
 
 **Introductory CTFs to get your feet wet**
 
-- [ ] Google Dorking <https://tryhackme.com/room/googledorking>
-- [ ] OHsint <https://tryhackme.com/room/ohsint>
+- [x] Google Dorking <https://tryhackme.com/room/googledorking>
+- [x] OHsint <https://tryhackme.com/room/ohsint>
 - [ ] Shodan.io <https://tryhackme.com/room/shodan>
 
 # Free-Beginner-Red-Team-Path
@@ -57,11 +61,11 @@ You will find the html code for below badges hidden in the repo.
 ## Level 2 - Tooling
 
 - [ ] Tmux <https://tryhackme.com/room/rptmux>
-- [ ] Nmap <https://tryhackme.com/room/rpnmap>
+- [x] Nmap <https://tryhackme.com/room/rpnmap>
 - [ ] Web Scanning <https://tryhackme.com/room/rpwebscanning>
 - [ ] Sublist3r <https://tryhackme.com/room/rpsublist3r>
-- [ ] Metasploit <https://tryhackme.com/room/rpmetasploit>
-- [ ] Hydra <https://tryhackme.com/room/hydra>
+- [x] Metasploit <https://tryhackme.com/room/rpmetasploit>
+- [x] Hydra <https://tryhackme.com/room/hydra>
 - [ ] Linux Privesc <https://tryhackme.com/room/linuxprivesc>
 - [ ] Web Scanning <https://tryhackme.com/room/rpwebscanning>
 - [ ] Red Team Fundamentals <https://tryhackme.com/room/redteamfundamentals>
@@ -69,27 +73,27 @@ You will find the html code for below badges hidden in the repo.
 
 **Red Team Intro CTFs**
 
-- [ ] Vulnversity - <https://tryhackme.com/room/vulnversity>
-- [ ] Blue - <https://tryhackme.com/room/blue>
+- [x] Vulnversity - <https://tryhackme.com/room/vulnversity>
+- [x] Blue - <https://tryhackme.com/room/blue>
 - [ ] Simple CTF <https://tryhackme.com/room/easyctf>
 - [ ] Bounty Hacker <https://tryhackme.com/room/cowboyhacker>
 
 ## Level 3 - Crypto & Hashes with CTF practice
 
-- [ ] Crack the hash <https://tryhackme.com/room/crackthehash>
+- [x] Crack the hash <https://tryhackme.com/room/crackthehash>
 - [ ] Agent Sudo <https://tryhackme.com/room/agentsudoctf>
 - [ ] The Cod Caper <https://tryhackme.com/room/thecodcaper>
 - [ ] Ice <https://tryhackme.com/room/ice>
-- [ ] Lazy Admin <https://tryhackme.com/room/lazyadmin>
-- [ ] Basic Pentesting <https://tryhackme.com/room/basicpentestingjt>
+- [x] Lazy Admin <https://tryhackme.com/room/lazyadmin>
+- [x] Basic Pentesting <https://tryhackme.com/room/basicpentestingjt>
 
 ## Level 4 - Web
 
-- [ ] OWASP top 10 <https://tryhackme.com/room/owasptop10>
+- [x] OWASP top 10 <https://tryhackme.com/room/owasptop10>
 - [ ] Inclusion <https://tryhackme.com/room/inclusion>
 - [ ] Injection <https://tryhackme.com/room/injection>
-- [ ] Vulnversity <https://tryhackme.com/room/vulnversity>
-- [ ] Basic Pentesting <https://tryhackme.com/room/basicpentestingjt>
+- [x] Vulnversity <https://tryhackme.com/room/vulnversity>
+- [x] Basic Pentesting <https://tryhackme.com/room/basicpentestingjt>
 - [ ] Juiceshop <https://tryhackme.com/room/owaspjuiceshop>
 - [ ] Ignite <https://tryhackme.com/room/ignite>
 - [ ] Overpass <https://tryhackme.com/room/overpass>
@@ -121,8 +125,8 @@ You will find the html code for below badges hidden in the repo.
 - [ ] Ignite <https://tryhackme.com/room/ignite>
 - [ ] Kenobi <https://tryhackme.com/room/kenobi>
 - [ ] Capture the flag <https://tryhackme.com/room/c4ptur3th3fl4g>
-- [ ] Pickle Rick <https://tryhackme.com/room/picklerick>
-- [ ] Insecure Kubernetes <https://tryhackme.com/room/insekube>
+- [x] Pickle Rick <https://tryhackme.com/room/picklerick>
+- [x] Insecure Kubernetes <https://tryhackme.com/room/insekube>
 - [ ] The Great Escape (docker) <https://tryhackme.com/room/thegreatescape>
 - [ ] Solr Exploiting Log4j <https://tryhackme.com/room/solar>
 
@@ -153,14 +157,14 @@ You will find the html code for below badges hidden in the repo.
 ## Level 1 - Tools
 
 - [ ] Windows Fundamentals <https://tryhackme.com/room/windowsfundamentals1xbx>
-- [ ] Nessus <https://tryhackme.com/room/rpnessusredux>
+- [x] Nessus <https://tryhackme.com/room/rpnessusredux>
 - [ ] Mitre <https://tryhackme.com/room/mitre>
 - [ ] Yara <https://tryhackme.com/room/yara>
 - [ ] OpenVAS <https://tryhackme.com/room/openvas>
 - [ ] Intro to Honeypots <https://tryhackme.com/room/introductiontohoneypots>
 - [ ] Volatility <https://tryhackme.com/room/bpvolatility>
 - [ ] Red Line <https://tryhackme.com/room/btredlinejoxr3d>
-- [ ] Autopsy <https://tryhackme.com/room/autopsy2ze0>
+- [x] Autopsy <https://tryhackme.com/room/autopsy2ze0>
 
 ## Level 2 - Security Operations
 
@@ -238,7 +242,9 @@ You will find the html code for below badges hidden in the repo.
 - [ ] OpenVPN <https://tryhackme.com/room/openvpn>
 - [ ] Welcome <https://tryhackme.com/jr/welcome>
 - [ ] Intro to Researching <https://tryhackme.com/room/introtoresearch>
-- [ ] Learn Linux <https://tryhackme.com/room/zthlinux>
+- [ ] Linux Fundamentals 1 <https://tryhackme.com/room/linuxfundamentalspart1>
+- [ ] Linux Fundamentals 2 <https://tryhackme.com/room/linuxfundamentalspart2>
+- [ ] Linux Fundamentals 3 <https://tryhackme.com/room/linuxfundamentalspart3>
 - [ ] Pentesting fundamentals <https://tryhackme.com/room/pentestingfundamentals>
 - [ ] Principles of security <https://tryhackme.com/room/principlesofsecurity>
 - [ ] Red Team Engagements <https://tryhackme.com/room/redteamengagements>
