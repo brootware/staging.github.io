@@ -2,7 +2,6 @@
 layout: post
 title: 'Pico CTF 2022: Cryptography 🔒 🕵'
 date: 2022-04-04 11:35 +0800
-render_with_liquid: false
 categories:
 - CTF
 - Cryptography
@@ -19,7 +18,42 @@ Download the message here.
 Take each number mod 37 and map it to the following character set: 0-25 is the alphabet (uppercase), 26-35 are the decimal digits, and 36 is an underscore.
 Wrap your decrypted message in the picoCTF flag format (i.e. picoCTF{decrypted_message})
 
-<script src="https://gist.github.com/brootware/b70f2ab76bf3a4e0ab6309ca7ac27308.js"></script>
+{% raw %}
+
+```python
+import string
+
+deciDigits = ['26', '27', '28', '29', '30', '31', '32', '33', '34', '35']
+numDict = {}
+for idx in range(len(deciDigits)):
+    numDict[idx] = deciDigits[idx]
+numDict = {v: k for k, v in numDict.items()}
+
+alphaDict = dict(enumerate(string.ascii_uppercase))
+
+def readFileNDecode():
+    with open('message.txt', 'r') as msg:
+        flag = []
+        msg_list = list(filter(None, msg.read().split(' ')))
+        for i in msg_list:
+            i = int(i)
+            modNum = i % 37
+            if modNum < 26:
+                flag.append(alphaDict[modNum])
+            elif modNum < 36:
+                flag.append(numDict[str(modNum)])
+            elif modNum == 36:
+                flag.append('_')
+        flag = map(str, flag)
+        flag = ''.join(flag)
+        picoFlag = f'picoCTF{{{flag}}}'
+        print(picoFlag)
+        
+    
+readFileNDecode()
+```
+
+{% endraw %}
 
 ```bash
 ➜  basicmod1 python basicmod1.py 
