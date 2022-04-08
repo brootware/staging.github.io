@@ -119,7 +119,7 @@ def readFileNDecode():
                 flag.append('_')
         flag = map(str, flag)
         flag = ''.join(flag)
-        picoFlag = f"picoCTF{{{flag}}}"
+        picoFlag = f"picoCTF{ {flag} }"
         print(picoFlag)
 
 
