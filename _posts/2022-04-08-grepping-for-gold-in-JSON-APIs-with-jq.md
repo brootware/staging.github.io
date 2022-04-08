@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grepping for gold in JSON APIs with jq
+title: Grepping for gold in JSON APIs with jq 🔍 📄
 categories:
 - General-tech
 - Misc
