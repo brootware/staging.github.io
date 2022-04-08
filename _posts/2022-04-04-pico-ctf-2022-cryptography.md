@@ -2,6 +2,7 @@
 layout: post
 title: 'Pico CTF 2022: Cryptography 🔒 🕵'
 date: 2022-04-04 11:35 +0800
+render_with_liquid: false
 categories:
 - CTF
 - Cryptography
@@ -17,8 +18,6 @@ We found this weird message being passed around on the servers, we think we have
 Download the message here.
 Take each number mod 37 and map it to the following character set: 0-25 is the alphabet (uppercase), 26-35 are the decimal digits, and 36 is an underscore.
 Wrap your decrypted message in the picoCTF flag format (i.e. picoCTF{decrypted_message})
-
-{% raw %}
 
 ```python
 import string
@@ -52,8 +51,6 @@ def readFileNDecode():
     
 readFileNDecode()
 ```
-
-{% endraw %}
 
 ```bash
 ➜  basicmod1 python basicmod1.py 
