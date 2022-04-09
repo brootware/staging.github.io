@@ -2,6 +2,7 @@
 layout: post
 title: 'Pico CTF 2022: Cryptography 🔒 🕵'
 date: 2022-04-04 11:35 +0800
+render_with_liquid: false
 categories:
 - CTF
 - Cryptography
@@ -44,7 +45,7 @@ def readFileNDecode():
                 flag.append('_')
         flag = map(str, flag)
         flag = ''.join(flag)
-        picoFlag = f"picoCTF{{{flag}}}"
+        picoFlag = f'picoCTF{{{flag}}}'
         print(picoFlag)
         
     
