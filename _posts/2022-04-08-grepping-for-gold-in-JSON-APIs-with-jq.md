@@ -85,7 +85,7 @@ How about only returning values of `name` from the responses?
 
 ## Querying complex API responses
 
-Alright, let's get into a little more complex API response. Below is an output of a response where the response has a key with a nested JSON value in it.
+Alright, let's get into a little more complex API response. Below is an output of a response where the response has a key called `"dataseries"` with an array of nested JSON objects in it.
 
 ```bash
 ✗ curl https://www.7timer.info/bin/astro.php\?lon\=113.2\&lat\=23.1\&ac\=0\&unit\=metric\&output\=json\&tzshift\=0 | jq
