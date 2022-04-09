@@ -27,7 +27,7 @@ If you are not on a linux distro or on a windows machine, curl might not be inst
 With that out of the way, let's start working with a sample API. Below is a sample query response after curling to the endpoint.
 
 ```bash
-✗ curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane
+curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane
 [{"name":"michael","age":70,"count":233482},{"name":"matthew","age":36,"count":34742},{"name":"jane","age":36,"count":35010}]
 ```
 
@@ -36,7 +36,7 @@ We can see that the response is a little hard to read. 🥴
 This is where Jq comes into save the day. Below is a sample query response piped with Jq.
 
 ```bash
-✗ curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq
+curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq
 [
   {
     "name": "michael",
@@ -59,7 +59,7 @@ This is where Jq comes into save the day. Below is a sample query response piped
 You can do a lot more with jq than just prettifying JSON responses. For example, if you want to filter on just michael from the response we can do a query as below.
 
 ```bash
-✗  curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq '.[0]'
+curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq '.[0]'
 {
   "name": "michael",
   "age": 70,
@@ -70,14 +70,14 @@ You can do a lot more with jq than just prettifying JSON responses. For example,
 To further drill down to a value such as `age` within michael's profile we can append the key as below in the query.
 
 ```bash
-✗  curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq '.[0].age'
+curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq '.[0].age'
 70
 ```
 
 How about only returning values of `name` from the responses?
 
 ```bash
-✗  curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq '.[].name'
+curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq '.[].name'
 "michael"
 "matthew"
 "jane"
@@ -88,7 +88,7 @@ How about only returning values of `name` from the responses?
 Alright, let's get into a little more complex API response. Below is an output of a response where the response has a key called `"dataseries"` with an array of nested JSON objects in it.
 
 ```bash
-✗ curl https://www.7timer.info/bin/astro.php\?lon\=113.2\&lat\=23.1\&ac\=0\&unit\=metric\&output\=json\&tzshift\=0 | jq
+curl https://www.7timer.info/bin/astro.php\?lon\=113.2\&lat\=23.1\&ac\=0\&unit\=metric\&output\=json\&tzshift\=0 | jq
 {
   "product": "astro",
   "init": "2022040806",
@@ -127,12 +127,12 @@ Alright, let's get into a little more complex API response. Below is an output o
 If we want to access the speed of the wind from the first object of the `"dataseries"` key we will have to run the query as below.
 
 ```bash
-✗ curl https://www.7timer.info/bin/astro.php\?lon\=113.2\&lat\=23.1\&ac\=0\&unit\=metric\&output\=json\&tzshift\=0 | jq '.dataseries[0].wind10m'
+curl https://www.7timer.info/bin/astro.php\?lon\=113.2\&lat\=23.1\&ac\=0\&unit\=metric\&output\=json\&tzshift\=0 | jq '.dataseries[0].wind10m'
 {
   "direction": "NW",
   "speed": 2
 }
-✗ curl https://www.7timer.info/bin/astro.php\?lon\=113.2\&lat\=23.1\&ac\=0\&unit\=metric\&output\=json\&tzshift\=0 | jq '.dataseries[0].wind10m.speed'
+curl https://www.7timer.info/bin/astro.php\?lon\=113.2\&lat\=23.1\&ac\=0\&unit\=metric\&output\=json\&tzshift\=0 | jq '.dataseries[0].wind10m.speed'
 2
 ```
 
