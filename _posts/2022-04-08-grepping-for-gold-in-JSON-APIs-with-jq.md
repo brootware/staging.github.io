@@ -14,7 +14,7 @@ date: 2022-04-08 19:53 +0800
 ---
 ## Introduction
 
-When you are working with cloud, REST APIs or any type of web service, you will come across a lightweight data-interchange format called JSON (JavaScript Object Notation). I won't go much into details about JSON here as we are mainly focusing on filtering and finding data using Grep and a tool called Jq (Json Query : a command-line json processor) from these API responses in this tutorial. You can think of Jq like `grep` for JSON APIs.
+When you are working with cloud, REST APIs or any type of web service, you will come across a lightweight data-interchange format called JSON (JavaScript Object Notation). I won't go much into details about JSON here as we are mainly focusing on filtering and finding data using a tool called Jq (Json Query : a command-line json processor) from these API responses in this tutorial. You can think of Jq like `grep` for JSON APIs.
 
 ## Guide on setting up
 
