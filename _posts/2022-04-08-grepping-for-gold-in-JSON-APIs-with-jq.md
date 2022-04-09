@@ -14,11 +14,11 @@ date: 2022-04-08 19:53 +0800
 ---
 ## Introduction
 
-When you are working with cloud, REST APIs or any type of web service, you will come across a lightweight data-interchange format called JSON (JavaScript Object Notation). I won't go much into details about JSON here as we are mainly focusing on filtering and finding data using Grep and a tool called Jq (Json Query : a command-line json processor) from these API responses in this tutorial.
+When you are working with cloud, REST APIs or any type of web service, you will come across a lightweight data-interchange format called JSON (JavaScript Object Notation). I won't go much into details about JSON here as we are mainly focusing on filtering and finding data using Grep and a tool called Jq (Json Query : a command-line json processor) from these API responses in this tutorial. You can think of Jq like `grep` for JSON APIs.
 
 ## Guide on setting up
 
-First we will need to install Jq from <https://stedolan.github.io/jq/download/>. The installation process should be fairly straightforward depending on your operating system. You can think of Jq like `grep` for JSON APIs.
+First we will need to install Jq from <https://stedolan.github.io/jq/download/>. The installation process should be fairly straightforward depending on your operating system.
 
 If you are not on a linux distro or on a windows machine, curl might not be installed by default. You can download binary from [here](https://curl.se/windows/) or follow [this tutorial](https://developer.zendesk.com/documentation/developer-tools/getting-started/installing-and-using-curl/#installing-curl) on installing curl on windows.
 
@@ -67,7 +67,7 @@ You can do a lot more with jq than just prettifying JSON responses. For example,
 }
 ```
 
-To further drill down to a value such as `age` within michael's profile we can give append the key as below in the query.
+To further drill down to a value such as `age` within michael's profile we can append the key as below in the query.
 
 ```bash
 ✗  curl https://api.agify.io/\?name\[\]\=michael\&name\[\]\=matthew\&name\[\]\=jane | jq '.[0].age'
