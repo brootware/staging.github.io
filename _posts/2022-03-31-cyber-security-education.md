@@ -132,7 +132,7 @@ This blog post is mainly to keep track and be accountable for myself.
 
 > Congratulations!! You have finished Red Team Path and are now familiar with red team concepts
 
-## Bonus CTF practice
+## Bonus CTF practice & Latest CVEs
 
 - [ ] Post Exploitation Basics <https://tryhackme.com/room/postexploit>
 - [ ] Smag Grotto <https://tryhackme.com/room/smaggrotto>
@@ -143,6 +143,10 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Overpass <https://tryhackme.com/room/overpass>
 - [ ] Break out the cage <https://tryhackme.com/room/breakoutthecage1>
 - [ ] Lian Yu <https://tryhackme.com/room/lianyu>
+- [ ] Insecure Kubernetes <https://tryhackme.com/room/insekube>
+- [ ] The Great Escape (docker) <https://tryhackme.com/room/thegreatescape>
+- [ ] Solr Exploiting Log4j <https://tryhackme.com/room/solar>
+- [ ] Spring4Shell <https://tryhackme.com/room/spring4shell>
 
 ## Bonus Windows
 
@@ -166,7 +170,7 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Red Line <https://tryhackme.com/room/btredlinejoxr3d>
 - [x] Autopsy <https://tryhackme.com/room/autopsy2ze0>
 
-## Level 2 - Security Operations
+## Level 2 - Security Operations & Incident Response
 
 - [x] Investigating Windows <https://tryhackme.com/room/investigatingwindows>
 - [ ] Juicy Details <https://tryhackme.com/room/juicydetails>
@@ -176,7 +180,7 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Splunk Boss of the SOC V2 <https://cyberdefenders.org/blueteam-ctf-challenges/16>
 - [ ] Splunk Boss of the SOC V3 <https://cyberdefenders.org/blueteam-ctf-challenges/8>
 
-## Level 3 - Beginner Forensics
+## Level 3 - Beginner Forensics & Cryptography
 
 - [x] Martryohka doll <https://play.picoctf.org/practice/challenge/129?category=4&page=1&solved=0>
 - [x] Glory of the Garden <https://play.picoctf.org/practice/challenge/44?category=4&page=1&solved=0>
@@ -189,6 +193,7 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Emo <https://app.hackthebox.com/challenges/emo>
 - [ ] Obsecure <https://app.hackthebox.com/challenges/obscure>
 - [x] Bucket - Cloud Security Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/84>
+- [x] Introduction to Cryptohack <https://cryptohack.org/courses/intro/course_details/>
 
 ## Level 4 - Memory & Disk Forensics
 
@@ -328,11 +333,8 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Kenobi <https://tryhackme.com/room/kenobi>
 - [ ] Capture the flag <https://tryhackme.com/room/c4ptur3th3fl4g>
 - [ ] Pickle Rick <https://tryhackme.com/room/picklerick>
-- [ ] Insecure Kubernetes <https://tryhackme.com/room/insekube>
-- [ ] The Great Escape (docker) <https://tryhackme.com/room/thegreatescape>
-- [ ] Solr Exploiting Log4j <https://tryhackme.com/room/solar>
 
-## Bonus CTF practice
+## Bonus CTF practice & Latest CVEs
 
 - [ ] Post Exploitation Basics <https://tryhackme.com/room/postexploit>
 - [ ] Smag Grotto <https://tryhackme.com/room/smaggrotto>
@@ -343,6 +345,10 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Overpass <https://tryhackme.com/room/overpass>
 - [ ] Break out the cage <https://tryhackme.com/room/breakoutthecage1>
 - [ ] Lian Yu <https://tryhackme.com/room/lianyu>
+- [ ] Insecure Kubernetes <https://tryhackme.com/room/insekube>
+- [ ] The Great Escape (docker) <https://tryhackme.com/room/thegreatescape>
+- [ ] Solr Exploiting Log4j <https://tryhackme.com/room/solar>
+- [ ] Spring4Shell <https://tryhackme.com/room/spring4shell>
 
 ## Bonus Windows
 
@@ -356,32 +362,31 @@ This blog post is mainly to keep track and be accountable for myself.
 ## Blue Team Markdown Version
 
 ```markdown
-# Free Beginner Blue Team Path
+# Free-Beginner-Blue-Team-Path
 
 ## Level 1 - Tools
 
 - [ ] Windows Fundamentals <https://tryhackme.com/room/windowsfundamentals1xbx>
-- [x] Nessus <https://tryhackme.com/room/rpnessusredux>
+- [ ] Nessus <https://tryhackme.com/room/rpnessusredux>
 - [ ] Mitre <https://tryhackme.com/room/mitre>
 - [ ] Yara <https://tryhackme.com/room/yara>
 - [ ] OpenVAS <https://tryhackme.com/room/openvas>
 - [ ] Intro to Honeypots <https://tryhackme.com/room/introductiontohoneypots>
-- [x] Volatility <https://tryhackme.com/room/bpvolatility>
+- [ ] Volatility <https://tryhackme.com/room/bpvolatility>
 - [ ] Red Line <https://tryhackme.com/room/btredlinejoxr3d>
 - [ ] Autopsy <https://tryhackme.com/room/autopsy2ze0>
 
-## Level 2 - Security Operations
+## Level 2 - Security Operations & Incident Response
 
 - [ ] Investigating Windows <https://tryhackme.com/room/investigatingwindows>
 - [ ] Juicy Details <https://tryhackme.com/room/juicydetails>
 - [ ] Carnage <https://tryhackme.com/room/c2carnage>
 - [ ] Squid Game <https://tryhackme.com/room/squidgameroom>
-- [ ] Attacktive Directory <https://tryhackme.com/room/attacktivedirectory>
 - [ ] Splunk Boss of the SOC V1 <https://tryhackme.com/room/bpsplunk>
 - [ ] Splunk Boss of the SOC V2 <https://cyberdefenders.org/blueteam-ctf-challenges/16>
 - [ ] Splunk Boss of the SOC V3 <https://cyberdefenders.org/blueteam-ctf-challenges/8>
 
-## Level 3 - Beginner Forensics
+## Level 3 - Beginner Forensics & Cryptography
 
 - [ ] Martryohka doll <https://play.picoctf.org/practice/challenge/129?category=4&page=1&solved=0>
 - [ ] Glory of the Garden <https://play.picoctf.org/practice/challenge/44?category=4&page=1&solved=0>
@@ -394,6 +399,7 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Emo <https://app.hackthebox.com/challenges/emo>
 - [ ] Obsecure <https://app.hackthebox.com/challenges/obscure>
 - [ ] Bucket - Cloud Security Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/84>
+- [ ] Introduction to Cryptohack <https://cryptohack.org/courses/intro/course_details/>
 
 ## Level 4 - Memory & Disk Forensics
 
@@ -402,7 +408,7 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Hunter - Windows Disk Image Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/32>
 - [ ] Spotlight - Mac Disk Image Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/34>
 - [ ] Ulysses -  Linux Disk Image Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/41>
-- [ ] Banking Troubles - Windows Memory Image Forensics
+- [ ] Banking Troubles - Windows Memory Image Forensics <https://cyberdefenders.org/blueteam-ctf-challenges/43>
 - [ ] Detect Log4J <https://cyberdefenders.org/blueteam-ctf-challenges/86>
 
 ## Level 5 - Malware and Reverse Engineering
@@ -414,7 +420,6 @@ This blog post is mainly to keep track and be accountable for myself.
 - [ ] Windows x64 Assembly <https://tryhackme.com/room/win64assembly>
 - [ ] JVM reverse engineering <https://tryhackme.com/room/jvmreverseengineering>
 - [ ] Get PDF (Malicious Document) <https://cyberdefenders.org/blueteam-ctf-challenges/47>
-
 ```
 
 ## Extremely Hard rooms Markdown Version
