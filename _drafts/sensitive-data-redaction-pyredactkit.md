@@ -7,6 +7,8 @@ tags: [Projects, security-toolkit, Python, Data-redaction, data-security, log-re
 
 # Introduction
 
+The tool is an inspiration of Ben's original [redact-py cli tool](https://github.com/ben-labs/redact-py) that redacts ip addresses from log files. The tool
+
 # First implementation
 
 # Bottle necks and slow performance
@@ -14,3 +16,6 @@ tags: [Projects, security-toolkit, Python, Data-redaction, data-security, log-re
 # Optimizing and refactoring code for speed
 
 # Todos and enhancements
+
+- [ ] Singapore NRIC
+- [ ] Multiprocessing files
