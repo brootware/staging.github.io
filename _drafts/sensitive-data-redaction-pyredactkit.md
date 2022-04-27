@@ -15,6 +15,56 @@ PyRedactKit aims to sanitize and redact Personally Identifiable Information (PII
 
 # Bottle necks and slow performance
 
+## Single-file processing bottle neck
+
+## Multi-file processing bottle neck
+
+```bash
+➜  PyRedactKit git:(main) time python pyredactkit.py multiredact -d redacted_dir
+
+    ______       ______         _            _     _   ___ _   
+    | ___ \      | ___ \       | |          | |   | | / (_) |  
+    | |_/ /   _  | |_/ /___  __| | __ _  ___| |_  | |/ / _| |_ 
+    |  __/ | | | |    // _ \/ _` |/ _` |/ __| __| |    \| | __|
+    | |  | |_| | | |\ \  __/ (_| | (_| | (__| |_  | |\  \ | |_ 
+    \_|   \__, | \_| \_\___|\__,_|\__,_|\___|\__| \_| \_/_|\__|
+           __/ |                                               
+           |___/                                                                                                           
+            +-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+-+
+            |P|o|w|e|r|e|d| |b|y| |B|r|o|o|t|w|a|r|e|
+            +-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+-+
+            
+    https://github.com/brootware
+    https://brootware.github.io                                                                             
+    
+[ + ] redacted_dir directory does not exist, creating it.
+[ + ] Processing starts now. This may take some time depending on the file size. Monitor the redacted file size to monitor progress
+[ + ] No option supplied, will be redacting all the sensitive data supported
+
+[ + ] Redacted 10038 targets...
+[ + ] Took 10.545741081237793 seconds to execute
+[ + ] Redacted results saved to redacted_dir/redacted_ip_test 2.txt
+[ + ] Processing starts now. This may take some time depending on the file size. Monitor the redacted file size to monitor progress
+[ + ] No option supplied, will be redacting all the sensitive data supported
+
+[ + ] Redacted 10038 targets...
+[ + ] Took 10.369873046875 seconds to execute
+[ + ] Redacted results saved to redacted_dir/redacted_ip_test 4.txt
+[ + ] Processing starts now. This may take some time depending on the file size. Monitor the redacted file size to monitor progress
+[ + ] No option supplied, will be redacting all the sensitive data supported
+
+[ + ] Redacted 10038 targets...
+[ + ] Took 10.294179677963257 seconds to execute
+[ + ] Redacted results saved to redacted_dir/redacted_ip_test 3.txt
+[ + ] Processing starts now. This may take some time depending on the file size. Monitor the redacted file size to monitor progress
+[ + ] No option supplied, will be redacting all the sensitive data supported
+
+[ + ] Redacted 10038 targets...
+[ + ] Took 10.296481847763062 seconds to execute
+[ + ] Redacted results saved to redacted_dir/redacted_ip_test.txt
+python3 pyredactkit.py multiredact -d redacted_dir  42.12s user 0.20s system 100% cpu 41.941 total
+```
+
 # Optimizing and refactoring code for speed
 
 # Todos and enhancements
