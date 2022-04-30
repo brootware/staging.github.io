@@ -13,9 +13,34 @@ PyRedactKit aims to sanitize and redact Personally Identifiable Information (PII
 
 # First implementation
 
+First implementation of the PyRedactKit was straightforward. It uses a library called commonregex, an open source project by Madison May on github.
+
 # Bottle necks and slow performance
 
 ## Single-file processing bottle neck
+
+```bash
+➜  PyRedactKit git:(600fc8f) ✗ time python pyredactkit.py ip_test.txt                                                               
+ 
+    ______       ______         _            _     _   ___ _   
+    | ___ \      | ___ \       | |          | |   | | / (_) |  
+    | |_/ /   _  | |_/ /___  __| | __ _  ___| |_  | |/ / _| |_ 
+    |  __/ | | | |    // _ \/ _` |/ _` |/ __| __| |    \| | __|
+    | |  | |_| | | |\ \  __/ (_| | (_| | (__| |_  | |\  \ | |_ 
+    \_|   \__, | \_| \_\___|\__,_|\__,_|\___|\__| \_| \_/_|\__|
+           __/ |                                               
+           |___/                                                                                                           
+            +-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+-+
+            |P|o|w|e|r|e|d| |b|y| |B|r|o|o|t|w|a|r|e|
+            +-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+-+                                                                             
+     
+[ + ] Processing starts now. This may take some time depending on the file size. Monitor the redacted file size to monitor progress
+[ + ] No option supplied, will be redacting all the sensitive data supported
+
+[ + ] Redacted 10021 targets...
+[ + ] Took 38.12691903114319 seconds to execute
+python3 pyredactkit.py ip_test.txt  67.39s user 0.19s system 99% cpu 1:08.05 total
+```
 
 ## Multi-file processing bottle neck
 
@@ -69,6 +94,7 @@ python3 pyredactkit.py multiredact -d redacted_dir  42.12s user 0.20s system 100
 
 # Todos and enhancements
 
-- [ ] Refactor regex functions as a class?
-- [ ] Singapore NRIC
+- [x] Refactor regex functions as a class?
+- [x] Singapore NRIC
+- [x] Further performance improvement, 10s -> 1.7s for over 4GB data.
 - [ ] Multiprocessing files
