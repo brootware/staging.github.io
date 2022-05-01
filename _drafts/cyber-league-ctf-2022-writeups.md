@@ -1,6 +1,14 @@
 ---
 layout: post
-title: CyberLeagueCTFWriteup
+title: Cyber League CTF 2022 - Writeups
+categories:
+- CTF
+- Web-exploitation
+tags:
+- CTF
+- Web-exploitation
+- Forensics
+- Cyber-League
 ---
 
 ## Simulated bomb drill
