@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyber League CTF 2022 - Writeups
+title: Cyber League CTF 2022 - Writeups 🚩
 categories:
 - CTF
 - Web-exploitation
@@ -11,6 +11,9 @@ tags:
 - Cyber-League
 date: 2022-05-02 10:16 +0800
 ---
+
+> Didn't really have much time to tackle a lot of the challenges with this CTF and only managed to pwn 3 of them. A big shoutout to my team mates Mocha and Dante for a lot of initial enumerations! I just mainly followed their leads 😅
+
 ## Simulated bomb drill
 
 This is the first challenge for the web category in cyber league's CTF. A web endpoint is given for us to start enumerating. When you first hit the main page you are issued a base64 encoded cookie that contains the time in the following format. And at the same time an imaginary bomb timer countdown starts.
