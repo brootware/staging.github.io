@@ -86,6 +86,14 @@ Visit the endpoint and you will be able to get the flag.
 
 ## Write farewell letters
 
+This challenge is the misc category of the CTF. 3 types of installation files are given with flag hidden.
+
+The application is doing nothing much but hiding and showing the message as below.
+
+![yoda](https://bn1304files.storage.live.com/y4mZ-4GT0gAj1OIaP2vgKopCFYLmbTMW8CMGiceqQjOIwTQL0jeezJSFWnsU8vNcWb2IA1NLW1WUZeqImILtFu6mtkrruZJ4DtSDBnp1koFd2k53r1e21PRsADdcbgQcWy8qldFQYQxq27_IYZb1rMjxFepvAyrMrl09F1yJoxynd_FY1QcFtynnFrzfwDQdO1k?width=1134&height=1344&cropmode=none)
+
+I had my suspicioun that this could be an electron app. To decompile it we can use npm's asar to extract the source code. Below is the capture of how i extracted out the electron source code.
+
 ```bash
 ➜  cyleague cd peekaboo.app 
 ➜  peekaboo.app cd Contents 
@@ -105,7 +113,9 @@ da.lproj      fa.lproj      hu.lproj      ml.lproj      pt_PT.lproj   ta.lproj
 ➜  decompile-electron code .
 ```
 
-In js > index.js
+After decompiling, we open the source code in electron to analyse. From root folder navigate to js folder to index.js as below.
+
+```In js > index.js```
 
 ```javascript
 var visibilitySetting = 'hidden'
@@ -133,6 +143,8 @@ function shinyKnob() {
 ```
 
 ## Understand space politics
+
+This is a forensics challenge where challengers are given a `.7z` file with flag text underneath. The challenge is straightfoward to crack the zip file password to get the flag. Below is the capture of using zip2john to crack the zip file.
 
 ```bash
 ┌──(kali㉿kali)-[~/Documents]
