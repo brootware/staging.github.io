@@ -169,7 +169,11 @@ Proceeding with incremental:ASCII
 1g 0:00:00:02 DONE 3/3 (2022-05-01 09:13) 0.3521g/s 2067Kp/s 2067Kc/s 2067KC/s cjjlip..2hul83
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
-                                                       
+```
+
+The password is `2hot4u` to extract out the flag.
+
+```bash
 ┌──(kali㉿kali)-[~/Documents]
 └─$ unzip hello_there.zip 
 Archive:  hello_there.zip
