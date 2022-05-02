@@ -13,6 +13,23 @@ tags:
 
 ## Simulated bomb drill
 
+This is the first challenge for the web category in cyber league's CTF. A web endpoint is given for us to start enumerating. When you first hit the main page you are issued a base64 encoded cookie that contains the time in the following format. And at the same time an imaginary bomb timer countdown starts.
+
+![cookie](https://bn1304files.storage.live.com/y4mSu5_wHVLBsroBYQUT9z97CIOX7BLmmwLCzSZhe_sArd5JxbUMIiMDl2K8Q3IXyFsXcjcSbzcholSUdVS-27Ley7PHhZ4KOi6DakV7SyUH-VEbfN6-vyKfSb_EzWxYAKbV8wdjinV1r2p6gDtPw7ewWrHjwmZR2V_DXI2cT-YN0OwDXizBEpOAHs1IoZyYsN2?width=2872&height=936&cropmode=none)
+
+```txt
+2022-05-01 12:41:35.329922
+```
+
+By the time we visit the `/defuse` endpoint, it would be too late and the bomb would have been blown. The bomb needs to be defused with 0 microseconds passed. So it is physically impossible to do this by hand. The algorithm to get the flag endpoint is as below.
+
+1. Decode the base64 time from cookie
+2. Measure the time elasped from the first request
+3. Minus off the time elasped from the cookie time
+4. Encode the new time into the cookie and send the request
+
+We can code the above steps as below in python.
+
 ```python
 import requests
 import base64
@@ -56,6 +73,16 @@ print(res.content)
 """ >>> print(res.content)
 b'<!DOCTYPE html>\n<html>\n<head>\n <title></title>\n <meta charset="utf-8" />\n</head><body>\n<div class="bd-example" align="middle">\n\n<img src="/static/712a8b4446afb5d43da0dea63cd1c13b.jpg"align="middle" />\n\n</div>\n</body>\n</html>' """
 ```
+
+We managed the get the flag endpoint like below.
+
+```html
+<img src="/static/712a8b4446afb5d43da0dea63cd1c13b.jpg"align="middle" />
+```
+
+Visit the endpoint and you will be able to get the flag.
+
+![flag](https://bn1304files.storage.live.com/y4mZLD6Ua4apnvDZjqDKWnzRFYFCsqkIm-c1GpA0_AMbdm8vp3qwR27yEkIssKJ7iVkcQPPeGryziw-4e9dC8ijsw2-9RCFGbeAh2HgFtWampNx94gZwH8shXi-siMMX_zED4XYBtEAK_3YmXvxVFxWW57iEateBhtfOiB2jNQvlDfcHdMH56ycnRwfyLyml9sL?width=533&height=496&cropmode=none)
 
 ## Write farewell letters
 
