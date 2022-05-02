@@ -95,7 +95,7 @@ The application is doing nothing much but hiding and showing the message as belo
 
 ![yoda](https://bn1304files.storage.live.com/y4mZ-4GT0gAj1OIaP2vgKopCFYLmbTMW8CMGiceqQjOIwTQL0jeezJSFWnsU8vNcWb2IA1NLW1WUZeqImILtFu6mtkrruZJ4DtSDBnp1koFd2k53r1e21PRsADdcbgQcWy8qldFQYQxq27_IYZb1rMjxFepvAyrMrl09F1yJoxynd_FY1QcFtynnFrzfwDQdO1k?width=1134&height=1344&cropmode=none)
 
-I had my suspicioun that this could be an electron app. To decompile it we can use npm's asar to extract the source code. Below is the capture of how i extracted out the electron source code.
+I had my suspicion that this could be an electron app. To decompile it we can use npm's asar to extract the source code. Below is the capture of how i extracted out the electron source code.
 
 ```bash
 ➜  cyleague cd peekaboo.app 
