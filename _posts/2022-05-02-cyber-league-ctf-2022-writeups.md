@@ -89,7 +89,7 @@ Visit the endpoint and you will be able to get the flag.
 
 ## Write farewell letters
 
-This challenge is the misc category of the CTF. 3 types of installation files are given with flag hidden.
+This challenge is the misc category of the CTF. 3 types of installation files are given with flag hidden. `.dmg` `.exe` and `.appimage`. You simply have to run them to get the binary file to run the application.
 
 The application is doing nothing much but hiding and showing the message as below.
 
