@@ -16,15 +16,26 @@ date: 2022-05-02 10:16 +0800
 
 ## Simulated bomb drill
 
-This is the first challenge for the web category in cyber league's CTF. A web endpoint is given for us to start enumerating. When you first hit the main page you are issued a base64 encoded cookie that contains the time in the following format. And at the same time an imaginary bomb timer countdown starts.
-
-![cookie](https://bn1304files.storage.live.com/y4mSu5_wHVLBsroBYQUT9z97CIOX7BLmmwLCzSZhe_sArd5JxbUMIiMDl2K8Q3IXyFsXcjcSbzcholSUdVS-27Ley7PHhZ4KOi6DakV7SyUH-VEbfN6-vyKfSb_EzWxYAKbV8wdjinV1r2p6gDtPw7ewWrHjwmZR2V_DXI2cT-YN0OwDXizBEpOAHs1IoZyYsN2?width=2872&height=936&cropmode=none)
+This is the first challenge for the web category in cyber league's CTF. A web endpoint is given for us to start enumerating. When you first hit the main page you are issued a base64 encoded cookie that contains the time in the following format.
 
 ```txt
 2022-05-01 12:41:35.329922
 ```
 
-By the time we visit the `/defuse` endpoint, it would be too late and the bomb would have been blown. The bomb needs to be defused with 0 microseconds passed. So it is physically impossible to do this by hand. The algorithm to get the flag endpoint is as below.
+From the time format given above, note that there are microseconds. This was missed initially as our team enumerates for possible way to exploit this cookie. During the initial request to the main page and by the time the cookie is issued, a few microseconds have already passed.
+
+![blown](https://bn1304files.storage.live.com/y4m4NKAA6TjHq4cvH4qK3FLr6jSkGSSZKUbekVgqo8YhCrpC_iqsHaYPcLHrQ-aIT8r-cyL03phkYBX1lD8Gy8CwdR-cwp6OeUlHVBQKhh1VBK7XTISZo4FdvkIszcMYMKEpFNAQlA8exKP3Y1yEMPZZzuAqMwgYlJPJ4vTv8rpQjfNnTxcHCnJu__1d7CCL_NP?width=2280&height=1068&cropmode=none)
+
+Above is an illustration of the time line. So
+
+- If you visit with the issued cookie under a minute to `/defuse` page, you will fail.
+- If you also modified the cookie to be one minute earlier, you will still fail.
+
+![cookie](https://bn1304files.storage.live.com/y4mSu5_wHVLBsroBYQUT9z97CIOX7BLmmwLCzSZhe_sArd5JxbUMIiMDl2K8Q3IXyFsXcjcSbzcholSUdVS-27Ley7PHhZ4KOi6DakV7SyUH-VEbfN6-vyKfSb_EzWxYAKbV8wdjinV1r2p6gDtPw7ewWrHjwmZR2V_DXI2cT-YN0OwDXizBEpOAHs1IoZyYsN2?width=2872&height=936&cropmode=none)
+
+The above is the screenshot of the main page with issued cookie.
+
+Since the bomb needs to be defused with 0 microseconds passed from the time of request (not the time of cookie issued), it is physically impossible to do this by hand. So the best way is to script this out in python. The algorithm to get the flag endpoint is as below.
 
 1. Decode the base64 time from cookie
 2. Measure the time elasped from the first request
