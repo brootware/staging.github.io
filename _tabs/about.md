@@ -20,4 +20,8 @@ Welcome! This is a personal blog site to share my CTF writeups, Cyber Defense (B
 
 <script src="https://tryhackme.com/badge/242534"></script>
 
+## A disclaimer as usual
+
+The views and opinions shown on this website are of my own and not necessarily the viewpoint of my employer.
+
 <!-- > **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page. -->
