@@ -92,9 +92,13 @@ python3 pyredactkit.py multiredact -d redacted_dir  42.12s user 0.20s system 100
 
 # Optimizing and refactoring code for speed
 
+# Implementing Unredaction function
+
 # Todos and enhancements
 
 - [x] Refactor regex functions as a class?
 - [x] Singapore NRIC
 - [x] Further performance improvement, 10s -> 1.7s for over 4GB data.
+- [x] Tokenization for unredacting data
+- [x] Base64 supoort
 - [ ] Multiprocessing files
