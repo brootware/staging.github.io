@@ -94,6 +94,8 @@ python3 pyredactkit.py multiredact -d redacted_dir  42.12s user 0.20s system 100
 
 # Implementing Unredaction function
 
+# Automating CICD
+
 # Todos and enhancements
 
 - [x] Refactor regex functions as a class?
