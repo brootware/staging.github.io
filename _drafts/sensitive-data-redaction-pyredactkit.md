@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sensitive data redaction tool - PyRedactKit 🧰🔐📝
+title: Sensitive data redaction/unredaction tool - PyRedactKit 🧰🔐📝
 categories: [Projects, security-toolkit]
 tags: [Projects, security-toolkit, Python, Data-redaction, data-security, log-redaction]
 ---
@@ -13,7 +13,9 @@ PyRedactKit aims to sanitize and redact Personally Identifiable Information (PII
 
 # First implementation
 
-First implementation of the PyRedactKit was straightforward. I took inspiration from a couple of projects involving  It uses a library called commonregex, an open source project by Madison May on github.
+First implementation of the PyRedactKit was straightforward. I took inspiration and used libraries from a couple of open source projects  [commonregex](https://github.com/madisonmay/CommonRegex), an open source project by Madison May on github. There are simple wrapper functions that calls the commonregex library to search for the sensitive data in a text file. It worked great for a start.
+
+But as I ran it on bigger and bigger log files with a few hundred thousands of records, the run time suffered.
 
 # Bottle necks and slow performance
 
@@ -41,6 +43,42 @@ First implementation of the PyRedactKit was straightforward. I took inspiration 
 [ + ] Took 38.12691903114319 seconds to execute
 python3 pyredactkit.py ip_test.txt  67.39s user 0.19s system 99% cpu 1:08.05 total
 ```
+
+For a single file with over 12k lines of records, it took over a minute to complete. If we pay attention to the last two lines, there were 2 parts that were taking half a minute each.
+
+```console
+[ + ] Took 38.12691903114319 seconds to execute
+python3 pyredactkit.py ip_test.txt  67.39s user 0.19s system 99% cpu 1:08.05 total
+```
+
+The first part was on this [particular function](https://github.com/brootware/PyRedactKit/blob/600fc8f65d629560608fc436f61614bc74a427e8/src/redact.py#L174).
+
+```python
+    def to_redact(self, data=str, redact_list=[]):
+        redact_count = 0
+        start = time.time()
+
+        for elm in redact_list:
+            total_elm = len(elm)
+            # encode element to be blocked
+            elm = r'\b' + elm + r'\b'
+            # multiply the block with length of identified elements
+            bl = total_elm * self.block
+            # substitute the block using regular expression
+            data = re.sub(elm, bl, data)
+            redact_count += 1
+
+        end = time.time()
+        print()
+        print(f"[ + ] Redacted {redact_count} targets...")
+        time_taken = end - start
+        print(f'[ + ] Took {time_taken} seconds to execute')
+        return data
+```
+
+The function was simply iterating through a list of identified strings returned from the commonregex regular expression library and redacting them from the text files. In terms of time complexity this was linear time increase directly proportional to number of elements in the list. O(n)
+
+An solution was considered to refactor the function in such a way that a binary search is used instead of linear search. However, as the list could not really be sorted I had to come up with alternative solution.
 
 ## Multi-file processing bottle neck
 
@@ -92,15 +130,18 @@ python3 pyredactkit.py multiredact -d redacted_dir  42.12s user 0.20s system 100
 
 # Optimizing and refactoring code for speed
 
+# Automating CICD
+
 # Implementing Unredaction function
 
-# Automating CICD
+# Reporting function to show man hour saved
 
 # Todos and enhancements
 
 - [x] Refactor regex functions as a class?
 - [x] Singapore NRIC
 - [x] Further performance improvement, 10s -> 1.7s for over 4GB data.
+- [x] Reporting function to show how much hours you have saved by using the tool.
 - [x] Tokenization for unredacting data
 - [x] Base64 supoort
 - [ ] Multiprocessing files
