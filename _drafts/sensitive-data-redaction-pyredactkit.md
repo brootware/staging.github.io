@@ -188,9 +188,52 @@ Currently I have implemented code scanning with sonarqube for detecting any code
 
 This feature is by far the most requested amongst my colleagues. The original data is lost once you have redacted it and finding back out what was the original data in the log file manually is a very tedious process.
 
+First design consideration to remedy this is to hash and salt the original sensitive data and store them as a `key:value` pair in hashtable(hashmap) format.
+
+```json
+{"hash('sensitive data' + salt)" : "sensitive data"}
+```
+
+However, this design did not make much sense as this implementation is used more for storing username and password for authentication. At the time of this writing and with the limited test cases I have gone through I have opted to go for using a Universally unique identifier `uuid()` instead to map to sensitive data. So the design looks something like below for the implementation.
+
+```json
+{"uuid()" : "sensitive data"}
+```
+
+During the redaction, there will be a hashmap of `key:value` pairs generated and stored in a file called `.hashshadow_filename.json` as a dot file together with a `redacted_logfile.txt`.
+
+There are a pros and cons to this design.
+
+Pros - As the UUID strings generated have a [.00000006 chance of two uuids being the same](https://stackoverflow.com/questions/292965/what-is-a-uuid) according to stackoverflow. So a malicious user will not be able to use a [dictionary attack](https://security.stackexchange.com/questions/67712/what-are-the-differences-between-dictionary-attack-and-brute-force-attack) to bruteforce the original data. Keeping this hashshadow file safe is very important if you need to unredact the data and of course away from the attackers too!
+
+Cons - The UUID strings generated will sometimes clash with the regular expression of Singapore NRIC or Credit Cards which creates an extra record in `.hashshadow_filename.json` file. Here's an example
+
+![uuidclash](https://bn1304files.storage.live.com/y4mdcXDw9q6clVupqFLERH2u9dsXdoaVS8cIxcKJr0pb0SqMdpBBlz3LEIa_bxZVrl7T95cHp5vd9REOgK6eJnOsVNeDpzvFaZqHoWwZ-bsR3GkZv0VmMtsEC5f6g9v3rpTfZy13l0XNdMTB7eyG3UXHyaMPGVswSgU4j2XSopePuAPfJ74Vc_wBzyTgwaWaRsz?width=1286&height=158&cropmode=none)
+
+The regex actually picks up the valid NRIC pattern from a UUID string and creates an extra record. This is a very instance and currently in the limited test case does not effect the data unredaction functionally. Only when there are trillions of records, I would probably start to see some edge cases.
+
 # Reporting function to show man hour saved
 
+This function is actually a nice cosmetic feature implemented to see how much man hours saved if you were to manually look through the log files without any help of regex or text finding tools.
+
+The report is generated as `manhour_saved_filename.txt` and provides the details as below.
+
+```txt
+[ + ] Estimated total words : 30316
+[ + ] Estimated total minutes saved : 405
+[ + ] Estimated total man hours saved : 6
+```
+
+The algorithm behind this is quite simple and it is actually the same as the algorithm behind reading time that you saw earlier at the start of this blog.
+
+```python
+reading_minutes = math.ceil(total_words/Word_Per_Minute_Read)
+reading_hours = math.floor(reading_minutes/60)
+```
+
 # Todos and enhancements
+
+Here is a roadmap of what's in store for PyRedactKit. If you would like to contribute and extend regex identifier database please check out the [guide](https://github.com/brootware/PyRedactKit/wiki/Contributing).
 
 - [x] Refactor regex functions as a class?
 - [x] Singapore NRIC
@@ -202,5 +245,6 @@ This feature is by far the most requested amongst my colleagues. The original da
 - [ ] Implement building python app and pushing to Pypi in CD
 - [ ] Dockerise the app for distribution
 - [ ] Multiprocessing files
+- [ ] UUID clash on hashmap generation?
 
 If you feel that there are suggestions or ideas you have in mind that could enhance the tool please feel free to create an [issue](https://github.com/brootware/PyRedactKit/issues) here to let me know!
