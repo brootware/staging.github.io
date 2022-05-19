@@ -188,7 +188,7 @@ This is currently on the [TODO list](#-todos-and-enhancements) to explore either
 
 # Automating CICD with github actions
 
-As a single dev working on this project, Github Actions are a godsent. There are a lot of pre-built tools available in [github marketplace](https://github.com/marketplace?type=actions). We could just define these tools in a YAML format to do code checkout, linting, testing, code scanning and building up the package.
+As a single dev working on this project, Github Actions are a awesome. There are a lot of pre-built tools available in [github marketplace](https://github.com/marketplace?type=actions). We could just define these tools in a YAML format to do code checkout, linting, testing, code scanning and building up the package.
 
 Currently I have implemented code scanning with sonarqube for detecting any code smells and linting python code according to flake8. There are a couple of todos regarding CD that I have listed out in the [Todos and enhancements](#-todos-and-enhancements) section.
 
