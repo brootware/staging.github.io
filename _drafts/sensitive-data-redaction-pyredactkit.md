@@ -188,7 +188,7 @@ This is currently on the TODO list to explore either async or multiprocessing li
 
 - [x] Refactor regex functions as a class?
 - [x] Singapore NRIC
-- [x] Further performance improvement, 10s -> 1.7s for over 4GB data.
+- [x] Performance improvement, 67s -> 1.7s for over 4GB data.
 - [x] Reporting function to show how much hours you have saved by using the tool.
 - [x] Tokenization for unredacting data
 - [x] Base64 supoort
