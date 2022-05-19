@@ -200,6 +200,7 @@ This feature is by far the most requested amongst my colleagues. The original da
 - [x] Base64 supoort
 - [ ] Implement testing in CI
 - [ ] Implement building python app and pushing to Pypi in CD
+- [ ] Dockerise the app for distribution
 - [ ] Multiprocessing files
 
 If you feel that there are suggestions or ideas you have in mind that could enhance the tool please feel free to create an [issue](https://github.com/brootware/PyRedactKit/issues) here to let me know!
