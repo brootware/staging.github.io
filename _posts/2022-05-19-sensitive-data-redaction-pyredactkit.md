@@ -194,7 +194,7 @@ Currently I have implemented code scanning with sonarqube for detecting any code
 
 # Implementing Unredaction function
 
-This feature is by far the most requested amongst my colleagues. The original data is lost once you have redacted it and finding back out what was the original data in the log file manually is a very tedious process.
+This feature is by far the most requested amongst my colleagues. In current design, the original data is lost once you have redacted it and finding back out what was the original data in the log file manually is a very tedious process.
 
 First design consideration to remedy this is to hash and salt the original sensitive data and store them as a `key:value` pair in hashtable(hashmap) format.
 
