@@ -226,7 +226,7 @@ Cons
 
 ![uuidclash](https://bn1304files.storage.live.com/y4mdcXDw9q6clVupqFLERH2u9dsXdoaVS8cIxcKJr0pb0SqMdpBBlz3LEIa_bxZVrl7T95cHp5vd9REOgK6eJnOsVNeDpzvFaZqHoWwZ-bsR3GkZv0VmMtsEC5f6g9v3rpTfZy13l0XNdMTB7eyG3UXHyaMPGVswSgU4j2XSopePuAPfJ74Vc_wBzyTgwaWaRsz?width=1286&height=158&cropmode=none)
 
-The regex actually picks up the valid NRIC pattern from a UUID string and creates an extra record. This is a very rare instance and currently in the limited test case does not effect the data unredaction functionally. Only when there are trillions of records, I would probably start to see some edge cases.
+The regex actually picks up the valid NRIC pattern from a UUID string and creates an extra record. This is a very rare instance and currently in the limited test case I have gone through, it does not effect the data unredaction functionally. Only when there are trillions of records, I would probably start to see some edge cases.
 
 # Reporting function to show man hour saved
 
