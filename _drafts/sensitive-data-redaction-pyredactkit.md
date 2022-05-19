@@ -186,6 +186,8 @@ Currently I have implemented code scanning with sonarqube for detecting any code
 
 # Implementing Unredaction function
 
+This feature is by far the most requested amongst my colleagues. The original data is lost once you have redacted it and finding back out what was the original data in the log file manually is a very tedious process.
+
 # Reporting function to show man hour saved
 
 # Todos and enhancements
@@ -199,3 +201,5 @@ Currently I have implemented code scanning with sonarqube for detecting any code
 - [ ] Implement testing in CI
 - [ ] Implement building python app and pushing to Pypi in CD
 - [ ] Multiprocessing files
+
+If you feel that there are suggestions or ideas you have in mind that could enhance the tool please feel free to create an [issue](https://github.com/brootware/PyRedactKit/issues) here to let me know!
