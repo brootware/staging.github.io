@@ -78,7 +78,19 @@ The first part was on this [particular function](https://github.com/brootware/Py
 
 The function was simply iterating through a list of identified strings returned from the commonregex regular expression library and redacting them from the text files. In terms of time complexity this was linear time increase directly proportional to number of elements in the list. O(n)
 
-An solution was considered to refactor the function in such a way that a binary search is used instead of linear search. However, as the list could not really be sorted I had to come up with alternative solution.
+If we were to run this for multiple log files with hundred thousands of records, the redaction will take much longer.
+
+A solution was considered to refactor the function to use binary search instead of iterative linear search. However, as the list could not really be sorted I had to come up with alternative solution.
+
+An alternative to this is to not store the identified regex strings in a list but rather redact them on the fly. In order to achieve that I had to stop using the commonregex library by madison may and build the regex library from scratch.
+
+So a separate class for identifier is created to maintain a database of regular expressions with data type for redaction. This made the project extensible and much cleaner. Contributors can also extend the type of data they want to redact just by modifying this particular [regex library](pyredactkit/identifiers.py).
+
+With these new and better implementations, I was able to reduce the time from 67 seconds to a mere 1 second for a single file redaction.
+
+```bash
+pyredactkit.py ip_test.txt  1.74s user 0.13s system 124% cpu 1.504 total
+```
 
 ## Multi-file processing bottle neck
 
