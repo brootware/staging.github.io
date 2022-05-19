@@ -212,13 +212,17 @@ However, this design did not make much sense as this implementation is used more
 {"uuid()" : "sensitive data"}
 ```
 
-During the redaction, there will be a hashmap of `key:value` pairs generated and stored in a file called `.hashshadow_filename.json` as a dot file together with a `redacted_logfile.txt`.
-
 There are a pros and cons to this design.
 
-Pros - The UUID strings generated have a [.00000006 chance of two uuids being the same](https://stackoverflow.com/questions/292965/what-is-a-uuid) according to stackoverflow. So a malicious user will not be able to use a [dictionary attack](https://security.stackexchange.com/questions/67712/what-are-the-differences-between-dictionary-attack-and-brute-force-attack) to bruteforce the original data. Keeping this hashshadow file safe is very important if you need to unredact the data and of course away from the attackers too!
+Pros
 
-Cons - The UUID strings generated will sometimes clash with the regular expression of Singapore NRIC or Credit Cards which creates an extra record in `.hashshadow_filename.json` file. Here's an example
+- During the redaction, there will be a hashmap of `key:value` pairs generated and stored in a file called `.hashshadow_filename.json` as a dot file together with a `redacted_logfile.txt`. This is a 1:1 generation. You will not be able to use a hashshadow file generated from the copy of an original log file to unredact the original log file.
+
+- The UUID strings generated have a [.00000006 chance of two uuids being the same](https://stackoverflow.com/questions/292965/what-is-a-uuid) according to stackoverflow. So a malicious user will not be able to use a [dictionary attack](https://security.stackexchange.com/questions/67712/what-are-the-differences-between-dictionary-attack-and-brute-force-attack) to bruteforce the original data. Keeping this hashshadow file safe is very important if you need to unredact the data and of course away from the attackers too!
+
+Cons
+
+- The UUID strings generated will sometimes clash with the regular expression of Singapore NRIC or Credit Cards which creates an extra record in `.hashshadow_filename.json` file. Here's an example
 
 ![uuidclash](https://bn1304files.storage.live.com/y4mdcXDw9q6clVupqFLERH2u9dsXdoaVS8cIxcKJr0pb0SqMdpBBlz3LEIa_bxZVrl7T95cHp5vd9REOgK6eJnOsVNeDpzvFaZqHoWwZ-bsR3GkZv0VmMtsEC5f6g9v3rpTfZy13l0XNdMTB7eyG3UXHyaMPGVswSgU4j2XSopePuAPfJ74Vc_wBzyTgwaWaRsz?width=1286&height=158&cropmode=none)
 
