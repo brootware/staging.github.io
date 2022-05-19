@@ -134,7 +134,7 @@ So a separate class for identifier is created to maintain a database of regular 
 ]
 ```
 
-With these new and better implementations, I was able to reduce the time from 67 seconds to a mere 1 second for a single file redaction with over 10k lines of records.
+With these new and better implementations, there was no iteration through a list and redaction function was processing much faster. I was able to reduce the time from 67 seconds to a mere 1 second for a single file redaction with over 10k lines of records.
 
 ```bash
 pyredactkit.py ip_test.txt  1.74s user 0.13s system 124% cpu 1.504 total
