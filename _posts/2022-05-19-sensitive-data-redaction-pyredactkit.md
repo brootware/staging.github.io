@@ -230,7 +230,7 @@ The regex actually picks up the valid NRIC pattern from a UUID string and create
 
 # Reporting function to show man hour saved
 
-This function is actually a nice cosmetic feature implemented to see how much man hours saved if you were to manually look through the log files without any help of regex or text finding tools.
+This function is actually a nice cosmetic feature implemented to see how much man hours you would have used if you were to manually look through the log files without any help of regex or text finding tools. The numbers are only estimates and in no way does not represent actual time used by an engineer with knowledge of `regex, grep, sed` and text editing tools.
 
 The report is generated as `manhour_saved_filename.txt` and provides the details as below.
 
