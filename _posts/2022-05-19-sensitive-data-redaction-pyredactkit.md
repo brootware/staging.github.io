@@ -57,7 +57,7 @@ But as I ran it on bigger and bigger log files with a few hundred thousands of r
 python3 pyredactkit.py ip_test.txt  67.39s user 0.19s system 99% cpu 1:08.05 total
 ```
 
-For a single file with over 12k lines of records, it took over a minute to complete. If we pay attention to the last two lines, there were 2 parts that were taking half a minute each.
+For a single file with over 10k lines of records, it took over a minute to complete. If we pay attention to the last two lines, there were 2 parts that were taking half a minute each.
 
 ```console
 [ + ] Took 38.12691903114319 seconds to execute
@@ -134,7 +134,7 @@ So a separate class for identifier is created to maintain a database of regular 
 ]
 ```
 
-With these new and better implementations, I was able to reduce the time from 67 seconds to a mere 1 second for a single file redaction.
+With these new and better implementations, I was able to reduce the time from 67 seconds to a mere 1 second for a single file redaction with over 10k lines of records.
 
 ```bash
 pyredactkit.py ip_test.txt  1.74s user 0.13s system 124% cpu 1.504 total
