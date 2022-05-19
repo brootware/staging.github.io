@@ -1,11 +1,19 @@
 ---
 layout: post
-title: Sensitive data redaction/unredaction tool - PyRedactKit 🧰🔐📝
-categories: [Projects, security-toolkit]
-tags: [Projects, security-toolkit, Python, Data-redaction, data-security, log-redaction]
+title: "Sensitive data redaction/unredaction tool - PyRedactKit \U0001F9F0\U0001F510\U0001F4DD"
+categories:
+- Projects
+- security-toolkit
+tags:
+- Projects
+- security-toolkit
+- Python
+- Data-redaction
+- data-security
+- log-redaction
 render_with_liquid: false
+date: 2022-05-19 16:18 +0800
 ---
-
 # Introduction
 
 There are a lot of open-source cyber security tools that help automate a lot of the tasks on the Red team/PT side of things like domain enumeration, network scanning, etc. When I searched for a Blue team/defense-focused tool for security and privacy especially redacting data, I could only find a few of them on Github. The PyRedactKit is an inspiration and expansion of Ben's original [redact-py CLI tool](https://github.com/ben-labs/redact-py) that redacts IP addresses from log files.
