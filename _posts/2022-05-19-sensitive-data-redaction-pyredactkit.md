@@ -198,7 +198,7 @@ Currently I have implemented code scanning with sonarqube for detecting any code
 
 # Implementing Unredaction function
 
-This feature is by far the most requested amongst my colleagues. In current design, the original data is lost once you have redacted it and finding back out what was the original data in the log file manually is a very tedious process.
+This feature is by far the most requested amongst my colleagues. In the initial design, the original data is lost once you have redacted it and finding back out what was the original data in the log file manually is a very tedious process.
 
 First design consideration to remedy this is to hash and salt the original sensitive data and store them as a `key:value` pair in hashtable(hashmap) format.
 
@@ -216,7 +216,7 @@ During the redaction, there will be a hashmap of `key:value` pairs generated and
 
 There are a pros and cons to this design.
 
-Pros - As the UUID strings generated have a [.00000006 chance of two uuids being the same](https://stackoverflow.com/questions/292965/what-is-a-uuid) according to stackoverflow. So a malicious user will not be able to use a [dictionary attack](https://security.stackexchange.com/questions/67712/what-are-the-differences-between-dictionary-attack-and-brute-force-attack) to bruteforce the original data. Keeping this hashshadow file safe is very important if you need to unredact the data and of course away from the attackers too!
+Pros - The UUID strings generated have a [.00000006 chance of two uuids being the same](https://stackoverflow.com/questions/292965/what-is-a-uuid) according to stackoverflow. So a malicious user will not be able to use a [dictionary attack](https://security.stackexchange.com/questions/67712/what-are-the-differences-between-dictionary-attack-and-brute-force-attack) to bruteforce the original data. Keeping this hashshadow file safe is very important if you need to unredact the data and of course away from the attackers too!
 
 Cons - The UUID strings generated will sometimes clash with the regular expression of Singapore NRIC or Credit Cards which creates an extra record in `.hashshadow_filename.json` file. Here's an example
 
