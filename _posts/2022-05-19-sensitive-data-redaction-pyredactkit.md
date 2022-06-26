@@ -259,6 +259,7 @@ Here is a roadmap of what's in store for PyRedactKit. If you would like to contr
 - [x] Reporting function to show how much hours you have saved by using the tool.
 - [x] Tokenization for unredacting data
 - [x] Base64 supoort
+- [x] Custom regex pattern definition for power users
 - [ ] Implement testing in CI
 - [ ] Implement building python app and pushing to Pypi in CD
 - [ ] Dockerise the app for distribution
