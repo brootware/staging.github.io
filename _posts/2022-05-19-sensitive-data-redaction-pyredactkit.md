@@ -64,7 +64,9 @@ For a single file with over 10k lines of records, it took over a minute to compl
 python3 pyredactkit.py ip_test.txt  67.39s user 0.19s system 99% cpu 1:08.05 total
 ```
 
-The first part was on this [particular function](https://github.com/brootware/PyRedactKit/blob/600fc8f65d629560608fc436f61614bc74a427e8/src/redact.py#L174).
+The first part of the bottleneck is coming from the commonregex library that is returning the list of identified words to be redacted from the text file. Especially the `re.compile` of regex library which is doing the compilation and searching that takes more time during the redaction.
+
+The second part was on this [particular function](https://github.com/brootware/PyRedactKit/blob/600fc8f65d629560608fc436f61614bc74a427e8/src/redact.py#L174).
 
 ```python
     def to_redact(self, data=str, redact_list=[]):
@@ -89,9 +91,9 @@ The first part was on this [particular function](https://github.com/brootware/Py
         return data
 ```
 
-The function was simply iterating through a list of identified strings returned from the commonregex regular expression library and redacting them from the text files. In terms of time complexity this was linear time increase directly proportional to number of elements in the list. O(n)
+The function was simply iterating through a list of identified strings returned from the commonregex regular expression library and redacting them from the text files. In terms of time complexity this was linear time increase directly proportional to number of elements in the list. O(n) The function itself is not really that big of an issue.
 
-If we were to run this for multiple log files with hundred thousands of records, the redaction will take much longer.
+If we were to run this for multiple log files with hundred thousands of records, the redaction will take much much longer.
 
 ## Optimizing and refactoring code for speed
 
@@ -257,6 +259,7 @@ Here is a roadmap of what's in store for PyRedactKit. If you would like to contr
 - [x] Reporting function to show how much hours you have saved by using the tool.
 - [x] Tokenization for unredacting data
 - [x] Base64 supoort
+- [x] Custom regex pattern definition for power users
 - [ ] Implement testing in CI
 - [ ] Implement building python app and pushing to Pypi in CD
 - [ ] Dockerise the app for distribution
