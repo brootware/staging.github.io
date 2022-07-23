@@ -21,7 +21,7 @@ date: 2022-07-23 20:31 +0800
 
 In the previous blog entry, we looked at the implementation details of PyRedactKit for improving performance, reducing code smells by refactoring, Using automated testing and code scanning with Github Actions. The heart of the cli app is working with regular expressions to identify any sensitive data are found in the ascii text files and mask them if any.
 
-The initial constraint I had to work with are:
+The initial constraints I had to work with are:
 
 * The tool needs to run cross platform
 * Rapidly prototype new features and push them out asap
@@ -29,7 +29,7 @@ The initial constraint I had to work with are:
 
 The tool works great! It has been packaged and started rolling into production. So What next? I heard good things about Go and Rust being performant as compiled languages. Go being good at concurrency for web services and Rust being good at systems performance. However, there is very limited information available for regular expressions performance of each with my specific use case.
 
-Thus, I decided to test things out myself and document my findings in this blog. Hopefully some human would read.
+Thus, I decided to test things out myself and document my findings in this blog. Hopefully this would help someone and give insights to make decisions on their future projects with regards to regex.
 
 ## Baseline setup
 
