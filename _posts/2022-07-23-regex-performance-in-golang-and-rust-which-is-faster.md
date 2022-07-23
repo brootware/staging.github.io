@@ -33,7 +33,7 @@ Thus, I decided to test things out myself and document my findings in this blog.
 
 ## Baseline setup
 
-The baseline setup for both of these two are simple. We will be testing the following of each standard regex libary for Go and Rust:
+The baseline setup for both of the languages are simple. We will be testing the following of each standard regex libary for Go and Rust:
 
 * Regex Match
 * Regex Replace
