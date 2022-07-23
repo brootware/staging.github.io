@@ -18,7 +18,7 @@ date: 2022-05-19 16:18 +0800
 
 > Check out the [project here](<https://github.com/brootware/PyRedactKit>)!
 
-> To start using: `pip install --upgrade pyredactkit && pyredactor`
+> To start using: `pip install --upgrade pyredactkit && prk`
 
 There are a lot of open-source cyber security tools that help automate a lot of the tasks on the Red team/PT side of things like domain enumeration, network scanning, etc. When I searched for a Blue team/defense-focused tool for security and privacy especially redacting data, I could only find a few of them on Github. The PyRedactKit is an inspiration and expansion of Ben's original [redact-py CLI tool](https://github.com/ben-labs/redact-py) that redacts IP addresses from log files.
 
