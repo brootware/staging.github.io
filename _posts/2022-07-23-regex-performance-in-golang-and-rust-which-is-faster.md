@@ -45,9 +45,9 @@ You can find the full code repository for it here.
 
 ## Running the benchmark
 
-The scripts are first run without compiled for 5 times and the results are averaged out to reduce any outliers.
+The scripts are first run without being compiled into a binary for 5 times and the results are averaged out to reduce any outliers.
 
-Next, I repeated the same process with compiled binaries for each language. (Do note that these binaries are compiled for release)
+Next, I repeated the same process with compiled binaries for each language. Do note that these binaries are compiled for release, meaning all the debugging and other dependencies are stripped out.
 
 ## Results
 
