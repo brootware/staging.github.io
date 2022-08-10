@@ -257,7 +257,29 @@ reading_hours = math.floor(reading_minutes/60)
 
 The implementation of custom redaction engine is similar to core redaction engine. The core redaction engine has a pre-defined list of regex patterns that will identify and redact data from the text files.
 
-The custom redaction engine on the other hand takes in a set of user defined regular expression patterns to redact sensitive data from text files. The usage of this can be found in this [pyredactkit wiki article](https://github.com/brootware/PyRedactKit/wiki/Usage#advance-usage).
+The custom redaction engine on the other hand takes in a set of user defined regular expression patterns to redact sensitive data from text files. The user can define their own custom regex pattern in a json file format as below for pyredactkit to identify and redact during runtime.
+
+```json
+// custom.json
+[
+    {
+        "pattern": "^(?:-----BEGIN PGP PRIVATE KEY BLOCK-----\\n?(?:(?:(?:Version|Comment|MessageID|Hash|Charset):.*)\\n?)*[a-zA-Z0-9\\/\\.\\n\\:\\+\\=]+-----END PGP PRIVATE KEY BLOCK-----)$",
+        "type": [
+            "PGP",
+            "Bug Bounty"
+        ]
+    },
+    {
+        "pattern": "^(ssh-rsa [A-Za-z0-9+\\/=]+ [^ \\n]+)$",
+        "type": [
+            "Credentials",
+            "SSH Public Key"
+        ]
+    }
+]
+```
+
+The usage of this can be found in this [pyredactkit wiki article](https://github.com/brootware/PyRedactKit/wiki/Usage#advance-usage).
 
 # Todos and enhancements
 
