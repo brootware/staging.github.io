@@ -95,7 +95,7 @@ The function was simply iterating through a list of identified strings returned 
 
 If we were to run this for multiple log files with hundred thousands of records, the redaction will take much much longer.
 
-## Optimizing and refactoring code for speed
+## Optimizing and refactoring the core redaction engine for speed
 
 A solution was considered to refactor the function to use binary search instead of iterative linear search. However, as the list could not really be sorted I had to come up with alternative solution.
 
@@ -136,7 +136,9 @@ So a separate class for identifier is created to maintain a database of regular 
 ]
 ```
 
-With these new and better implementations, there was no iteration through a list and redaction function was processing much faster. I was able to reduce the time from 67 seconds to a mere 1 second for a single file redaction with over 10k lines of records.
+This solution helped speed up the redaction in two ways. First, the `re.compile` of the regex library which actually takes a lot of time to compile is taken out. Only the needed regular expressions are used to identify the sensitive data within text files. (Reducing the runtime by about 30 seconds)
+
+Secondly, there was no iteration through a list and redaction engine is further optimized and thus processing much faster. This again reduces the runtime I was able to reduce the time from 67 seconds to a mere 1 second for a single file redaction with over 10k lines of records.
 
 ```bash
 pyredactkit.py ip_test.txt  1.74s user 0.13s system 124% cpu 1.504 total
@@ -191,6 +193,8 @@ python3 pyredactkit.py multiredact -d redacted_dir  42.12s user 0.20s system 100
 ```
 
 This is currently on the [TODO list](#-todos-and-enhancements) to explore either async or multiprocessing library of python to process the files simultaneously. The issue simply here is that the files are currently being redacted in synchronous manner.
+
+An update as of 10th August 2022, benchmarks have been done on both Async, Threading and Multi-processing. Reading and writing files to disk are already non blocking. The concurrency only comes in handy when the requests are processed over the network. Further explanation can be found in this [issue](https://github.com/brootware/PyRedactKit/issues/1)
 
 # Automating CICD with github actions
 
@@ -249,6 +253,12 @@ reading_minutes = math.ceil(total_words/Word_Per_Minute_Read)
 reading_hours = math.floor(reading_minutes/60)
 ```
 
+# Custom Redaction Engine
+
+The implementation of custom redaction engine is similar to core redaction engine. The core redaction engine has a pre-defined list of regex patterns that will identify and redact data from the text files.
+
+The custom redaction engine on the other hand takes in a set of user defined regular expression patterns to redact sensitive data from text files. The usage of this can be found in this [pyredactkit wiki article](https://github.com/brootware/PyRedactKit/wiki/Usage#advance-usage).
+
 # Todos and enhancements
 
 Here is a roadmap of what's in store for PyRedactKit. If you would like to contribute and extend regex identifier database please check out the [guide](https://github.com/brootware/PyRedactKit/wiki/Contributing).
@@ -260,10 +270,11 @@ Here is a roadmap of what's in store for PyRedactKit. If you would like to contr
 - [x] Tokenization for unredacting data
 - [x] Base64 supoort
 - [x] Custom regex pattern definition for power users
-- [ ] Implement testing in CI
-- [ ] Implement building python app and pushing to Pypi in CD
-- [ ] Dockerise the app for distribution
-- [ ] Multiprocessing files
+- [x] Implement testing in CI
+- [x] Implement building python app and pushing to Pypi in CD
+- [x] Dockerise the app for distribution
+- [x] Refactoring core and custom redaction engine
+- [ ] Multiprocessing files (No longer implementing)
 - [ ] UUID clash on hashmap generation?
 
 If you feel that there are suggestions or ideas you have in mind that could enhance the tool please feel free to create an [issue](https://github.com/brootware/PyRedactKit/issues) here to let me know!
