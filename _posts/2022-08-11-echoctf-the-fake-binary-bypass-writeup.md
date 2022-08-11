@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'EchoCTF: The Fake Binary Bypass Writeup ⚙️ 🛠'
+title: "EchoCTF: The Fake Binary Bypass Writeup ⚙️ \U0001F6E0"
 categories:
 - CTF
 - Binary-Exploitation
 tags:
 - CTF
 - Binary-Exploitation
+date: 2022-08-11 19:37 +0800
 ---
-
 ## Summary
 
 It has been a while last I did an online CTF. So this entry is a refresher on my knowledge of binary analysis.
@@ -70,10 +70,26 @@ $ ./binary_analysis_bypass
 ETSCTF_{redacted}
 ```
 
+### What is the ETSCTF variable value
+
+There is an ETSCTF variable defined, see if you can get its value in hex (format 0123abcd).
+
+For this challenge, you need to find the variable named ETSCTF in ghidra from the Symbol Tree panel and find out the value that is stored in the variable. Check out the screenshot below on how to do this.
+
+![ETSCTFVAR](https://bn1304files.storage.live.com/y4mUQgBESiS8e0s-B-dEQhDcZcIP_gD-7a7Wd__ok03WZlMoYlYIjJV4nJsRhyL27Gy_QWuE2LF3hKBS0LekmtDv2zAMkFTa48P5FN_ry_DZUMPXgUrcJcqCwPEu10_QXLv0ozDYxM0mp-GEZVKC6fN4QmQjIsbZi1F04ybI9GiYJSZG9mJv8cMXArMbW7A_tOi?width=2858&height=1492&cropmode=none)
+
 ### What is the function name that displays an actual flag?
 
 Analyze the binary and answer the name of the function that isn't being called by default?
 
 By analyzing the program flow in ghidra, we can see that there are 2 functions. One is being called by the main function while the other is not. This is the hiddne function that the challenge is asking for.
 
-![hiddnefunc](https://bn1304files.storage.live.com/y4meQdSm7Fn1iZUl5DaRzXd22D9CXLOGOxszToC6CGXdc0b0R5rsopHDuWWmTMdmnNmHd9dh4kJM5mvn5kPkAi0fUrVp-bDXF6fDw_pbimnYEXudzZ_yhmBt2huYCfRfDYE0aAcqaiAEv2HU6427WwzwrYu8fxml4exp9XKOvMz_uKjg7LIluLTSKLybclKJmYo?width=2858&height=1492&cropmode=none)
+![hiddnefunc](https://bn1304files.storage.live.com/y4mTrmU3nOXBf7e1RFJctv-hnpqO_qxDCyRIuhOCGiEKRYRuK6QyLpZk4WiJe-4VesIeWHnU5PPJ-oHXByZhX8cHVlMoSQ70DwF6zyu3ccKzCtcrEo5yRVDS_eyvLJqyhEmiuGWAMx7A97tMqTRx7hOVnVwCN51NtFCl3VnUSuX9JKYwOW8ncOXngW63SGzxcTt?width=2858&height=1492&cropmode=none)
+
+### Complete and correct flag that isn't being displayed
+
+By analyzing the function from previous question, we can see that the correct flag is a combination of the variables `m1` and `m2`. You just need to find the values of these variables and concatenate them together to get the correct flag.
+
+![correctflag](https://bn1304files.storage.live.com/y4mlMqY54COTvOa9JFDTxp-GyCzqHsSJB699CHjEETJnwoXCYQAExA9kSM1ahOK0I8-YlhmMNGPaLyBTJP_dfEMa0tN1mjNJDncXtpB2ZMPcRjdusk-lD4e1eSJ8yfSKcJ8lWiwNyvuSgxPKapmUxQqKAvuaQUybN41C7QGLKp6OoYU4nZqTUyu5Be2ImIgRsE8?width=2858&height=1492&cropmode=none)
+
+You can also find the ETSCTF local variable defined within this function from `local_c` from the screenshot.
