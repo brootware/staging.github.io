@@ -69,3 +69,11 @@ What would be the flag being displayed when the program is run?
 $ ./binary_analysis_bypass 
 ETSCTF_{redacted}
 ```
+
+### What is the function name that displays an actual flag?
+
+Analyze the binary and answer the name of the function that isn't being called by default?
+
+By analyzing the program flow in ghidra, we can see that there are 2 functions. One is being called by the main function while the other is not. This is the hiddne function that the challenge is asking for.
+
+![hiddnefunc](https://bn1304files.storage.live.com/y4meQdSm7Fn1iZUl5DaRzXd22D9CXLOGOxszToC6CGXdc0b0R5rsopHDuWWmTMdmnNmHd9dh4kJM5mvn5kPkAi0fUrVp-bDXF6fDw_pbimnYEXudzZ_yhmBt2huYCfRfDYE0aAcqaiAEv2HU6427WwzwrYu8fxml4exp9XKOvMz_uKjg7LIluLTSKLybclKJmYo?width=2858&height=1492&cropmode=none)
