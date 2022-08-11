@@ -18,14 +18,13 @@ Welcome! This is a personal blog site to share my CTF writeups, Cyber Defense (B
 
 <a href="https://www.credly.com/users/oaker-min/badges"><img src="https://img.shields.io/badge/Credly%20Certificates-Oaker%20Min-brightgreen" /></a>
 
-<!-- <a href="https://blueteamlabs.online/public/user/f7656a47c955978a69858f"><img src="https://img.shields.io/badge/blueteamlabs-Top%202%20percent-blue" /></a> -->
-
 <a href="https://cyberdefenders.org/profile/rootware"><img src="https://img.shields.io/badge/cyberdefenders.org-rootware-blue" /></a>
 
 <script src="https://tryhackme.com/badge/242534"></script>
 
 [![echoCTF badge](https://echoctf.red/profile/289749/badge)](https://echoctf.red/profile/289749)
 
+<!-- <a href="https://blueteamlabs.online/public/user/f7656a47c955978a69858f"><img src="https://img.shields.io/badge/blueteamlabs-Top%202%20percent-blue" /></a> -->
 ## A disclaimer as usual
 
 The views and opinions shown on this website are of my own and not necessarily the viewpoint of my employer.
