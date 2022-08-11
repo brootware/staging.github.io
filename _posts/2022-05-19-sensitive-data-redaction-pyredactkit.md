@@ -95,13 +95,39 @@ The function was simply iterating through a list of identified strings returned 
 
 If we were to run this for multiple log files with hundred thousands of records, the redaction will take much much longer.
 
-## Optimizing and refactoring the core redaction engine for speed
+## Refactoring the core redaction engine
+
+The very initial implementation and the architecture of the redaction engine looks something like this.
+
+Class diagram:
+![class](https://github.com/brootware/PyRedactKit/blob/main/images/beforeRefactor/classes.png?raw=true)
+
+Program flow diagram:
+![program](<https://github.com/brootware/PyRedactKit/blob/main/images/beforeRefactor/packages.png?raw=true>)
+
+As you can see the program suffers from a code smell. The redactor class was actually suffering from [Large Class symptom](https://refactoring.guru/smells/large-class). It is simply when a class contains many fields/methods/lines of code.
+
+So to remedy this, I broke down the Redactor class into 3 separate components:
+
+* Core Redactor Engine - contains a pre-defined list of regex patterns to mask sensitive data.
+* Custom Redactor Engine - reads in user defined list of regex patterns to mask sensitive data.
+* Common Jobs - common functions that is used by both core and custom redactor engines.
+
+Class diagram:
+![class](<https://github.com/brootware/PyRedactKit/blob/main/images/refactor10jul/classes_pyredactkit.png?raw=true>)
+
+Program flow diagram:
+![program](<https://github.com/brootware/PyRedactKit/blob/main/images/refactor10jul/packages_pyredactkit.png?raw=true>)
+
+This made the code more modular and easier to focus and contributors can work on different parts of the code base simultaneously.
+
+## Optimizing core redaction engine for speed
 
 A solution was considered to refactor the function to use binary search instead of iterative linear search. However, as the list could not really be sorted I had to come up with alternative solution.
 
 An alternative to this is to not store the identified regex strings in a list but rather redact them on the fly. In order to achieve that I had to stop using the commonregex library by madison may and build the regex library from scratch.
 
-So a separate class for identifier is created to maintain a database of regular expressions with data type for redaction. This made the project extensible and much cleaner. Contributors can also extend the type of data they want to redact just by modifying this particular [regex library](https://github.com/brootware/PyRedactKit/blob/233452755f5ee85a29f96f85d6b0a85052425b54/pyredactkit/identifiers.py#L17).
+So a separate class for identifier is created to maintain a database of regular expressions with data type for redaction as shown in the class diagram in refactoring section of this article. This made the project easily extensible. Contributors can also extend the type of data they want to redact just by modifying this particular [regex library](https://github.com/brootware/PyRedactKit/blob/233452755f5ee85a29f96f85d6b0a85052425b54/pyredactkit/identifiers.py#L17).
 
 ```json
 [
@@ -222,13 +248,13 @@ There are a pros and cons to this design.
 
 Pros
 
-- During the redaction, there will be a hashmap of `key:value` pairs generated and stored in a file called `.hashshadow_filename.json` as a dot file together with a `redacted_logfile.txt`. This is a 1:1 generation. You will not be able to use a hashshadow file generated from the copy of an original log file to unredact the original log file.
+* During the redaction, there will be a hashmap of `key:value` pairs generated and stored in a file called `.hashshadow_filename.json` as a dot file together with a `redacted_logfile.txt`. This is a 1:1 generation. You will not be able to use a hashshadow file generated from the copy of an original log file to unredact the original log file.
 
-- The UUID strings generated have a [.00000006 chance of two uuids being the same](https://stackoverflow.com/questions/292965/what-is-a-uuid) according to stackoverflow. So a malicious user will not be able to use a [dictionary attack](https://security.stackexchange.com/questions/67712/what-are-the-differences-between-dictionary-attack-and-brute-force-attack) to bruteforce the original data. Keeping this hashshadow file safe is very important if you need to unredact the data and of course away from the attackers too!
+* The UUID strings generated have a [.00000006 chance of two uuids being the same](https://stackoverflow.com/questions/292965/what-is-a-uuid) according to stackoverflow. So a malicious user will not be able to use a [dictionary attack](https://security.stackexchange.com/questions/67712/what-are-the-differences-between-dictionary-attack-and-brute-force-attack) to bruteforce the original data. Keeping this hashshadow file safe is very important if you need to unredact the data and of course away from the attackers too!
 
 Cons
 
-- The UUID strings generated will sometimes clash with the regular expression of Singapore NRIC or Credit Cards which creates an extra record in `.hashshadow_filename.json` file. Here's an example
+* The UUID strings generated will sometimes clash with the regular expression of Singapore NRIC or Credit Cards which creates an extra record in `.hashshadow_filename.json` file. Here's an example
 
 ![uuidclash](https://bn1304files.storage.live.com/y4mdcXDw9q6clVupqFLERH2u9dsXdoaVS8cIxcKJr0pb0SqMdpBBlz3LEIa_bxZVrl7T95cHp5vd9REOgK6eJnOsVNeDpzvFaZqHoWwZ-bsR3GkZv0VmMtsEC5f6g9v3rpTfZy13l0XNdMTB7eyG3UXHyaMPGVswSgU4j2XSopePuAPfJ74Vc_wBzyTgwaWaRsz?width=1286&height=158&cropmode=none)
 
@@ -285,18 +311,18 @@ The usage of this can be found in this [pyredactkit wiki article](https://github
 
 Here is a roadmap of what's in store for PyRedactKit. If you would like to contribute and extend regex identifier database please check out the [guide](https://github.com/brootware/PyRedactKit/wiki/Contributing).
 
-- [x] Refactor regex functions as a class?
-- [x] Singapore NRIC
-- [x] Performance improvement, 67s -> 1.7s for over 4GB data.
-- [x] Reporting function to show how much hours you have saved by using the tool.
-- [x] Tokenization for unredacting data
-- [x] Base64 supoort
-- [x] Custom regex pattern definition for power users
-- [x] Implement testing in CI
-- [x] Implement building python app and pushing to Pypi in CD
-- [x] Dockerise the app for distribution
-- [x] Refactoring core and custom redaction engine
-- [ ] Multiprocessing files (No longer implementing)
-- [ ] UUID clash on hashmap generation?
+* [x] Refactor regex functions as a class?
+* [x] Singapore NRIC
+* [x] Performance improvement, 67s -> 1.7s for over 4GB data.
+* [x] Reporting function to show how much hours you have saved by using the tool.
+* [x] Tokenization for unredacting data
+* [x] Base64 supoort
+* [x] Custom regex pattern definition for power users
+* [x] Implement testing in CI
+* [x] Implement building python app and pushing to Pypi in CD
+* [x] Dockerise the app for distribution
+* [x] Refactoring core and custom redaction engine
+* [ ] Multiprocessing files (No longer implementing)
+* [ ] UUID clash on hashmap generation?
 
 If you feel that there are suggestions or ideas you have in mind that could enhance the tool please feel free to create an [issue](https://github.com/brootware/PyRedactKit/issues) here to let me know!
