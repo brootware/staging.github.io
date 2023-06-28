@@ -15,3 +15,4 @@ I have recently moved back to using windows as the new apple M1 and M2 chips are
 
 # Setting up a new machine and automating tasks
 
+https://gist.github.com/HonkinWaffles/ec48e5c37f2c410c07d97cfb0a0d016d
