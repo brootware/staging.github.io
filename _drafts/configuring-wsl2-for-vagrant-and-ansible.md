@@ -15,4 +15,10 @@ I have recently moved back to using windows as the new apple M1 and M2 chips are
 
 # Setting up a new machine and automating tasks
 
-https://gist.github.com/HonkinWaffles/ec48e5c37f2c410c07d97cfb0a0d016d
+Below are the steps in order. Do note that **vagrant versions installed on both Windows Native and WSL2 has to be same** for this to work.
+* Enable WSL2 from additional window feature.
+* Install Vagrant on Windows and on WSL2 according to your linux distro https://developer.hashicorp.com/vagrant/downloads.
+* Check for the version of vagrant installed by running `vagrant -v` in powershell and WSL2.
+* Ensure they are the same version.
+* If not, go directly to source URL to download the same versions of windows msi and linux package to install locally. https://releases.hashicorp.com/vagrant
+  * Windows installation will end with `*.msi` and Ubuntu would be `*.deb`.
