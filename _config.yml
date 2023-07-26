@@ -20,7 +20,7 @@ timezone: Asia/Singapore
 
 title: (B)rootware Research # the main title
 
-tagline: Cloud DevOps / Site Reliability Engineering, Cyber Security # it will display as the sub-title
+tagline: Cyber Security, Platform/Reliability Engineering # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A blog for CTF writeups, Cyber Security & Defense (Blue) Team Techniques, other side projects and research by Oaker Min (Bruce).
