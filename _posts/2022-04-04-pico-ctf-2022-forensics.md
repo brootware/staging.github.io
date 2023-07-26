@@ -379,11 +379,7 @@ Contents Of File: /3/root/flag.txt
 
 Contents Of File: /3/root/flag.txt.enc
 
-```txt
-Salted__k0]�=�fz
-VF8��i�ns�|,��W
-����܁��s�Ȥ7� ���؎$�'%
-```
+![contentsofflag](https://onedrive.live.com/embed?resid=3AC474C28157D633%21343054&authkey=%21AJSEe49FdZPdBuU&width=696&height=89)
 
 Export the flag.txt.enc from autopsy and decrypt the file as below.
 

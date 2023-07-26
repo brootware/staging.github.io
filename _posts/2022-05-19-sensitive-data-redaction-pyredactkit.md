@@ -218,7 +218,7 @@ pyredactkit.py ip_test.txt  1.74s user 0.13s system 124% cpu 1.504 total
 python3 pyredactkit.py multiredact -d redacted_dir  42.12s user 0.20s system 100% cpu 41.941 total
 ```
 
-This is currently on the [TODO list](#-todos-and-enhancements) to explore either async or multiprocessing library of python to process the files simultaneously. The issue simply here is that the files are currently being redacted in synchronous manner.
+This is currently on the [TODO list](#todos-and-enhancements) to explore either async or multiprocessing library of python to process the files simultaneously. The issue simply here is that the files are currently being redacted in synchronous manner.
 
 An update as of 10th August 2022, benchmarks have been done on both Async, Threading and Multi-processing. Reading and writing files to disk are already non blocking. The concurrency only comes in handy when the requests are processed over the network. Further explanation can be found in this [issue](https://github.com/brootware/PyRedactKit/issues/1)
 
@@ -226,7 +226,7 @@ An update as of 10th August 2022, benchmarks have been done on both Async, Threa
 
 As a single dev working on this project, Github Actions are  awesome. There are a lot of pre-built tools available in [github marketplace](https://github.com/marketplace?type=actions). We could just define these tools in a YAML format to do code checkout, linting, testing, code scanning and building up the package.
 
-Currently I have implemented code scanning with sonarqube for detecting any code smells and linting python code according to flake8. There are a couple of todos regarding CD that I have listed out in the [Todos and enhancements](#-todos-and-enhancements) section.
+Currently I have implemented code scanning with sonarqube for detecting any code smells and linting python code according to flake8. There are a couple of todos regarding CD that I have listed out in the [Todos and enhancements](#todos-and-enhancements) section.
 
 # Implementing Unredaction function
 
